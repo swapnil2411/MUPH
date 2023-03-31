@@ -1,0 +1,104 @@
+@media (min-width: 1366px) {
+  .content_container {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1366px) {
+  /* .MPUH_Specialities {
+    padding: 70px 30px;
+  }
+  .MPUH_parent .MPUH_child {
+    padding: 24px 25px;
+  } */
+}
+
+@media (max-width: 1199px) {
+  .statistics_padding_right {
+    padding-right: 50px !important;
+  }
+  .lotusImg {
+    width: 230px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .statistics_padding_right {
+    padding-right: 40px !important;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .our_statistics {
+    padding: 46px 39px 70px;
+  }
+  .statistics_details_inner p,
+  .MPUH_parent .MPUH_child p {
+    font-size: 14px;
+  }
+  /* .MPUH_Specialities {
+    padding: 70px 20px;
+  } */
+  .MPUH_parent.MPUH_spacing {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .lotusImg {
+    width: unset;
+    padding: 0;
+    margin: 50px 0;
+  }
+  .MPUH_parent .MPUH_child {
+    padding: 24px 15px;
+    max-width: 335px;
+  }
+  .MPUH_heading span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .MPUH_heading img {
+    max-width: 50px;
+  }
+  .MPUH_heading span {
+    font-size: 22px;
+    padding-left: 10px;
+  }
+  .MPUH_parent .MPUH_child {
+    padding: 24px 10px;
+    max-width: 245px;
+  }
+}
+
+@media (max-width: 576px) {
+  .our_statistics {
+    padding: 30px 20px 50px;
+  }
+  .statistics_padding_bottom {
+    padding-bottom: 0;
+  }
+  .statistics_padding_right {
+    padding-right: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .MPUH_parent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    padding-top: 0;
+  }
+  .MPUH_parent .MPUH_child {
+    margin: 20px 0;
+  }
+  .lotusImg {
+    width: 200px;
+    margin: 20px 0;
+  }
+}
