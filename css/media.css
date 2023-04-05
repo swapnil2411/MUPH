@@ -12,6 +12,11 @@
   .MPUH_parent .MPUH_child {
     padding: 24px 25px;
   } */
+
+  .content_container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -21,6 +26,10 @@
   .lotusImg {
     width: 230px;
     padding: 0 25px;
+  }
+  .content_container {
+    max-width: 991px;
+    margin: 0 auto;
   }
 }
 
@@ -60,6 +69,15 @@
   }
   .MPUH_heading span {
     font-size: 30px;
+  }
+
+  .content_container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  section .content_container{
+    padding: 0 15px;
   }
 }
 

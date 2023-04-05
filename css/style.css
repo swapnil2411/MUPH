@@ -518,6 +518,10 @@ a:hover {
 }
 
 /* Why Choose Css */
+.why_choose_area{
+  overflow-x: hidden;
+}
+
 .sub_content {
   margin-top: 25px;
 }
