@@ -379,7 +379,33 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 5000,
   });
-  // 15. About Tab
+
+
+  // Navbar dropdown child Tabs
+  $(".tab_links ul li").click(function () {
+    var panelToShow = $(this).attr("rel");
+    // alert(panelToShow)
+    $(this).addClass("active").siblings().removeClass("active");
+
+    $(".panel.active").fadeOut(600, function () {
+      $(this).removeClass("active");
+      $("#" + panelToShow).fadeIn(600, function () {
+        $(this).addClass("active");
+      });
+    });
+  });
+
+  
+
+  //show child dropdown on click
+
+  $('.has_dropdown a').on('click', function(){
+    $(this).siblings('.dropdown_child').toggleClass('show_dropdown').parent().siblings().find('.dropdown_child').removeClass('show_dropdown');
+    $(this).parent().toggleClass('active_link').siblings().removeClass('active_link');
+    $(this).find('.iconify').toggleClass('rotate_svg').parent().parent().siblings().find('.iconify').removeClass('rotate_svg');
+  })
+
+  
 
   $(".tabs li").click(function () {
     var panelToShow = $(this).attr("rel");
