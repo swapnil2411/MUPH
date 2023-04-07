@@ -1036,11 +1036,14 @@
   line-height: 30px;
   color: #4ddebd;
   display: inline-block;
-  padding: 15px 0 8px;
+  padding: 10px 0 8px;
 }
 
 @media (max-width: 991px) {
   .joinOurTeamLeft {
     padding-bottom: 60px !important;
+  }
+  .ourCultureLeft {
+    padding: 50px 20px !important;
   }
 }
