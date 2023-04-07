@@ -939,6 +939,49 @@
   line-height: 20px;
 }
 
-.multipleData{
+.multipleData {
   padding-top: 30px;
+}
+
+.contactUs {
+  padding-block: 90px;
+}
+
+.contact_details {
+  padding-bottom: 40px;
+}
+
+.contact_details h2 {
+  padding-bottom: 5px;
+}
+
+.contactUsMap iframe {
+  width: 100%;
+  height: 437px;
+  padding-right: 80px;
+}
+
+.contact_details svg {
+  margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .contactUs {
+    padding-block: 50px;
+  }
+  .contactUsMap iframe {
+    padding-right: 0;
+  }
+  .contactUsDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactUsDetails {
+    grid-template-columns: 1fr;
+  }
 }
