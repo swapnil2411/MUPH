@@ -978,10 +978,69 @@
     gap: 20px;
     padding: 20px !important;
   }
+  .joinOurTeamLeft {
+    padding-bottom: 60px !important;
+  }
 }
 
 @media (max-width: 576px) {
   .contactUsDetails {
     grid-template-columns: 1fr;
+  }
+}
+
+.emailCv {
+  background-color: #4ddebd;
+  padding-block: 32px;
+  margin-top: 50px;
+}
+
+.emailCv a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.joinOurTeam {
+  margin-block: 60px !important;
+}
+
+.joinOurTeamLeft {
+  padding-right: 60px !important;
+}
+
+.joinOurTeamLeft h2 {
+  padding-bottom: 15px;
+}
+
+.ourCultureLeft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #132573;
+  padding-inline: 50px !important;
+}
+
+.ourCultureLeft h2 {
+  color: #fff;
+}
+
+.ourCultureLeft p {
+  color: #eeeeee;
+}
+
+.greenClr {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4ddebd;
+  display: inline-block;
+  padding: 15px 0 8px;
+}
+
+@media (max-width: 991px) {
+  .joinOurTeamLeft {
+    padding-bottom: 60px !important;
   }
 }
