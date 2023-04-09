@@ -804,7 +804,8 @@
   color: #192029;
 }
 
-.eventsInformation button {
+.eventsInformation button,
+.packageDetails button {
   background: none;
   font-weight: 700;
   font-size: 14px;
@@ -818,7 +819,8 @@
   margin-block: 25px;
 }
 
-.eventsInformation button::after {
+.eventsInformation button::after,
+.packageDetails button::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1118,8 +1120,114 @@
   margin-top: 20px;
 }
 
-.topExtraMargin{
+.topExtraMargin {
   margin-top: 40px !important;
+}
+
+.healthPlan {
+  margin-block: 40px !important;
+}
+
+.healthPlanRight .plan_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #192029;
+  padding-bottom: 10px;
+}
+
+.healthPlanRight .plan_title span {
+  color: #192029;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+}
+
+.healthPlanRight span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fc8c8c;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+
+.healthPlanRight .customGap {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.healthPlanRight input {
+  background: #f8f8f8;
+  border: 1px solid #132573;
+  outline: none;
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #c4c4c4;
+  padding: 12px 15px;
+}
+
+.healthPlanRight p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #192029;
+  margin-block: 20px;
+}
+
+.healthPlanRight .button {
+  width: 180px;
+  background: #132573;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 13px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.healthPlanRight .button.greenBtn {
+  background: #4ddebd;
+}
+
+.packageDetailsBox {
+  display: grid;
+  grid-template-columns: repeat(2, 218px);
+  padding: 25px 90px;
+  gap: 0 90px;
+  border: 1px solid #d3ced2;
+}
+
+.packageDetails p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #2a3d53;
+  padding-bottom: 5px;
+}
+
+.packageDetails span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2a3d53;
+}
+
+.packageDetails p span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.packageDetails button {
+  margin: 0;
+}
+
+.packageDetails {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
@@ -1155,6 +1263,10 @@
   .jobPositionDescBox {
     padding: 15px 10px;
   }
+  .packageDetailsBox {
+    grid-template-columns: repeat(2, auto);
+    padding: 25px 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1167,5 +1279,9 @@
   }
   .MPUH_Highlights_right_second {
     margin-block: 33px;
+  }
+  .packageDetailsBox {
+    grid-template-columns: auto;
+    padding: 20px;
   }
 }
