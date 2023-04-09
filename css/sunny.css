@@ -1047,3 +1047,125 @@
     padding: 50px 20px !important;
   }
 }
+
+.careers_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #132573;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.jobPosition {
+  margin-block: 60px;
+}
+
+.jobPositionMain {
+  display: grid;
+  grid-template-columns: repeat(3, 283px);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.jobPositionDescBox {
+  padding: 20px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 5px 5px 2px #e8e8e8;
+  transition: 0.5s all;
+}
+
+.jobPositionDescBox:hover {
+  border: 1px solid #fc8c8c;
+  box-shadow: 5px 5px 2px #fc8c8c;
+}
+
+.jobPositionDescBox .jp_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #132573;
+}
+
+.jobPositionDescBox span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2a3d53;
+}
+
+.jobPositionDescBox p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2a3d53;
+}
+
+.y-axix-spacing {
+  margin-block: 25px;
+}
+
+.applyButton {
+  background: #132573;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding-block: 10px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.topExtraMargin{
+  margin-top: 40px !important;
+}
+
+@media (max-width: 991px) {
+  .jobPositionMain {
+    grid-template-columns: repeat(3, auto);
+  }
+  .jobPositionDescBox .jp_title,
+  .careers_title {
+    font-size: 20px;
+  }
+  .MPUH_Highlights_right_second h3,
+  .MPUH_Highlights_right h3,
+  .MPUH_Highlights_right p,
+  .highlights_details p {
+    padding: 0 15px 8px;
+  }
+  .MPUH_Highlights_right h3 {
+    font-size: 14px;
+  }
+  .highlights_details p {
+    font-size: 16px;
+  }
+  .MPUH_Highlights_right p {
+    font-size: 12px;
+  }
+  .highlights_spacing,
+  .mlr_spacing {
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .jobPositionDescBox {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .jobPositionMain {
+    grid-template-columns: repeat(1, 283px);
+  }
+  .jobPositionDescBox p {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .MPUH_Highlights_right_second {
+    margin-block: 33px;
+  }
+}
