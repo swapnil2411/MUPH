@@ -72,9 +72,9 @@ $(document).ready(function () {
                             <a href="#" rel="panel_two">
                               <img src="img/choice.png" alt="treatment options" class="img-fluid">
                               <span class="font_regular">treatment options</span>
-                              <div class="arrrow">
-                                <span class="iconify" data-icon="ic:sharp-keyboard-arrow-down"></span>
-                              </div>
+                              // <div class="arrrow">
+                              //   <span class="iconify" data-icon="ic:sharp-keyboard-arrow-down"></span>
+                              // </div>
                             </a>
                             <li rel="panel_three">
                               <img src="img/badge.png" alt="Specialities" class="img-fluid">
