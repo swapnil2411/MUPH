@@ -95,12 +95,14 @@ video {
 .font_regular{
   font-size: 16px !important;
   font-weight: 400 !important;
+  line-height: 24px;
   text-transform: capitalize;
 }
 
 .font_small{
   font-size: 14px;
   font-weight: 400;
+  line-height: 22px;
   text-transform: capitalize;
 }
 
@@ -157,9 +159,22 @@ a:hover {
   text-decoration: none;
 }
 
+
 .ptb-70 {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.pt-0{
+  padding-top: 0;
+}
+
+.pt-20{
+  padding-top: 20px;
+}
+
+.blue_bg{
+  background: #132573;
 }
 
 .title {
@@ -223,7 +238,11 @@ a:hover {
 .dropdown_tabs .panel .card_container,
 .without_tab_sublinks .card_container,
 .dropdown_tabs .panel .card_container .nested_card,
-.without_tab_sublinks .card_container .nested_card{
+.without_tab_sublinks .card_container .nested_card,
+.patient_center_care_content,
+.inner_form,
+.mobile_top_header,
+.mobile_menu .logo_area{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -245,7 +264,6 @@ a:hover {
 }
 
 
-
 .top_footer_col,
 .address_col .social ul li {
   -webkit-justify-content: center;
@@ -264,7 +282,10 @@ a:hover {
 .main_header .main_header_flex .right_main_header .other_links .donate_box a,
 .top_footer_col,
 .address_col .social ul li,
-.why_choose_img {
+.why_choose_img,
+.patient_center_care_content,
+.mobile_top_header,
+.mobile_menu .logo_area {
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -394,6 +415,39 @@ a:hover {
   font-size: 20px;
   font-weight: 700;
   margin-left: 5px;
+}
+
+.main_header .main_header_flex .right_main_header .hambuger{
+  cursor: pointer;
+  display: none;
+}
+
+.main_header .main_header_flex .right_main_header .hambuger svg{
+  font-size: 32px;
+}
+
+.mobile_top_header{
+  background: #132573;
+  padding: 8px 10px;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  display: none;
+}
+
+.mobile_top_header p{
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.mobile_top_header .sub_menu{
+  cursor: pointer;
+}
+
+.mobile_top_header .sub_menu svg{
+  font-size: 30px;
+  color: #fff;
 }
 
 /* Banner Slider Start */
@@ -1101,3 +1155,389 @@ a:hover {
 }
 
 /* Header Dropdown End */
+
+/* Treatment Options Css */
+
+.treatment_option_overview .title{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.patient_center_care_area .title{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.patient_center_care_content{
+  padding: 70px;
+  height: 100%;
+}
+
+.patient_center_care_content p{
+  color: #fff;
+}
+
+.patient_center_care_area img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.treatment_options_area .title{
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.treatment_box{
+  box-shadow: 3px 3px 5px #E8E8E8;
+}
+
+.treatment_box:hover{
+  box-shadow: 3px 3px 0px #FC8C8C;
+}
+
+.treatment_box .treatment_content{
+  padding: 20px 20px 45px;
+}
+
+.treatment_box .treatment_content h3{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stories_box{
+  border: 1px solid #E8E8E8;
+  box-shadow: 3px 3px 0px #E8E8E8;
+}
+
+.stories_flex{
+  justify-content: center;
+}
+
+.stories_box:hover{
+  border: 1px solid #FC8C8C;
+  box-shadow: 3px 3px 0px #FC8C8C;
+}
+
+.success_stories_area .title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.success_stories_area .sub_title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customer_img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.stories_content{
+  padding: 25px 20px 45px;
+  position: relative;
+}
+
+.stories_content .quote_icon{
+  position: absolute;
+  left: 18px;
+  top: -13px;
+}
+
+.stories_content h3{
+  color: #132573;
+  font-weight: 700;
+  margin: 20px 0 5px;
+  font-size: 18px;
+}
+
+.blue_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  background: #132573;
+  color: #fff;
+  text-align: none;
+  margin: 20px auto 0;
+  padding: 12px;
+}
+
+.blue_btn svg{
+  font-size: 24px;
+}
+
+.blue_btn:hover{
+  background: #4ddebd;
+  color: #fff;
+}
+
+
+.inner_form{
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.inner_form .form_element{
+  flex: 0 0 50%;
+  max-width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.inner_form .form_element.message_element{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.inner_form .form_element .form_input{
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  border: 1px solid #E8E8E8;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #707070;
+}
+
+.inner_form .form_element.message_element .form_input{
+  padding: 15px 12px;
+}
+
+.inner_form .form_element .form_input::placeholder{
+  font-size: 12px;
+  font-weight: 700;
+  color: #707070;
+}
+
+.inner_form .form_element .form_input:focus{
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.inner_form .form_element textarea.form_input{
+  height: unset;
+}
+
+.inner_form .form_element .bootstrap-select{
+  width: 100% !important;
+}
+
+.inner_form .form_element .bootstrap-select button{
+  border-radius: 0;
+  background: transparent;
+  height: 40px;
+  border: 1px solid #E8E8E8;
+}
+
+.inner_form .form_element .bootstrap-select button:focus{
+  outline: none !important;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.inner_form .form_element .bootstrap-select button:active{
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.inner_form .form_element .bootstrap-select button .filter-option-inner-inner{
+  font-size: 12px;
+  font-weight: 700;
+  color: #707070;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inner_form .form_element .bootstrap-select button .filter-option-inner{
+  height: 100%;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu{
+  border-radius: 0;
+  padding: 0;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu li a{
+  padding: 8px 12px;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu li a span{
+  font-size: 12px;
+  font-weight: 700;
+  color: #707070;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu li a:hover{
+  background: #4ddebd;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu li a:hover span{
+  color: #fff;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu li a.active{
+  background: #132573;
+}
+
+.inner_form .form_element .bootstrap-select .dropdown-menu li a.active span{
+  color: #fff;
+}
+
+.contact_form_btn{
+  width: 225px;
+  margin: 0 auto;
+  height: 45px;
+  background: #132573;
+  color: #fff;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  display: block;
+}
+
+.contact_form_btn:hover{
+  background: #4ddebd;
+}
+
+.help_form_area .title{
+  margin-bottom: 20px;
+}
+
+.help_form_area .sub_para{
+  line-height: 25px;
+}
+
+.help_form_area .help_form_img{
+  padding: 0 0 0 30px;
+}
+
+/* Mobile menu css */
+.mobile_menu{
+  width: 320px;
+  position: fixed;
+  top: 0;
+  left: -330px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: 1px 1px 10px #E8E8E8;
+  padding: 20px 15px;
+  transition: 0.5s ease-in-out all;
+}
+
+.mobile_menu.show_mobile_menu{
+  left: 0;
+}
+
+.mobile_menu #accordion > .card:not(:last-child){
+  margin-bottom: 15px;
+}
+
+.mobile_menu #accordion .card .card-body{
+  padding: 0;
+}
+
+.mobile_menu #accordion .card{
+  border-radius: 0;
+}
+
+.mobile_menu #accordion .card .card-header{
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.mobile_menu #accordion > .card > .card-header{
+  background: #132573;
+}
+
+.mobile_menu #accordion > .card > .card-header:hover{
+  background: #4ddebd;
+}
+
+.mobile_menu #accordion > .card > .card-header:hover h5 a{
+  color: #2a2a2a;
+}
+
+.mobile_menu #accordion .card .card-header h5 a{
+  font-size: 14px;
+  color: #2a2a2a;
+  font-weight: 700;
+  padding: 10px;
+  position: relative;
+}
+
+.mobile_menu #accordion .card .card-header h5 a::after{
+  content: '-';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 18px;
+}
+
+.mobile_menu #accordion .card .card-header h5 a.collapsed::after{
+  content: '+';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 14px;
+}
+
+.mobile_menu #accordion .card .card-header h5 a.no_collapse::after{
+  display: none;
+}
+
+.mobile_menu #accordion > .card > .card-header h5 a{
+  color: #fff;
+}
+
+
+.mobile_menu #accordion .card .card-body .card{
+  border: none;
+}
+
+.mobile_menu #accordion .card .card-body .card .card-header h5 a{
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.mobile_menu #accordion .card .card-body .card .card-header h5 a:hover,
+.mobile_menu #accordion .card .card-body ul li a:hover{
+  color: #4ddebd;
+}
+
+.mobile_menu #accordion .card .card-body ul{
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.mobile_menu #accordion .card .card-body ul li a{
+  font-size: 11px;
+  font-weight: 700;
+  color: #2a2a2a;
+  padding: 10px 10px 10px 30px;
+}
+
+.mobile_menu .logo_area{
+  margin-bottom: 20px;
+}
+
+.mobile_menu .logo_area p{
+  margin-left: 10px;
+  color: #132573;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
