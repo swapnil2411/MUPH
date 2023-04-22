@@ -216,6 +216,34 @@
   padding-bottom: 20px;
 }
 
+.speciality_links{
+  overflow-x: auto;
+}
+
+.speciality_links li{
+  flex: 0 0 23%;
+  max-width: 23%;
+  text-align: center;
+  margin-right: 0;
+  padding: 10px;
+  border: 1px solid #fc8c8c;
+}
+
+.speciality_links li:not(:last-child){
+  margin-right: 0;
+}
+
+.speciality_links{
+  -webkit-justify-content: flex-start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.speciality_links::-webkit-scrollbar{
+  visibility: hidden;
+  display: none;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -254,5 +282,10 @@
   .lotusImg {
     width: 200px;
     margin: 20px 0;
+  }
+
+  .speciality_links li{
+    flex: 0 0 150px;
+    max-width: 150px;
   }
 }
