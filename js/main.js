@@ -97,7 +97,7 @@ $(document).ready(function () {
                             </li>
                             <li rel="panel_five">
                               <img src="img/flask.png" alt="flask" class="img-fluid">
-                              <span class="font_regular">flask</span>
+                              <span class="font_regular">research</span>
                               <div class="arrrow">
                                 <span class="iconify" data-icon="ic:sharp-keyboard-arrow-down"></span>
                               </div>
@@ -225,6 +225,12 @@ $(document).ready(function () {
                                 <p class="font_small">Our pathology laboratory is well-equipped with state-of-the-art equipment capable of conducting a comprehensive range of tests at reasonable rates.</p>
                               </div>
                             </a>
+                          </div>
+                          <div class="readMoreSpecialities">
+                            <a href="specialities.html" class="blue_btn">
+                              <span class="font_small">Read More</span>
+                              <span class="iconify" data-icon="prime:angle-right"></span>
+                          </a>
                           </div>
                         </div>
 
