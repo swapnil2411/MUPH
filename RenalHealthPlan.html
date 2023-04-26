@@ -36,69 +36,77 @@
     <my-header></my-header>
     <!-- Header End Here -->
 
-    <div class="content_container">
-        <div class="navigation">
-            <a href="#"><img src="./img/icon/home_dark.png" alt="home" /></a>
-            <span>/</span>
-            <a href="#"> Renal Health Plan </a>
-        </div>
-    </div>
-
-    <div class="content_container">
-        <h2 class="title text-center">Renal Health Plan</h2>
-        <div class="row m-0 healthPlan">
-            <div class="col-xs-12 col-sm-4 healthPlanLeft">
-                <img src="/img/hp.png" alt="hp" class="img-fluid">
-                <p class="special_details_para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+    <section class="breadcrumb_header">
+        <div class="content_container">
+            <div class="breadcrumb_nav">
+                <a href="index.html"><img src="./img/icon/home_dark.png" alt="home" /></a>
+                <span class="slash">/</span>
+                <span class="grey_txt font_small">Our Expertise</span>
+                <span class="slash">/</span>
+                <a href="healthcheckup.html" class="grey_txt font_small">Health Checkup</a>
+                <span class="slash">/</span>
+                <span class="active_breadcrumb font_small">Renal Health Plan</span>
             </div>
-            <div class="col-xs-12 col-sm-8 healthPlanRight">
-                <h4 class="plan_title">Renal Health Plan <span>(29 Parameters)</span></h4>
-                <span>₹2,850</span>
-                <div class="row m-0 customGap">
-                    <div class="col-sm-12 p-0">
-                        <input type="text" placeholder="Name">
+            <h2 class="title">Renal Health Plan</h2>
+        </div>
+    </section>
+
+    <section class="plans_form ptb-70 pt-0">
+        <div class="content_container">
+            <div class="row m-0 healthPlan">
+                <div class="col-xs-12 col-sm-4 healthPlanLeft">
+                    <img src="/img/hp.png" alt="hp" class="img-fluid">
+                    <p class="special_details_para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, </p>
+                </div>
+                <div class="col-xs-12 col-sm-8 healthPlanRight">
+                    <h4 class="plan_title">Renal Health Plan <span>(29 Parameters)</span></h4>
+                    <span>₹2,850</span>
+                    <div class="row m-0 customGap">
+                        <div class="col-sm-12 p-0">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-12 col-sm-5 p-0"><input type="text" placeholder="Contact Number"></div>
+                        <div class="col-12 col-sm-6 p-0"><input type="email" placeholder="Email Id"></div>
                     </div>
-                    <div class="col-12 col-sm-5 p-0"><input type="text" placeholder="Contact Number"></div>
-                    <div class="col-12 col-sm-6 p-0"><input type="email" placeholder="Email Id"></div>
+                    <p>12 Hours of fasting is mandatory</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="button">Book Package</button>
+                        <button class="button greenBtn">Explore All Plan ></button>
+                    </div>
                 </div>
-                <p>12 Hours of fasting is mandatory</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="button">Book Package</button>
-                    <button class="button greenBtn">Explore All Plan ></button>
+            </div>
+            <div class="packageDetails">
+                <button>Package Details</button>
+                <div class="packageDetailsBox">
+                    <div class="packageDetailsLeft">
+                        <p>CBC <span>(Complete blood count)</span> </p>
+                        <span>White blood cells (WBCs)
+                            Red blood cells (RBC)
+                            Haemoglobin (Hb or Hgb)
+                            Mean corpuscular volume
+                            Platelets</span>
+                        <p>ESR</p>
+                        <p>S. Creatinine</p>
+                        <p>TSH (Thyroid Function Test)</p>
+                        <p>S.GPT</p>
+                    </div>
+                    <div class="packageDetailsRight">
+                        <p>Random Blood Sugar</p>
+                        <p>Lipid Profile </p>
+                        <span>Cholesterol
+                            Triglycerides
+                            HDL
+                            LDL
+                            VDRK
+                            Chol./ HDL Ratio</span>
+                        <p>Urine routine & microscopic study</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="packageDetails">
-            <button>Package Details</button>
-            <div class="packageDetailsBox">
-                <div class="packageDetailsLeft">
-                    <p>CBC <span>(Complete blood count)</span> </p>
-                    <span>White blood cells (WBCs)
-                        Red blood cells (RBC)
-                        Haemoglobin (Hb or Hgb)
-                        Mean corpuscular volume
-                        Platelets</span>
-                    <p>ESR</p>
-                    <p>S. Creatinine</p>
-                    <p>TSH (Thyroid Function Test)</p>
-                    <p>S.GPT</p>
-                </div>
-                <div class="packageDetailsRight">
-                    <p>Random Blood Sugar</p>
-                    <p>Lipid Profile </p>
-                    <span>Cholesterol
-                        Triglycerides
-                        HDL
-                        LDL
-                        VDRK
-                        Chol./ HDL Ratio</span>
-                    <p>Urine routine & microscopic study</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </section>
+    
     <!-- Footer Start Here -->
     <my-footer></my-footer>
     <!-- Footer End Here -->

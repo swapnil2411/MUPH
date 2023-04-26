@@ -1,27 +1,11 @@
-@media (min-width: 1366px) {
-  .content_container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-}
-
-@media (max-width: 1366px) {
-  /* .MPUH_Specialities {
-    padding: 70px 30px;
-  }
-  .MPUH_parent .MPUH_child {
-    padding: 24px 25px;
-  } */
-
-  .content_container {
-    max-width: 1140px;
+@media (min-width: 1440px) {
+  .content_container{
+    max-width: 1366px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 1199px) {
-
   .main_header .main_header_flex .left_main_header .logo_area p{
     font-size: 18px;
     line-height: 25px;
@@ -34,10 +18,19 @@
     width: 230px;
     padding: 0 25px;
   }
-  .content_container {
-    max-width: 991px;
-    margin: 0 auto;
-    padding: 0 15px;
+
+  .cashless_option_column .inner_cashless_option_column{
+    padding: 25px 35px 35px;
+  }
+
+  .patient_stat_box::after{
+    right: 10%;
+  }
+
+  .success_stories_area .content_container .half_circle{
+    left: 83px;
+    top: 13px;
+    max-width: 150px;
   }
 }
 
@@ -47,7 +40,13 @@
   }
   .title {
     font-size: 30px;
+    line-height: 40px;
   }
+
+  .success_stories_area .content_container .half_circle{
+    top: 0;
+  }
+  
 }
 
 @media (max-width: 991px) {
@@ -126,6 +125,133 @@
     padding-left: 0;
   }
 
+  .amenity_box .health_checkupbox h3,
+  .amenity_box .amenity_content h3,
+  .visitors_info_faq .accordion .card-header h2 button span{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .health_checkupbox .blue_btn{
+    width: 160px;
+  }
+
+  .health_checkupbox{
+    top: 15%;
+    right: -40px;
+  }
+
+  .health_checkup_element img{
+    max-width: 70px;
+    top: 20px;
+  }
+
+  .font_regular{
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .title{
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .font_small{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .cashless_option_column .inner_cashless_option_column{
+    padding: 20px 30px 30px;
+    margin-bottom: 20px;
+  }
+
+  .hospitalization_option_content{
+    padding-right: 15px;
+  }
+
+  .international_hero {
+    width: calc(100% - 225px);
+  }
+
+  .international_hero_content p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .international_hero_content .title{
+    line-height: 34px;
+  }
+
+  .patient_stat_box p{
+    font-size: 18px;
+  }
+
+  .patient_stat_box::after{
+    right: 0%;
+  }
+
+  .find_place_stay_option .inner_hospitalisation_option_service .option_service_col{
+    flex: 0 0 25%;
+    max-width: calc(25% - 40px);
+    margin-bottom: 20px;
+  }
+
+  .find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:last-child){
+    margin-right: unset;
+  }
+
+  .find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:nth-child(4n)){
+    margin-right: 20px;
+  }
+
+  .follow_up_area .inner_follow_up{
+    height: unset;
+  }
+
+  .follow_up_area .inner_follow_up .right_content_follow_img,
+  .follow_up_area .inner_follow_up .left_content_area{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .follow_up_area .inner_follow_up .left_content_area::after{
+    display: none;
+  }
+
+  .follow_up_area .inner_follow_up .left_content_area{
+    padding: 50px;
+  }
+
+  .success_stories_area .content_container .half_circle{
+    top: 0;
+    left: 15px;
+  }
+
+  .stories_flex > div{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .stories_box{
+    margin-bottom: 20px;
+  }
+
+  .testimonial_area .stories_flex{
+    /* max-width: 100%; */
+    margin: 0 -15px;
+  }
+  
+  .testimonial_area .stories_flex > div{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  
+  .testimonial_area p br{
+    display: none;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -202,7 +328,7 @@
   }
 
   .footer_bg {
-    padding: 40px 20px;
+    padding: 40px 0px;
 }
 
 .top_footer_col{
@@ -242,6 +368,135 @@
 .speciality_links::-webkit-scrollbar{
   visibility: hidden;
   display: none;
+}
+
+.health_checkupbox{
+  position: unset;
+  margin-top: 60px;
+}
+
+.health_checkup_element img{
+  top: -45px;
+}
+
+.facilities_navigator .facility_nav_block:not(:last-child){
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.facilities_navigator .facility_nav_block{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.facility_nav_link{
+  text-align: center;
+}
+
+.facility_nav_dropdown_links{
+  width: 160px;
+}
+
+.facility_nav_dropdown_links a{
+  padding: 8px 12px;
+}
+
+.health_plan_box .health_plan_img .blue_btn{
+  width: 150px;
+}
+
+.cashless_option_column .inner_cashless_option_column{
+  padding: 20px;
+}
+
+.inner_hospitalisation_option_service .option_service_col{
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-bottom: 20px;
+}
+
+.inner_hospitalisation_option_service{
+  flex-wrap: wrap;
+}
+
+.inner_hospitalisation_option_service .option_service_col .option_service_img{
+  margin: 0 auto 15px;
+}
+
+.inner_hospitalisation_option_service .option_service_col:not(:last-child){
+  margin-right: 20px;
+}
+
+.hospitalization_option_content{
+  padding-bottom: 30px;
+}
+
+.hospitalization_option_img{
+  text-align: center;
+}
+
+.patient_stat_box p{
+  font-size: 16px;
+}
+
+.international_patient_info_pointers{
+  padding-top: 30px;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col{
+  flex: 0 0 33.33%;
+  max-width: calc(33.33% - 40px);
+  margin-bottom: 20px;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:nth-child(4n)){
+  margin-right: unset;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:nth-child(3n)){
+  margin-right: 20px;
+}
+
+.follow_up_area .inner_follow_up .left_content_area{
+  padding: 50px 15px;
+}
+
+.success_stories_area .content_container .half_circle{
+  display: none;
+}
+
+.sub_title{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.testimonial_area h2{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.visitors_info_area{
+  padding-top: 0px;
+}
+
+.visitors_content{
+  padding: 40px 0 30px;
+}
+.visitors_content h2{
+  margin-bottom: 25px;
+}
+
+.visitors_info_faq .accordion .card-header h2 button,
+.visitors_info_faq .accordion .card-body{
+  padding: 17px 25px;
+}
+
+.visitors_info_faq{
+  max-width: calc(100% - 30px);
+}
+
+.faq_banner_area{
+  padding: 100px 0;
 }
 
 }
@@ -288,4 +543,139 @@
     flex: 0 0 150px;
     max-width: 150px;
   }
+
+  .title{
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .health_plan_box .health_plan_img img{
+    width: calc(100% - 40px);
+  }
+
+  .blue_btn{
+    padding: 8px 12px;
+  }
+
+  .international_hero_content{
+    position: unset;
+    text-align: center;
+  }
+
+  .international_hero{
+    width: 100%;
+  }
+
+  .international_hero_content .title {
+    line-height: 30px;
+}
+
+.breadcrumb_nav .grey_txt,
+.breadcrumb_nav .active_breadcrumb{
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.patient_stat_box{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 20px;
+}
+
+.patient_stat_box p{
+  font-size: 14px;
+}
+
+.international_patient_info_pointers ul{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.inner_hospitalisation_option_service .option_service_col{
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin-bottom: 20px;
+}
+
+.inner_hospitalisation_option_service .option_service_col:not(:last-child){
+  margin-right: unset;
+}
+
+.inner_hospitalisation_option_service .option_service_col:not(:nth-child(even)){
+  margin-right: 20px;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service{
+  max-width: 100%;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col{
+  flex: 0 0 50%;
+  max-width: calc(50% - 15px);
+  margin-bottom: 20px;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:nth-child(3n)){
+  margin-right: unset;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:nth-child(2n)){
+  margin-right: 20px;
+}
+
+.stories_flex > div{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.stories_content{
+  padding: 25px 15px 35px;
+}
+
+.stories_content h3{
+  font-size: 16px;
+}
+
+.domestic_patient_banner{
+  height: 180px;
+}
+
+.domestic_patient_banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: unset;
+}
+
+.testimonial_area .stories_flex > div{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.visitors_info_faq .accordion .card-header h2 button,
+.visitors_info_faq .accordion .card-body{
+  padding: 15px;
+}
+
+.visitors_info_faq .accordion .card-header h2 button span{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.faq_banner_area .question_area{
+  max-width: 100%;
+  padding: 8px 10px;
+}
+}
+
+@media (max-width: 480px){
+  .health_plan_flex > div{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  
+
+  
 }

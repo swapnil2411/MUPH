@@ -106,6 +106,12 @@ video {
   text-transform: capitalize;
 }
 
+.font_medium{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
 .uppercase_name{
   text-transform: uppercase;
   font-size: 16px !important;
@@ -206,6 +212,12 @@ a:hover {
   border: none;
 }
 
+.content_container {
+  max-width: 97%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* Header Css */
 
 .top_header {
@@ -245,7 +257,19 @@ a:hover {
 .mobile_menu .logo_area,
 .speciality_links,
 .inner_member,
-.members_stat_flex{
+.members_stat_flex,
+.breadcrumb_nav,
+.facilities_navigator,
+.inner_hospitalisation_option_service,
+.international_patient_stat_flex,
+.international_patient_info_pointers,
+.follow_up_area .inner_follow_up,
+.follow_up_area .inner_follow_up .left_content_area,
+.visitors_info_faq .accordion .card-header h2 button,
+.faq_banner_area .question_area,
+.faq_banner_area .question_area .question_hit_button,
+.faq_tab_content,
+.faq_tabs ul{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -257,7 +281,9 @@ a:hover {
 .main_header .main_header_flex,
 .main_header .main_header_flex .right_main_header,
 .main_header .main_header_flex .right_main_header .menu_links nav ul,
-.main_header .main_header_flex .right_main_header .other_links {
+.main_header .main_header_flex .right_main_header .other_links,
+.visitors_info_faq .accordion .card-header h2 button,
+.faq_banner_area .question_area {
   -webkit-justify-content: space-between;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -269,7 +295,11 @@ a:hover {
 
 .top_footer_col,
 .address_col .social ul li,
-.speciality_links {
+.speciality_links,
+.facilities_navigator,
+.inner_hospitalisation_option_service,
+.international_patient_stat_flex,
+.faq_banner_area .question_area .question_hit_button{
   -webkit-justify-content: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -290,7 +320,11 @@ a:hover {
 .patient_center_care_content,
 .mobile_top_header,
 .mobile_menu .logo_area,
-.our_member_flex {
+.our_member_flex,
+.breadcrumb_nav,
+.facilities_navigator,
+.follow_up_area .inner_follow_up .left_content_area,
+.faq_banner_area .question_area .question_hit_button{
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -349,7 +383,7 @@ a:hover {
 }
 
 .main_header {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .main_header .main_header_flex .left_main_header .logo_area p {
@@ -455,6 +489,18 @@ a:hover {
   color: #fff;
 }
 
+.readMoreSpecialities .blue_btn{
+  margin: 0;
+  margin-top: 20px;
+  margin-left: auto;
+  color: #fff;
+}
+
+.readMoreSpecialities .blue_btn span,
+.readMoreSpecialities .blue_btn svg{
+  color: #fff !important;
+}
+
 /* Banner Slider Start */
 
 .banner_slider .item {
@@ -512,7 +558,7 @@ a:hover {
 
 .footer_bg {
   background: #ffecec;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .footer_top_area {
@@ -650,7 +696,7 @@ a:hover {
   height: 150px;
   background: #4ddebd;
   bottom: 0;
-  right: -50px;
+  right: -65px;
   z-index: -1;
 }
 
@@ -670,10 +716,11 @@ a:hover {
 /* Our Statistics Css Start*/
 .our_statistics {
   background-image: url("../img/our_stat_bg.png");
-  height: 100%;
+  background-size: cover;
+  background-repeat: repeat;
   position: relative;
-  padding: 46px 98px 70px;
   isolation: isolate;
+  padding: 40px 0 10px;
 }
 
 .our_statistics::after {
@@ -687,42 +734,38 @@ a:hover {
   z-index: -1;
 }
 
-.statistics_details {
-  padding-top: 48px;
+.our_statistics .title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
-.statistics_padding_right {
-  padding-right: 100px !important;
+.our_statistics_box {
+  margin-bottom: 75px;
+  position: relative;
 }
 
-.statistics_padding_bottom {
-  padding-bottom: 50px !important;
-}
-
-.statistics_details_inner::after {
-  content: "";
+.our_statistics_box::after{
+  content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  width: 85%;
   height: 2px;
-  border: 2px solid #6d7bb9;
+  background: #6D7BB9;
+  left: 0;
+  bottom: -25px;
+  display: block;
 }
 
-.statistics_details_inner h3 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 49px;
-  color: #ffffff;
+.our_statistics_box .statistics_no{
+  color: #fff;
 }
 
-.statistics_details_inner p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  padding-bottom: 25px;
-  color: #99a1c3;
+.our_statistics_box .statistics_name{
+  color: #fff;
+  opacity: 0.55;
 }
+
+
 /* Our Statistics Css End */
 
 /* MPUH Specialities Css Start */
@@ -1633,4 +1676,947 @@ a:hover {
 
 .our_member_flex p{
   line-height: 25px;
+}
+
+.our_member_flex .info_content h2{
+  margin-bottom: 56px;
+  position: relative;
+}
+
+.our_member_flex .info_content h2::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -17px;
+  background: #E8E8E8;
+  display: block;
+}
+
+.our_member_flex .info_content h2::before{
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  left: 0;
+  bottom: -17px;
+  background: #FC8C8C;
+  display: block;
+  z-index: 1;
+}
+
+.key_staff_members .title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.key_staff_members .sub_title{
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.key_staff_members .urology_area{
+  background: #FFECEC;
+  padding: 15px 0 25px;
+  position: relative;
+}
+
+.key_staff_members .urology_area .doctors_dot_pattern{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.doctor_grid{
+  margin-right: -25px;
+  margin-left: -25px;
+}
+
+.doctor_info_box{
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.doctor_img{
+  border: 1px solid #C4C4C4;
+  box-shadow: 5px 5px 0px #E8E8E8;
+  position: relative;
+}
+
+.doctor_info_box:hover .doctor_img{
+  border: 1px solid #fc8c8c;
+  box-shadow: 5px 5px 0px #fc8c8c;
+}
+
+.doctor_modal_arrow{
+  height: 50px;
+  width: 50px;
+  background: #132573;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+}
+
+.doctor_modal_arrow:hover{
+  background: #4ddebd;
+}
+
+.doctor_modal_arrow svg{
+  color: #fff;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doctor_img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor_data{
+  padding: 27px 0 0;
+}
+
+.doctor_data .author{
+  color: #192029;
+}
+
+.doctor_data .designation{
+  padding: 10px 0;
+  font-weight: 500 !important;
+  color: #2A3D53;
+}
+
+.doctor_data .degree{
+  color: #132573;
+}
+
+.key_staff_members .nephrology_area{
+  position: relative;
+}
+
+.key_staff_members .nephrology_area .doctors_dot_pattern{
+  position: absolute;
+  left: 0;
+  top: 47%;
+  z-index: 0;
+}
+
+.green_bg_form{
+  background: #D4FFF5;
+  align-items: center;
+}
+
+.green_bg_form .inner_form .form_element .bootstrap-select button .filter-option-inner-inner,
+.green_bg_form .inner_form .form_element .form_input,
+.green_bg_form .inner_form .form_element .form_input::placeholder,
+.green_bg_form .inner_form .form_element .bootstrap-select .dropdown-menu li a span{
+  font-weight: 400;
+}
+
+.green_bg_form .bookappointment_form{
+  background: #fff;
+  padding: 28px 40px 35px;
+}
+
+/* Breadcrumb */
+
+.breadcrumb_header{
+  border-top: 1px solid #C4C4C4;
+}
+
+.breadcrumb_nav{
+  padding: 12px 0 29px;
+}
+
+.breadcrumb_nav .slash{
+  padding: 0 5px;
+  color: #707070;
+  font-weight: 500;
+}
+
+.breadcrumb_nav .grey_txt{
+  color: #707070;
+  font-weight: 500;
+}
+
+.breadcrumb_nav .active_breadcrumb{
+  color: #132573;
+  font-weight: 700;
+}
+
+.breadcrumb_header .title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Patient Facitity */
+.facilities_link_area{
+  background: #132573;
+  padding: 15px 0;
+}
+
+.patient_amenities_area .title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.amenity_box{
+  margin-bottom: 20px;
+}
+
+.amenity_box .amenity_img{
+  border: 1px solid #E8E8E8;
+  box-shadow: 4px 4px 0 #E8E8E8;
+}
+
+.amenity_box:hover .amenity_img{
+  border: 1px solid #fc8c8c;
+  box-shadow: 4px 4px 0 #fc8c8c;
+}
+
+.amenity_box .amenity_img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amenity_box .amenity_content{
+  padding-top: 21px;
+}
+
+.amenity_box .amenity_content h3{
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #132573;
+  margin-bottom: 16px;
+  width: max-content;
+  position: relative;
+}
+
+.amenity_box .amenity_content h3::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #132573;
+  left: 0;
+  bottom: -14px;
+  display: block;
+}
+
+.amenity_box .amenity_content p{
+  color: #707070;
+}
+
+.amenity_box .health_checkupbox{
+
+}
+
+.amenity_box .health_checkupbox h3{
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000;
+} 
+
+.patient_amenities_area{
+  padding: 35px 0 100px;
+  overflow: hidden;
+}
+
+.facilities_navigator{
+  flex-wrap: wrap;
+}
+
+.facilities_navigator .facility_nav_block:not(:last-child){
+  margin-right: 85px;
+}
+
+.facility_nav_dropdown svg{
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s ease-in-out all;
+}
+
+.facility_nav_dropdown.rotate svg{
+  transform: rotate(180deg);
+}
+
+.facility_nav_link{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.facility_nav_link:hover{
+  color: #4ddebd;
+}
+
+.facility_nav_dropdown span{
+  font-weight: 700;
+}
+
+.facility_nav_block{
+  position: relative;
+}
+
+.facility_nav_dropdown_links{
+  position: absolute;
+  width: 165px;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 5px #E8E8E8;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in-out all;
+  z-index: 10;
+}
+
+.facility_nav_dropdown_links.show{
+  visibility: visible;
+  opacity: 1;
+  top: 28px;
+}
+
+.facility_nav_dropdown_links a{
+  display: block;
+  padding: 9px 15px;
+  background: #fff;
+  width: 100%;
+  white-space: nowrap;
+  color: #000;
+}
+
+.facility_nav_dropdown_links a:nth-child(1){
+  border-bottom: 1px solid #132573;
+}
+
+.health_checkup_element{
+  position: relative;
+  height: 100%;
+}
+
+.health_checkupbox{
+  background: #4ddebd;
+  padding: 28px 20px;
+  position: absolute;
+  width: 100%;
+  top: 23%;
+  right: -65px;
+}
+
+.health_checkupbox:hover{
+  background: #132573;
+}
+
+.health_checkupbox:hover h3{
+  color: #fff;
+}
+
+.health_checkupbox .blue_btn{
+  margin: 14px 0 0;
+}
+
+.health_checkup_element img{
+  position: absolute;
+  left: 0;
+  top: 30px;
+  max-width: 108px;
+  z-index: 10;
+}
+
+.helath_plan_area{
+  padding: 26px 0 70px;
+}
+
+.health_plan_box{
+  margin-bottom: 35px;
+}
+
+.health_plan_box .health_plan_img img{
+  display: block;
+  width: calc(100% - 80px);
+  height: 100%;
+  object-fit: cover;
+}
+
+.health_plan_box .health_plan_img{
+  position: relative;
+}
+
+.health_plan_box .health_plan_img .blue_btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 200px;
+  margin-top: 0;
+}
+
+.health_plan_content{
+  padding-top: 10px;
+}
+
+.health_plan_content h3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #132573;
+  margin-bottom: 9px;
+}
+
+/* All Plans contact form */
+.healthPlanRight .customGap{
+  max-width: 70%;
+}
+
+.packageDetails{
+  padding-top: 25px;
+}
+
+.healthPlanRight{
+  padding-left: 45px;
+}
+
+.special_details_para{
+  padding-top: 45px;
+}
+
+.healthPlan{
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Cashless Hospitalisation */
+.cashless_options_area{
+  padding: 44px 0 100px;
+}
+
+.cashless_option_column .inner_cashless_option_column{
+  border: 1px solid #E8E8E8;
+  box-shadow: 4px 4px 0px #e8e8e8;
+  padding: 35px 50px 50px;
+}
+
+.cashless_option_column .inner_cashless_option_column:hover{
+  border: 1px solid #fc8c8c;
+  box-shadow: 4px 4px 0px #fc8c8c;
+}
+
+.cashless_option_column .inner_cashless_option_column h3{
+  font-weight: 700 !important;
+  margin-bottom: 20px;
+}
+
+.cashless_option_column .inner_cashless_option_column ul{
+  padding-left: 25px;
+}
+
+.cashless_option_column .inner_cashless_option_column li{
+  list-style: decimal;
+}
+
+/* Hospitalisation Options */
+.hospitalisation_option_area{
+  padding: 44px 0 100px;
+}
+
+.hospitalization_option_flex{
+  align-items: center;
+}
+
+.hospitalization_option_content{
+  padding-right: 70px;
+}
+
+.hospitalisation_option_service_area{
+  padding-top: 80px;
+}
+
+.inner_hospitalisation_option_service{
+  flex-wrap: wrap;
+}
+
+.inner_hospitalisation_option_service .option_service_col:not(:last-child){
+  margin-right: 50px;
+}
+
+.inner_hospitalisation_option_service .option_service_col{
+  text-align: center;
+  flex: 0 0 123px;
+  max-width: 123px;
+}
+
+.inner_hospitalisation_option_service .option_service_col .option_service_img{
+  border: 1px solid #e8e8e8;
+  box-shadow: 4px 4px 0px #e8e8e8;
+  padding: 20px 30px;
+  margin-bottom: 13px;
+}
+
+.inner_hospitalisation_option_service .option_service_col:hover .option_service_img{
+  border: 1px solid #fc8c8c;
+  box-shadow: 4px 4px 0px #fc8c8c;
+}
+
+/* International Patient */
+.inner_internationl_plan_banner{
+  position: relative;
+}
+
+.international_hero{
+  width: calc(100% - 330px);
+}
+
+.international_hero_content{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.international_hero_content .title{
+  line-height: 40px;
+}
+
+.international_hero_content p{
+  font-size: 22px;
+  line-height: 25px;
+  color: #192029;
+  margin-top: 10px;
+}
+
+.international_patient_stat_area{
+  padding: 40px 0;
+  margin-bottom: 55px;
+}
+
+.international_patient_stat_flex{
+  flex-wrap: wrap;
+} 
+
+.patient_stat_box{
+  flex: 0 0 20%;
+  max-width: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.patient_stat_box::after{
+  content: '';
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #707070;
+  height: 50px;
+  width: 1px;
+  display: block;
+}
+
+.patient_stat_box h2{
+  color: #192029;
+}
+
+.patient_stat_box p{
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #2A3D53;
+}
+
+.international_patient_info_content .blue_btn{
+  margin: 40px 0 0;
+}
+
+.international_patient_info_content h4{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #132573;
+  margin-bottom: 40px;
+}
+
+.international_patient_info_pointers{
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.international_patient_info_pointers ul{
+  flex: 0 0 50%;
+  max-width: calc(50% - 20px);
+  border: 1px solid #e8e8e8;
+  padding: 30px 25px 30px 35px;
+  margin-bottom: 30px;
+}
+
+.international_patient_info_pointers ul li{
+  list-style: disc;
+}
+
+.find_place_stay h2{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #132573;
+  text-align: center;
+}
+
+.find_place_stay{
+  padding: 40px 0 70px;
+}
+
+.find_place_stay p{
+  text-align: center;
+  margin-top: 23px;
+  color: #2A3D53;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service{
+  flex-wrap: wrap;
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.find_place_stay_option .option_service_col{
+  margin-bottom: 20px;
+}
+
+/* .find_place_stay_option .option_service_col{
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.find_place_stay_option .inner_hospitalisation_option_service .option_service_col:not(:last-child){
+  margin-right: 0;
+}*/
+
+.find_place_stay_option .option_service_col .option_service_img img{
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.follow_up_area .inner_follow_up{
+  height: 545px;
+  flex-wrap: wrap;
+}
+
+.follow_up_area .inner_follow_up .right_content_follow_img{
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+
+.follow_up_area .inner_follow_up .right_content_follow_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.follow_up_area .inner_follow_up .left_content_area{
+  flex: 0 0 35%;
+  max-width: 35%;
+  background: #4ddebd;
+  position: relative;
+  padding: 25px 20px 25px 50px;
+}
+
+.follow_up_area .inner_follow_up .left_content_area p.font_small{
+  font-weight: 700;
+  color: #fff;
+}
+
+.follow_up_area .inner_follow_up .left_content_area h3{
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.follow_up_area .inner_follow_up .left_content_area h3::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  background: #fff;
+  height: 2px;
+  width: 80%;
+  display: block;
+  z-index: 2;
+}
+
+.follow_up_area .inner_follow_up .left_content_area::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -100px;
+  border-top: 545px solid #4ddebd;
+  border-right: 100px solid transparent;
+}
+
+.success_stories_area .content_container{
+  position: relative;
+}
+
+.success_stories_area .content_container .half_circle{
+  z-index: 1;
+  left: 90px;
+  position: absolute;
+  top: 0px;
+  max-width: 180px;
+}
+
+.domestic_patient_banner{
+  position: relative;
+}
+
+.domestic_patient_banner h2{
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.testimonial_area h2{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 22px;
+  color: #132573;
+  text-align: center;
+}
+
+.testimonial_area p{
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.testimonial_area .stories_flex{
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.testimonial_area .stories_flex > div{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.testimonial_area .stories_flex > div .stories_box{
+  margin-bottom: 45px;
+}
+
+/* Visitors Information */
+.visitors_info_area{
+  padding-top: 15px;
+}
+.viditor_info_flex{
+  align-items: center;
+}
+
+.visitors_content h2{
+  margin-bottom: 40px;
+}
+
+.visitors_content p{
+  line-height: 30px;
+}
+
+.visitors_img{
+  height: 100%;
+}
+
+.visitors_img img{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.visitors_info_faq{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.visitors_info_faq .accordion .card{
+  border: none;
+  margin-bottom: 20px;
+}
+
+.visitors_info_faq .accordion .card-header{
+  padding: 0;
+  border: none;
+}
+
+.visitors_info_faq .accordion .card-header h2 button{
+  border: none;
+  padding: 17px 45px;
+  background: #132573;
+  text-decoration: none;
+}
+
+.visitors_info_faq .accordion .card-header h2 button:focus{
+  box-shadow: none;
+}
+
+.visitors_info_faq .accordion .card-header h2 button span{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+}
+
+.visitors_info_faq .accordion .card-header h2 button svg{
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.visitors_info_faq .accordion .card-body{
+  padding: 17px 45px;
+}
+
+/* FAQ */
+
+.faq_banner_area{
+  padding: 170px 0 130px;
+  background: url('../img/faq_banner_img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq_banner_area .title{
+  color: #fff;
+}
+
+.faq_banner_area .font_regular{
+  color: #e8e8e8;
+}
+
+.faq_banner_area .title,
+.faq_banner_area .font_regular{
+  text-align: center;
+}
+
+.faq_banner_area .question_area{
+  max-width: 482px;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.faq_banner_area .question_area .question_input{
+  width: calc(100% - 40px);
+}
+
+.faq_banner_area .question_area .question_input input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.faq_banner_area .question_area .question_input input::placeholder{
+  font-size: 14px;
+  color: #98A2B3;
+}
+
+.faq_banner_area .question_area .question_hit_button{
+  height: 40px;
+  width: 40px;
+  background: #132573;
+}
+
+.faq_banner_area .question_area .question_hit_button svg{
+  color: #fff;
+  font-size: 28px;
+}
+
+.faq_content_area .title{
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.faq_content_area .font_regular{
+  text-align: center;
+}
+
+.faq_tab_content .faq_tab_left_content{
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+.faq_tab_content .faq_tab_right_content{
+  flex: 0 0 65%;
+  max-width: 65%;
+  padding-left: 40px;
+}
+
+.faq_tabs ul{
+  margin: 0 -20px;
+  padding: 50px 0 75px;
+}
+
+.faq_tabs ul li{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.faq_tabs ul li .category_card{
+  border: 1px solid #C4C4C4;
+  padding: 40px 20px 25px;
+  box-shadow: 4px 4px 0px #e8e8e8;
+}
+
+.faq_tabs ul li .category_card:hover{
+  border: 1px solid #fc8c8c;
+  box-shadow: 4px 4px 0px #fc8c8c;
+}
+
+.faq_tabs ul li img{
+  max-height: 50px;
+}
+
+.faq_tabs ul li h3{
+  font-size: 22px;
+  font-weight: 700;
+  color: #132573;
+  margin: 25px 0 21px;
+}
+
+.faq_tabs ul li p{
+  text-align: left !important;
+}
+
+.faq_tab_content .faq_tab_left_content h2,
+.faq_tab_content .faq_tab_left_content p{
+  text-align: left;
+}
+
+.faq_tab_content .faq_tab_left_content p{
+  margin-bottom: 46px;
+}
+
+.faq_tab_content .faq_tab_left_content .blue_btn{
+  margin: 20px 0;
 }

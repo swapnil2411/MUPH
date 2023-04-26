@@ -12,7 +12,7 @@ $(document).ready(function () {
         </div>
       </div>
       <div class="top_header">
-        <div class="top_header_context">
+        <div class="content_container top_header_context">
           <div class="left_top_header">
             <div class="contact_txt">
               <span
@@ -48,7 +48,7 @@ $(document).ready(function () {
         </div>
       </div>
       <div class="main_header">
-        <div class="main_header_flex">
+        <div class="content_container main_header_flex">
           <div class="left_main_header">
             <a href="index.html" class="logo_area">
               <img src="img/logo.png" alt="Logo" />
@@ -65,7 +65,7 @@ $(document).ready(function () {
                       <span class="iconify" data-icon="uil:angle-down"></span>
                     </a>
                     <div class="dropdown_child">
-                      <div class="dropdown_tabs">
+                      <div class="dropdown_tabs our_expertise_tab">
                         <div class="tab_links">
                           <ul>
                             <li class="active" rel="panel_one">
@@ -230,7 +230,7 @@ $(document).ready(function () {
 
                         <div class="panel" id="panel_four">
                           <div class="card_container">
-                            <a href="#" class="nested_card">
+                            <a href="patientfacility.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/patient_facility.png" alt="patient facility" class="img-fluid">
                               </div>
@@ -239,7 +239,7 @@ $(document).ready(function () {
                                 <p class="font_small">MPUH provides a variety of amenities for a seamless and comfortable experience for patients as well as their caregivers.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="healthcheckup.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/health_checkup.png" alt="health checkup" class="img-fluid">
                               </div>
@@ -248,7 +248,7 @@ $(document).ready(function () {
                                 <p class="font_small">We offer complete health check ups at affordable prices under different packages. Explore to see what works for you.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="cashlesshospitalisation.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/cashless.png" alt="cashless hospitalisation" class="img-fluid">
                               </div>
@@ -257,7 +257,7 @@ $(document).ready(function () {
                                 <p class="font_small">Take advantage of our tie-ups with leading insurance providers and public sector companies. Check the full list here.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="hospitalisationoption.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/hospitalization.png" alt="hospitalisation options" class="img-fluid">
                               </div>
@@ -271,7 +271,7 @@ $(document).ready(function () {
 
                         <div class="panel" id="panel_five">
                           <div class="card_container">
-                            <a href="#" class="nested_card">
+                            <a href="patientfacility.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/patient_facility.png" alt="patient facility" class="img-fluid">
                               </div>
@@ -280,7 +280,7 @@ $(document).ready(function () {
                                 <p class="font_small">MPUH provides a variety of amenities for a seamless and comfortable experience for patients as well as their caregivers.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="healthcheckup.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/health_checkup.png" alt="health checkup" class="img-fluid">
                               </div>
@@ -289,7 +289,7 @@ $(document).ready(function () {
                                 <p class="font_small">We offer complete health check ups at affordable prices under different packages. Explore to see what works for you.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="cashlesshospitalisation.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/cashless.png" alt="cashless hospitalisation" class="img-fluid">
                               </div>
@@ -298,7 +298,7 @@ $(document).ready(function () {
                                 <p class="font_small">Take advantage of our tie-ups with leading insurance providers and public sector companies. Check the full list here.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="hospitalisationoption.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/hospitalization.png" alt="hospitalisation options" class="img-fluid">
                               </div>
@@ -359,7 +359,7 @@ $(document).ready(function () {
                       <span class="iconify" data-icon="uil:angle-down"></span>
                     </a>
                     <div class="dropdown_child">
-                      <div class="dropdown_tabs">
+                      <div class="dropdown_tabs more_link_tab">
                         <div class="tab_links">
                           <ul>
                             <li class="active" rel="panel_six">
@@ -503,7 +503,6 @@ $(document).ready(function () {
           </div>
         </div>
       </div>
-
       <div class="mobile_menu">
         <a href="index.html" class="logo_area">
           <img src="img/logo.png" alt="Logo" />
@@ -731,7 +730,7 @@ $(document).ready(function () {
         this.innerHTML = `
         <footer>
       <div class="footer_bg">
-        <div class="footer_content">
+        <div class="content_container footer_content">
           <div class="footer_top_area">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -1011,12 +1010,12 @@ $(document).ready(function () {
   })
 
   // Navbar dropdown child Tabs
-  $(".tab_links ul li").click(function () {
+  $(".our_expertise_tab .tab_links ul li").click(function () {
     var panelToShow = $(this).attr("rel");
     // alert(panelToShow)
     $(this).addClass("active").siblings().removeClass("active");
 
-    $(".panel.active").fadeOut(600, function () {
+    $(".our_expertise_tab .panel.active").fadeOut(600, function () {
       $(this).removeClass("active");
       $("#" + panelToShow).fadeIn(600, function () {
         $(this).addClass("active");
@@ -1024,7 +1023,24 @@ $(document).ready(function () {
     });
   });
 
-  
+  $(".more_link_tab .tab_links ul li").click(function () {
+    var panelToShow = $(this).attr("rel");
+    // alert(panelToShow)
+    $(this).addClass("active").siblings().removeClass("active");
+
+    $(".more_link_tab .panel.active").fadeOut(600, function () {
+      $(this).removeClass("active");
+      $("#" + panelToShow).fadeIn(600, function () {
+        $(this).addClass("active");
+      });
+    });
+  });
+
+  // Patient Facility Links
+  $('.facility_nav_dropdown').on('click', function(){
+    $('.facility_nav_dropdown_links').toggleClass('show');
+    $(this).toggleClass('rotate')
+  })
 
   //show child dropdown on click
 
