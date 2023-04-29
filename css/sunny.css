@@ -704,6 +704,10 @@
   margin-block: 40px !important;
 }
 
+.fellowShipsIntroLeft{
+  padding-right: 90px;
+}
+
 .fellowShipsIntroLeft h4,
 .fellowShipsIntroRight h4 {
   font-weight: 700;
@@ -712,6 +716,10 @@
   color: #192029;
   margin: 0;
   padding-bottom: 20px;
+}
+
+.fellowShipsIntroRight h4{
+  color: #132573;
 }
 
 .fellowShipsIntroLeft p,
@@ -770,6 +778,24 @@
   width: 180px;
 }
 
+.fellowships_contact{
+  margin-top: 36px
+}
+
+.fellowships_contact a{
+  color: #545454;
+}
+
+.fellowships_contact .bold_txt{
+  font-weight: 700;
+  font-size: 14px;
+  color: #192029;
+}
+
+.fellowShipsIntroRight .font_regular{
+  line-height: 25px;
+}
+
 .eventsInformationMain,
 .galleryGrid,
 .publicationMain {
@@ -780,6 +806,7 @@
   border: 2px solid #c4c4c4;
   padding: 40px;
   margin-bottom: 40px;
+  box-shadow: 4px 4px 0px #e8e8e8;
 }
 
 .eventsInformation p.eventDate {
@@ -787,7 +814,7 @@
   font-size: 18px;
   line-height: 20px;
   color: #fc8c8c;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 
 .eventsInformation p.eventName {
@@ -795,6 +822,7 @@
   font-size: 24px;
   line-height: 30px;
   color: #192029;
+  padding-bottom: 5px;
 }
 
 .eventsInformation p.postedBy {
@@ -802,6 +830,10 @@
   font-size: 16px;
   line-height: 30px;
   color: #192029;
+}
+
+.eventsInformation .eventDetails{
+  line-height: 20px;
 }
 
 .eventsInformation button,
@@ -816,7 +848,10 @@
   width: 180px;
   border: 1px solid #fc8c8c;
   position: relative;
-  margin-block: 25px;
+}
+
+.eventsInformation button{
+  margin: 52px 0 25px;
 }
 
 .eventsInformation button::after,
@@ -868,6 +903,7 @@
   color: #ffffff;
   text-align: center;
   padding: 13px;
+  cursor: pointer;
 }
 
 .tabs li.active {
@@ -909,6 +945,7 @@
   justify-content: start;
   align-items: center;
   gap: 60px;
+  box-shadow: 4px 4px 0px #e8e8e8;
 }
 
 .shownTabDetails .detailsYear {
@@ -932,7 +969,7 @@
 .shownTabDetails .detailsDesc h3.underLine {
   /* border-bottom: 3px solid #2a3d53; */
   width: fit-content;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .shownTabDetails .detailsDesc p {

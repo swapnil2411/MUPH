@@ -32,6 +32,24 @@
     top: 13px;
     max-width: 150px;
   }
+
+  .patent_nephrology_box h4{
+    font-size: 16px;
+  }
+
+  .patent_nephrology_box h3{
+    font-size: 20px;
+  }
+
+  .urology_innovation_heading h2{
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .urology_innovation_heading p{
+    text-align: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -250,6 +268,22 @@
   
   .testimonial_area p br{
     display: none;
+  }
+
+  .urology_innovation_heading,
+  .innovation_box_area{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .innovation_box_area_50{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .urology_innovation_heading{
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 
 }
@@ -499,6 +533,19 @@
   padding: 100px 0;
 }
 
+.innovation_box h4{
+  font-size: 16px;
+}
+
+.urology_innovation_heading h2{
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.nephrology_innovation_area{
+  padding-top: 0 !important;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -667,6 +714,30 @@
   max-width: 100%;
   padding: 8px 10px;
 }
+
+.innovation_box_area_50{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.urology_innovation_area .wave{
+  bottom: 40%;
+  transform: translateY(-50%);
+}
+
+
+.patent_nephrology_box:nth-child(4), .patent_nephrology_box:nth-child(5){
+  margin-bottom: unset;
+}
+
+.patent_nephrology_box{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px !important;
+}
+
+
 }
 
 @media (max-width: 480px){

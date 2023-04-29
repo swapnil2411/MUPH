@@ -36,23 +36,21 @@
     <my-header></my-header>
     <!-- Header End Here -->
 
-    <div class="content_container">
-        <div class="navigation">
-            <a href="#"><img src="./img/icon/home_dark.png" alt="home"></a>
-            <span>/</span>
-            <a href="#">
-                Academics
-            </a>
-            <span>/</span>
-            <a href="#">
-                About JPAC
-            </a>
-        </div>
-    </div>
-
-    <div class="fellowShips">
+    <section class="breadcrumb_header">
         <div class="content_container">
-            <h2 class="special_details_title text-center">Fellowships</h2>
+            <div class="breadcrumb_nav">
+                <a href="index.html"><img src="./img/icon/home_dark.png" alt="home" /></a>
+                <span class="slash">/</span>
+                <span class="grey_txt font_small">DNB Residency Program</span>
+                <span class="slash">/</span>
+                <span class="active_breadcrumb font_small"> Fellowships </span>
+            </div>
+            <h2 class="title">Fellowships</h2>
+        </div>
+    </section>
+
+    <section class="fellowShips">
+        <div class="content_container">
             <div class="row m-0 fellowShipsIntro">
                 <div class="col-sm-8 pl-0 fellowShipsIntroLeft">
                     <h4>Introduction</h4>
@@ -61,20 +59,22 @@
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="special_details_para">
-                        For more information, please contact: <br>
-                        <span>Lorem ipsum</span>
-                        <a href="tell:+912586935025">Ph: +91 2586935025</a>
-                        <a href="mailto:meheshpatel@mpuh.com">Email: meheshpatel@mpuh.com</a> <br>
-                        <span>Lorem ipsum</span>
-                        <a href="tell:+916985314256">Ph: +91 6985314256</a>
-                        <a href="mailto:ravindrasabnish@mpuh.com">Email: ravindrasabnish@mpuh.com</a>
-                    </p>
+                    <div class="fellowships_contact">
+                        <p class="font_regular">For more information, please contact:</p>
+                        <p class="font_small bold_txt pt-5">Lorem ipsum</p>
+                        <a href="tell:+912586935025" class="font_small pt-5"><span class="font_regular">Ph:</span> +91 2586935025</a>
+                        <a href="mailto:meheshpatel@mpuh.com" class="font_small pt-5"><span class="font_regular">Email:</span> meheshpatel@mpuh.com</a>
+                        <br>
+                        <br>
+                        <p class="font_small bold_txt">Lorem ipsum</p>
+                        <a href="tell:+916985314256" class="font_small pt-5"><span class="font_regular">Ph:</span> +91 6985314256</a>
+                        <a href="mailto:ravindrasabnish@mpuh.com" class="font_small pt-5"><span class="font_regular">Email:</span> ravindrasabnish@mpuh.com</a>
+                    </div>
                 </div>
                 <div class="col-sm-4 pr-0 fellowShipsIntroRight">
                     <form>
                         <h4>Contact Us</h4>
-                        <p>Please feel welcome to contact our friendly reception staff with any general or medical
+                        <p class="font_regular">Please feel welcome to contact our friendly reception staff with any general or medical
                             enquiry. Our doctors will receive or return any urgent calls.</p>
                         <input type="text" placeholder="Name"><input type="text" placeholder="Contact">
                         <input type="email" placeholder="Email Id">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer Start Here -->
     <my-footer></my-footer>

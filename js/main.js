@@ -75,7 +75,7 @@ $(document).ready(function () {
                                 <span class="iconify" data-icon="ic:sharp-keyboard-arrow-down"></span>
                               </div>
                             </li>
-                            <li href="#" rel="panel_two">
+                            <li href="#">
                               <a href="treatmentoptions.html">
                                 <img src="img/choice.png" alt="treatment options" class="img-fluid">
                                 <span class="font_regular">treatment options</span>
@@ -96,11 +96,10 @@ $(document).ready(function () {
                               </div>
                             </li>
                             <li rel="panel_five">
-                              <img src="img/flask.png" alt="flask" class="img-fluid">
-                              <span class="font_regular">research</span>
-                              <div class="arrrow">
-                                <span class="iconify" data-icon="ic:sharp-keyboard-arrow-down"></span>
-                              </div>
+                              <a href="research.html">
+                                 <img src="img/flask.png" alt="flask" class="img-fluid">
+                                <span class="font_regular">research</span>
+                              </a>
                             </li>
                           </ul>
                         </div>
