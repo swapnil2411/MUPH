@@ -994,7 +994,7 @@ $(document).ready(function () {
 
   customElements.define('my-footer', MyFooter);
 
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel.home_banner").owlCarousel({
     loop: true,
     margin: 10,
     dots: true,
@@ -1055,8 +1055,49 @@ $(document).ready(function () {
     $(this).find('.iconify').toggleClass('rotate_svg').parent().parent().siblings().find('.iconify').removeClass('rotate_svg');
   })
 
+ 
+  $(".owl-carousel.detail_carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
   
-
+  $(".owl-carousel.timelineMain").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3,
+        nav: true,
+      },
+      600: {
+        items: 5,
+        nav: false,
+      },
+      1000: {
+        items: 6,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+  
   $(".tabs li").click(function () {
     var panelToShow = $(this).attr("rel");
     $(this).addClass("active").siblings().removeClass("active");
@@ -1069,48 +1110,44 @@ $(document).ready(function () {
     });
   });
 
+  $('.history_timeline_area .history_tab_links').owlCarousel({
+    loop:false,
+    // margin:10,
+    nav:true,
+    items: 6,
+    dots: false,
+    navText: ['<span class="iconify" data-icon="prime:angle-left"></span>','<span class="iconify" data-icon="prime:angle-right"></span>'],
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:6
+        }
+    }
+  })
+
+  $(".history_tab_links .item").click(function () {
+    var panelToShow = $(this).attr("rel");
+    //alert(panelToShow)
+    $(this).addClass("active").parent().siblings().find('.item').removeClass('active');
+
+    console.log($(this).parent().prevAll().addClass('inactive'));
+    console.log($(this).parent().removeClass('inactive'));
+    console.log($(this).parent().nextAll().removeClass('inactive'));
+    // $(this).parent().prev().siblings().find('.item').addClass('inactive');
+
+    $(".history_timeline_area .panel.active").fadeOut(600, function () {
+      $(this).removeClass("active");
+      $("#" + panelToShow).fadeIn(600, function () {
+        $(this).addClass("active");
+      });
+    });
+  });
 
   $('select').selectpicker();
 });
 
-$(".owl-carousel.detail_carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
-    },
-    600: {
-      items: 2,
-      nav: false,
-    },
-    1000: {
-      items: 2,
-      nav: true,
-      loop: false,
-    },
-  },
-});
-
-$(".owl-carousel.timelineMain").owlCarousel({
-  loop: true,
-  margin: 10,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 3,
-      nav: true,
-    },
-    600: {
-      items: 5,
-      nav: false,
-    },
-    1000: {
-      items: 6,
-      nav: true,
-      loop: false,
-    },
-  },
-});

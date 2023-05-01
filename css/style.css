@@ -278,7 +278,8 @@ a:hover {
 .faq_banner_area .question_area .question_hit_button,
 .faq_tab_content,
 .faq_tabs ul,
-.patent_nephrology_flex{
+.patent_nephrology_flex,
+.history_area .inner_history_info{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -333,7 +334,8 @@ a:hover {
 .breadcrumb_nav,
 .facilities_navigator,
 .follow_up_area .inner_follow_up .left_content_area,
-.faq_banner_area .question_area .question_hit_button{
+.faq_banner_area .question_area .question_hit_button,
+.history_area .inner_history_info{
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -2771,3 +2773,208 @@ a:hover {
   color: #000;
 }
 
+/* History */
+
+.history_area{
+  max-width: 991px;
+  margin: 0 auto;
+  padding-top: 12px;
+  position: relative;
+  padding-bottom: 270px;
+}
+
+.history_vector{
+  position: absolute;
+  left: 46%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.history_timeline_area .title{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 75px;
+}
+
+.history_area .font_bold{
+  font-weight: 700;
+}
+
+.history_area .inner_history_info .left_history_area{
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+
+.history_area .inner_history_info .left_history_area .history_img img{
+  display: block;
+  margin-left: auto;
+}
+
+.history_area .inner_history_info .right_history_area{
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.history_area .inner_history_info .right_history_area .history_content{
+  padding-left: 30px;
+}
+
+.history_area .inner_history_info .right_history_area .history_content .font_regular{
+  line-height: 25px;
+}
+
+.history_tab_links .item{
+  cursor: pointer;
+}
+
+.history_tab_links .item h4{
+  text-align: center;
+  padding-bottom: 17px;
+  position: relative;
+  font-size: 18px;
+  color: #2A3D53;
+  font-weight: 700;
+}
+
+.history_tab_links .item.active h4::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background: #132573;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.history_timeline_area .panel{
+  display: none;
+}
+
+.history_timeline_area .panel.active{
+  display: block;
+}
+
+.history_timeline_area .panel .history_panel_flex .year_history_box{
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.history_timeline_area .panel .history_panel_flex .year_history_box .history_img_year{
+  height: 195px;
+}
+
+.history_timeline_area .panel .history_panel_flex .year_history_box .history_img_year img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.history_timeline_area .panel .history_panel_flex .year_history_box .history_box_content{
+  padding-top: 22px;
+}
+
+.history_timeline_area .panel .history_panel_flex .year_history_box .history_box_content .history_year{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #4DDEBD;
+}
+
+.history_timeline_area .panel .history_panel_flex .year_history_box .history_box_content .history_txt{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.history_timeline_area .owl-item{
+  position: relative;
+}
+
+.history_timeline_area .owl-item::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #e8e8e8;
+  left: 0;
+  bottom: 0;
+}
+
+.history_timeline_area .owl-nav{
+  margin-top: 0;
+}
+
+.history_timeline_area .owl-nav button{
+  position: absolute;
+  top: -55px;
+  height: 40px;
+  width: 40px;
+  background: #132573 !important;
+  border-radius: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.history_timeline_area .owl-nav button svg{
+  font-size: 40px;
+  color: #fff;
+}
+
+.history_timeline_area .owl-nav button.owl-next{
+  right: 0;
+}
+
+.history_timeline_area .owl-nav button.owl-prev{
+  left: 0;
+}
+
+.history_timeline_area .owl-nav button.owl-prev.disabled{
+  display: none;
+}
+
+.history_timeline_area .owl-item.inactive .item h4:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #132573;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.history_timeline_area .owl-item .item.active::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+  background: #fc8c8c;
+  z-index: 3;
+}
+
+.history_timeline_area .owl-item .item.active h4::after{
+  content: '';
+  position: absolute;
+  height: 161px;
+  width: 5px;
+  left: 50%;
+  bottom: -155px;
+  transform: translateX(-50%);
+  background: #fc8c8c;
+  z-index: 3;
+}
+
+
+.history_tab_links .owl-stage-outer{
+  overflow: unset;
+  overflow-x: hidden;
+  height: 200px;
+}
