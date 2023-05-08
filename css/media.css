@@ -1,7 +1,23 @@
+@media (min-width: 1600px){
+  .urology_innovation_area .wave{
+    bottom: -70px;
+  }
+
+  .urology_innovation_area{
+    padding-top: 120px !important;
+  }
+}
+
 @media (min-width: 1440px) {
   .content_container{
     max-width: 1366px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1366px){
+  .urology_innovation_area .wave{
+    width: 100%;
   }
 }
 
@@ -49,6 +65,29 @@
 
   .urology_innovation_heading p{
     text-align: center;
+  }
+
+  .achievement_statistics .inner_member h2,
+  .achievement_stat_right h2, .stats_heading,
+  .institute_doctor_left_area .content_institute_doc h2, .institute_doctor_right_area .content_institute_doc h2{
+    font-size: 46px;
+  }
+
+  .institute_doctor_left_area, .institute_doctor_right_area{
+    flex: 0 0 47%;
+    max-width: 47%;
+  }
+
+  .our_team_panel .chairman_box{
+    max-width: calc(100% - 30px);
+  }
+
+  .our_team_panel .chairman_box:nth-child(odd) .chairman_content{
+    padding-left: 30px;
+  }
+
+  .our_team_panel .chairman_box:nth-child(even) .chairman_content {
+    padding-right: 30px;  
   }
 }
 
@@ -288,6 +327,63 @@
 
   .history_area{
     max-width: 767px;
+  }
+
+  .achievement_statistics .inner_member h2,
+  .achievement_stat_right h2, .stats_heading,
+  .institute_doctor_left_area .content_institute_doc h2, .institute_doctor_right_area .content_institute_doc h2{
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .achievement_stat_left{
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+
+  .achievement_stat_right{
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+
+  .achievement_stat_right .members_stat_flex{
+    max-width: 100%;
+  }
+
+  .other_stat_achievement_flex .member_stat{
+    flex: 0 0 50%;
+    max-width: 50%  ;
+  }
+
+  .our_team_tab_links{
+    max-width: 95%;
+  }
+
+  .our_team_panel .team_flex{
+    margin: 0 -15px;
+  }
+
+  .our_team_panel .team_flex .team_member_box{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+  }
+
+  .our_team_panel .team_flex .team_member_box .team_member_txt{
+    padding-top: 20px;
+  }
+
+  .our_team_panel .team_flex .team_member_box .team_member_txt .member_name{
+    font-size: 18px;
+  }
+
+  .impact_right_area{
+    padding: 15px 30px;
+  }
+
+  .campaigns_flex{
+    max-width: 100%;
+    padding: 0 15px;
   }
 
 }
@@ -582,6 +678,58 @@
   padding: 10px 15px;
 }
 
+  .achievement_stat_left,
+  .achievement_stat_right{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .achievement_stat_right{
+    padding-top: 30px;
+  }
+
+  .other_stat_achievement_flex{
+    padding: 55px 20px 30px !important;
+  }
+
+  .achievement_statistics .inner_member h2, .achievement_stat_right h2, .stats_heading,
+  .institute_doctor_left_area .content_institute_doc h2, .institute_doctor_right_area .content_institute_doc h2{
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .institute_doctor_left_area .content_institute_doc h2, .institute_doctor_right_area .content_institute_doc h2{
+    margin-bottom: 25px;
+  }
+
+  .institute_doctor_left_area, .institute_doctor_right_area{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .institute_doctor_right_area{
+    margin-top: 40px;
+  }
+
+  .our_team_panel .urology_area .sub_title::before, .our_team_panel .nephrology_area .sub_title::before{
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .our_team_panel .urology_area .sub_title, .our_team_panel .nephrology_area .sub_title{
+    overflow: unset;
+    overflow-x: hidden;
+    line-height: 100px;
+  }
+
+  .doctor_grid{
+    margin: 0 -15px;
+  }
+
+ .why_disease_flex > div:not(:last-child){
+  margin-bottom: 20px;
+ }
+
 }
 
 @media (max-width: 576px) {
@@ -810,6 +958,78 @@
   font-size: 13px;
 }
 
+.other_stat_achievement_flex .member_stat{
+  padding: 0 20px;
+}
+
+.recognition_flex .recognition_box{
+  width: 100%;
+}
+
+.recognition_flex .recognition_box:nth-child(1){
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+.our_team_tab_links .owl-stage{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.our_team_panel .chairman_box{
+  max-width: 100%;
+  margin: 0 0 30px;
+}
+
+.our_team_panel .chairman_box .chairman_img,
+.our_team_panel .chairman_box .chairman_content,
+.our_team_panel .chairman_box:nth-child(odd) .chairman_content,
+.our_team_panel .chairman_box:nth-child(even) .chairman_content{
+  padding: 0;
+}
+
+.our_team_panel .chairman_box .chairman_content{
+  padding: 20px 0 !important;
+}
+
+.our_team_panel .chairman_box .chairman_img{
+  text-align: center;
+}
+
+.our_team_tab_links{
+  padding-bottom: 35px;
+}
+
+.our_team_panel .team_flex .team_member_box{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.our_team_panel .team_flex .team_member_box .team_member_txt .member_name{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.campaign_column .campaign_content .campaign_btn .green_btn,
+.campaign_column .campaign_content .campaign_btn .transparent_btn{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.campaign_column .campaign_content .campaign_btn .transparent_btn{
+  margin-top: 10px;
+}
+
+.campaign_column .campaign_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.impact_right_area{
+  padding: 50px 30px;
+}
+
 }
 
 @media (max-width: 480px){
@@ -818,7 +1038,15 @@
     max-width: 100%;
   }
 
-  
+  .other_stat_achievement_flex .member_stat{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .achievement_statistics .members_stat_flex{
+    padding: 30px 20px;
+  }
 
   
 }

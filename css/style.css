@@ -187,6 +187,10 @@ a:hover {
   padding-top: 20px;
 }
 
+.pt-40{
+  padding-top: 40px;
+}
+
 .blue_bg{
   background: #132573;
 }
@@ -279,7 +283,15 @@ a:hover {
 .faq_tab_content,
 .faq_tabs ul,
 .patent_nephrology_flex,
-.history_area .inner_history_info{
+.history_area .inner_history_info,
+.achievement_statistics .inner_member h2,
+.institute_doctor_flex,
+.recognition_flex,
+.our_team_panel .team_flex,
+.our_team_tab_links .owl-nav button,
+.campaign_column .campaign_content .campaign_btn,
+.campaign_column .campaign_content .campaign_btn .transparent_btn,
+.impact_right_area{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -309,7 +321,9 @@ a:hover {
 .facilities_navigator,
 .inner_hospitalisation_option_service,
 .international_patient_stat_flex,
-.faq_banner_area .question_area .question_hit_button{
+.faq_banner_area .question_area .question_hit_button,
+.recognition_flex,
+.our_team_tab_links .owl-nav button{
   -webkit-justify-content: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -335,7 +349,9 @@ a:hover {
 .facilities_navigator,
 .follow_up_area .inner_follow_up .left_content_area,
 .faq_banner_area .question_area .question_hit_button,
-.history_area .inner_history_info{
+.history_area .inner_history_info,
+.our_team_tab_links .owl-nav button,
+.impact_right_area{
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -2977,4 +2993,529 @@ a:hover {
   overflow: unset;
   overflow-x: hidden;
   height: 200px;
+}
+
+/* Achievements */
+
+.urology_innovation_border_bottom,
+.other_stat_area{
+  padding-bottom: 45px !important;
+  border-bottom: 1px solid #707070;
+}
+
+.achievement_statistics .title{
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.achievement_statistics .our_member_flex{
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  align-items: end;
+  padding-bottom: 50px;
+}
+
+.achievement_statistics .members_stat_flex{
+  padding: 55px 30px 30px;
+}
+
+.achievement_statistics .inner_member h2{
+  font-size: 52px;
+  padding-left: 25px;
+  line-height: normal;
+  width: 100px;
+  -webkit-align-items: self-end;
+  -webkit-box-align: end;
+  align-items: self-end;
+}
+
+.achievement_stat_left{
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+
+.achievement_stat_right{
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.achievement_stat_right .members_stat_flex{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.achievement_stat_right .members_stat_flex .member_stat{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.achievement_stat_right h2,
+.stats_heading{
+  font-size: 52px;
+  line-height: 65px;
+  font-weight: 900;
+  color: #13257333;
+  margin-bottom: 10px !important;
+}
+
+.other_stat_achievement_flex{
+  background-position: center;
+}
+
+.other_stat_achievement_flex{
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 55px 55px 30px !important;
+
+}
+
+.other_stat_achievement_flex .member_stat{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0px 50px 20px;
+}
+
+.world_best_intitute_doc_area .title{
+  margin: 40px 0 60px;
+  text-align: center;
+}
+
+.institute_doctor_flex{
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #707070;
+  flex-wrap: wrap;
+}
+
+.institute_doctor_left_area,
+.institute_doctor_right_area{
+  flex: 0 0 515px;
+  max-width: 515px;
+}
+
+.institute_doctor_left_area .content_institute_doc h2,
+.institute_doctor_right_area .content_institute_doc h2{
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #132573;
+  margin-bottom: 45px;
+}
+
+.institute_doctor_left_area .content_institute_doc h2 .green_txt,
+.institute_doctor_right_area .content_institute_doc h2 .green_txt{
+  color: #4DDEBD;
+}
+
+.institute_doctor_left_area .content_institute_doc ul,
+.institute_doctor_right_area .content_institute_doc ul{
+  padding-left: 20px;
+}
+
+.institute_doctor_left_area .content_institute_doc ul li,
+.institute_doctor_right_area .content_institute_doc ul li{
+  list-style: disc;
+  color: #707070;
+}
+
+.recognition_area .title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.recognition_flex{
+  flex-wrap: wrap;
+}
+
+.recognition_flex .recognition_box{
+  width: 250px;
+  text-align: center;
+  border: 1px solid;
+    border-image: linear-gradient(to right, #4ddebd 50%, #fc8c8c 50%) 1;
+    padding: 40px 15px;
+}
+
+.recognition_flex .recognition_box:hover{
+  box-shadow: 4px 4px 0px #fc8c8c;
+}
+
+.recognition_flex .recognition_box:nth-child(1){
+  margin-right: 40px;
+}
+
+.recognition_flex .recognition_box .recognition_txt{
+  margin-top: 15px;
+}
+
+.recognition_flex .recognition_box .recognition_txt p{
+  font-weight: 700 !important;
+  line-height: 20px;
+  color: #2A3D53;
+}
+
+/* Our Team */
+
+.our_team_tab_links{
+  max-width: 991px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-top: 22px;
+}
+
+.our_team_tab_links .item{
+  cursor: pointer;
+}
+
+.our_team_tab_links .item h4{
+  text-align: center;
+  padding: 13px 5px;
+  border: 1px solid #707070;
+  font-weight: 700;
+}
+
+.our_team_tab_links .item.active h4{
+  background: #132573;
+  color: #fff;
+}
+
+.our_team_panel{
+  display: none;
+}
+
+.our_team_panel.active{
+  display: block;
+}
+
+.our_team_panel .chairman_box{
+  margin-bottom: 30px;
+  max-width: calc(100% - 60px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.our_team_panel .chairman_box .chairman_content .chairman_txt{
+  margin: 12px 0;
+}
+
+.our_team_panel .chairman_box .chairman_content .chairman_txt .bold_txt,
+.our_team_panel .chairman_box .chairman_content .author{
+  font-weight: 700 !important;
+}
+
+.our_team_panel .chairman_box .chairman_content .author,
+.our_team_panel .chairman_box .chairman_content .designation{
+  max-width: 180px;
+  margin-left: auto;
+}
+
+.our_team_panel .chairman_box:nth-child(even){
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.our_team_panel .chairman_box:nth-child(even) .chairman_content{
+  padding-right: 60px;
+}
+
+.our_team_panel .chairman_box:nth-child(odd) .chairman_content{
+  padding-left: 60px;
+}
+
+.our_team_panel .chairman_box .chairman_content .right_quote{
+  margin-left: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.our_team_panel_heading{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.our_team_panel .team_flex{
+  margin: 0 -20px;
+  flex-wrap: wrap;
+}
+
+.our_team_panel .team_flex .team_member_box{
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 20px;
+  margin-bottom: 45px;
+}
+
+.our_team_panel .team_flex .team_member_box .team_member_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our_team_panel .team_flex .team_member_box .team_member_txt{
+  padding-top: 30px;
+}
+
+.our_team_panel .team_flex .team_member_box .team_member_txt .member_name{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.our_team_panel .team_flex .team_member_box .team_member_txt .member_designation{
+  font-weight: 500;
+}
+
+.our_team_tab_links .owl-nav{
+  margin-top: 0;
+}
+
+.our_team_tab_links .owl-nav button{
+  height: 40px;
+  width: 40px;
+  background: #132573 !important;
+  border-radius: 100% !important;
+  margin: 0 !important;
+  position: absolute;
+  top: -25px;
+}
+
+.our_team_tab_links .owl-nav button.owl-prev{
+  left: 0;
+}
+
+.our_team_tab_links .owl-nav button.owl-next{
+  right: 0;
+}
+
+.our_team_tab_links .owl-nav button svg{
+  font-size: 40px;
+  color: #fff;
+}
+
+.our_team_tab_links .owl-nav button.disabled{
+  display: none;
+}
+
+.our_team_panel .sub_title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.our_team_panel .urology_area .sub_title,
+.our_team_panel .nephrology_area .sub_title{
+  position: relative;
+}
+
+.our_team_panel .urology_area .sub_title::before,
+.our_team_panel .nephrology_area .sub_title::before{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #fc8c8c;
+  opacity: 0.07;
+}
+
+.our_team_panel .urology_area .sub_title::before{
+  content: 'Urology';
+}
+
+.our_team_panel .nephrology_area .sub_title::before{
+  content: 'Nephrology';
+}
+
+.our_team_panel .anesthesiology_area .sub_title::before{
+  content: 'Anesthesiology';
+}
+
+.our_team_panel .laboratory_area .sub_title::before{
+  content: 'Laboratory';
+}
+
+.our_team_panel .radiology_area .sub_title::before{
+  content: 'Radiology';
+}
+
+.our_team_panel .administration_area .sub_title::before{
+  content: 'Administration';
+}
+
+/* Donate */
+
+.why_kidney_disease_area .title,
+.ways_to_donate_area .title{
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.ways_donate_box{
+  height: 100%;
+  border: 1px solid #c4c4c4;
+  box-shadow: 4px 4px 0px #e8e8e8;
+}
+
+.ways_donate_box:hover{
+  border: 1px solid #fc8c8c;
+  box-shadow: 4px 4px 0px #fc8c8c;
+}
+
+.doante_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.donate_content{
+  padding: 20px;
+}
+
+.donate_content h4{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 17px;
+  color: #132573;
+}
+
+.support_partners_area .title{
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.support_carousel .owl-dots .owl-dot span{
+  height: 5px;
+  width: 35px;
+  background: #ececec;
+  border-radius: 0;
+}
+
+
+.support_carousel .owl-dots .owl-dot.active span{
+  background: #fc8c8c;
+}
+
+.campaigns_area .title{
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.campaigns_flex{
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.campaign_column{
+  border: 1px solid #c4c4c4;
+  box-shadow: 4px 4px 0px #e8e8e8;
+  margin-bottom: 40px;
+}
+
+.campaign_column:hover{
+  border: 1px solid #fc8c8c;
+  box-shadow: 4px 4px 0px #fc8c8c;
+}
+
+.campaign_column .campaign_content{
+  padding: 15px 15px 35px;
+}
+
+.campaign_column .campaign_content h4{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #132573;
+  margin-bottom: 5px;
+}
+
+.campaign_column .campaign_content .campaign_btn{
+  margin-top: 34px;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.campaign_column .campaign_content .campaign_btn .green_btn{
+  flex: 0 0 58%;
+  max-width: 58%;
+  background: #4ddebd;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px;
+  border: 1px solid #4ddebd;
+}
+
+.campaign_column .campaign_content .campaign_btn .green_btn:hover{
+  background: transparent;
+  color: #132573;
+  border: 1px solid #132573;
+}
+
+.campaign_column .campaign_content .campaign_btn .transparent_btn{
+  flex: 0 0 35%;
+  max-width: 35%;
+  padding: 10px;
+  border: 1px solid #132573;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.campaign_column .campaign_content .campaign_btn .transparent_btn:hover{
+  background: #132573;
+}
+
+.campaign_column .campaign_content .campaign_btn .transparent_btn span{
+  color: #132573;
+}
+
+.campaign_column .campaign_content .campaign_btn .transparent_btn svg{
+  color: #132573;
+  font-size: 22px;
+  margin-left: 7px;
+}
+
+.campaign_column .campaign_content .campaign_btn .transparent_btn:hover span,
+.campaign_column .campaign_content .campaign_btn .transparent_btn:hover svg{
+  color: #fff;
+}
+
+.impact_area{
+  overflow-x: hidden;
+}
+
+.impact_area .title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.impact_left_area img{
+  display: block;
+}
+
+.impact_right_area{
+  background: #132573;
+  padding: 15px 80px 15px 60px;
+}
+
+.impact_right_area .impact_content .title{
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.impact_right_area .impact_content p{
+  color: #fff;
 }

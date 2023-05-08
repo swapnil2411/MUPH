@@ -1148,6 +1148,66 @@ $(document).ready(function () {
     });
   });
 
+  $('.our_team_tab_links').owlCarousel({
+    loop:false,
+    margin: 20,
+    nav:false,
+    items: 4,
+    dots: false,
+    navText: ['<span class="iconify" data-icon="prime:angle-left"></span>','<span class="iconify" data-icon="prime:angle-right"></span>'],
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+            centerMode: true,
+            stagePadding: 50,
+        },
+        600:{
+            items:3,
+            nav:true,
+        },
+        1000:{
+            items:4,
+            autoplay: false,
+            touchDrag: false,
+            mouseDrag: false,
+            nav: false
+        }
+    }
+  })
+
+  $(".our_team_tab_links .item").click(function () {
+    var panelToShow = $(this).attr("rel");
+    $(this).addClass("active").parent().siblings().find('.item').removeClass('active');
+
+    $(".our_team_tabs .our_team_panel.active").fadeOut(600, function () {
+      $(this).removeClass("active");
+      $("#" + panelToShow).fadeIn(600, function () {
+        $(this).addClass("active");
+      });
+    });
+  });
+
+  $('.support_carousel').owlCarousel({
+    loop:false,
+    margin: 5,
+    nav:false,
+    responsive:{
+        0:{
+            items:2,
+            loop:true,
+        },
+        600:{
+            items:3,
+            loop:true,
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+
   $('select').selectpicker();
 });
 
