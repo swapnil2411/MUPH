@@ -1952,9 +1952,6 @@ a:hover {
   color: #707070;
 }
 
-.amenity_box .health_checkupbox{
-
-}
 
 .amenity_box .health_checkupbox h3{
   font-size: 22px;
@@ -2043,7 +2040,7 @@ a:hover {
 }
 
 .health_checkupbox{
-  background: #4ddebd;
+  background: #fc8c8c;
   padding: 28px 20px;
   position: absolute;
   width: 100%;
@@ -2051,13 +2048,7 @@ a:hover {
   right: -65px;
 }
 
-.health_checkupbox:hover{
-  background: #132573;
-}
 
-.health_checkupbox:hover h3{
-  color: #fff;
-}
 
 .health_checkupbox .blue_btn{
   margin: 14px 0 0;
@@ -2121,7 +2112,7 @@ a:hover {
 }
 
 .healthPlanRight{
-  padding-left: 45px;
+  padding-left: 70px;
 }
 
 .special_details_para{

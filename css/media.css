@@ -386,6 +386,18 @@
     padding: 0 15px;
   }
 
+  .healthPlanRight{
+    padding-left: 35px;
+  }
+
+  .packageDetails p{
+    font-size: 14px;
+  }
+
+  .packageDetails span{
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -730,6 +742,29 @@
   margin-bottom: 20px;
  }
 
+ .healthPlanLeft,
+ .healthPlanRight{
+  flex: 0 0 100%;
+  max-width: 100%;
+ }
+
+ .healthPlanRight{
+  padding: 30px 15px;
+ }
+
+ .healthPlanLeft{
+  text-align: center;
+ }
+
+ .healthPlanRight .customGap{
+  max-width: 100%;
+ }
+
+ .healthPlanRight .plan_title,
+ .healthPlanRight .plan_title span{
+  font-size: 18px;
+ }
+
 }
 
 @media (max-width: 576px) {
@@ -1048,5 +1083,16 @@
     padding: 30px 20px;
   }
 
+  .healthPlanRight .d-flex{
+    flex-wrap: wrap;
+  }
+
+  .healthPlanRight .button{
+    width: 100%;
+  }
+
+  .healthPlanRight .button:nth-child(1){
+    margin-bottom: 8px;
+  }
   
 }
