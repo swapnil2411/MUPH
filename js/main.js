@@ -318,7 +318,7 @@ $(document).ready(function () {
                     </div>
                   </li>
                   <li class="nav_link">
-                    <a href="#">
+                    <a href="meetourdoctor.html">
                       <span>Doctors</span>
                     </a>
                   </li>
@@ -330,25 +330,25 @@ $(document).ready(function () {
                     <div class="dropdown_child">
                       <div class="without_tab_sublinks">
                         <div class="card_container">
-                          <a href="#" class="nested_card">
+                          <a href="" class="nested_card">
                             <div class="nested_card_content">
                               <h3 class="font_regular">about <span class="uppercase_name">muph</span></h3>
                               <p class="font_small">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                             </div>
                           </a>
-                          <a href="#" class="nested_card">
+                          <a href="historyAndNews.html" class="nested_card">
                             <div class="nested_card_content">
                               <h3 class="font_regular">history</h3>
                               <p class="font_small">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                             </div>
                           </a>
-                          <a href="#" class="nested_card">
+                          <a href="achievements.html" class="nested_card">
                             <div class="nested_card_content">
                               <h3 class="font_regular">our achievements</h3>
                               <p class="font_small">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                             </div>
                           </a>
-                          <a href="#" class="nested_card">
+                          <a href="ourteam.html" class="nested_card">
                             <div class="nested_card_content">
                               <h3 class="font_regular">our team</h3>
                               <p class="font_small">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
@@ -465,7 +465,7 @@ $(document).ready(function () {
                                 <p class="font_small">Browse through highlights of our significant events to gain a better understanding of our organisation.</p>
                               </div>
                             </a>
-                            <a href="#" class="nested_card">
+                            <a href="testimonials.html" class="nested_card">
                               <div class="nested_card_img">
                                 <img src="img/testimonial-icon.png" alt="Testimonials" class="img-fluid">
                               </div>
@@ -495,8 +495,14 @@ $(document).ready(function () {
               <div class="search_box">
                 <img src="img/search.png" alt="Search" />
               </div>
-              <div class="donate_box">
+              <div class="payonline_box">
                 <a href="#">
+                  <span>Pay online</span>
+                  <span class="iconify" data-icon="uil:angle-right"></span>
+                </a>
+              </div>
+              <div class="donate_box">
+                <a href="donation.html">
                   <span>Donate</span>
                   <span class="iconify" data-icon="uil:angle-right"></span>
                 </a>
@@ -783,9 +789,9 @@ $(document).ready(function () {
                       <div class="bottom_footer_links">
                         <ul>
                           <li><a href="#">About MPUH</a></li>
-                          <li><a href="#">History</a></li>
-                          <li><a href="#">Our Achievements</a></li>
-                          <li><a href="#">Our Team</a></li>
+                          <li><a href="historyAndNews.html">History</a></li>
+                          <li><a href="achievements.html">Our Achievements</a></li>
+                          <li><a href="ourteam.html">Our Team</a></li>
                         </ul>
                       </div>
 
@@ -806,12 +812,12 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">Urology</a></li>
-                          <li><a href="#">Nephrology</a></li>
-                          <li><a href="#">Anesthesia</a></li>
-                          <li><a href="#">Pathology</a></li>
-                          <li><a href="#">Radiology</a></li>
-                          <li><a href="#">Physiotherapy</a></li>
+                          <li><a href="urology.html">Urology</a></li>
+                          <li><a href="nephrology.html">Nephrology</a></li>
+                          <li><a href="anaesthesia.html">Anesthesia</a></li>
+                          <li><a href="pathology.html">Pathology</a></li>
+                          <li><a href="radiology.html">Radiology</a></li>
+                          <li><a href="physiotherapy.html">Physiotherapy</a></li>
                         </ul>
                       </div>
                     </div>
@@ -823,8 +829,8 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">About JPAC</a></li>
-                          <li><a href="#">Upcoming Courses</a></li>
+                          <li><a href="aboutjpac.html">About JPAC</a></li>
+                          <li><a href="upcomingCourse.html">Upcoming Courses</a></li>
                         </ul>
                       </div>
 
@@ -833,14 +839,14 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">Patient Facilities</a></li>
-                          <li><a href="#">Health Checkup</a></li>
-                          <li><a href="#">Cashless Hospitalisation</a></li>
-                          <li><a href="#">Hospitalisation Options</a></li>
+                          <li><a href="patientfacility.html">Patient Facilities</a></li>
+                          <li><a href="healthcheckup.html">Health Checkup</a></li>
+                          <li><a href="cashlesshospitalisation.html">Cashless Hospitalisation</a></li>
+                          <li><a href="hospitalisationoption.html">Hospitalisation Options</a></li>
                           <li><a href="#">Plan your trip</a></li>
-                          <li><a href="#">Visitor Information</a></li>
-                          <li><a href="#">FAQs</a></li>
-                          <li><a href="#">Patient Testimonials</a></li>
+                          <li><a href="visitorsinformation.html">Visitor Information</a></li>
+                          <li><a href="faq.html">FAQs</a></li>
+                          <li><a href="testimonials.html">Patient Testimonials</a></li>
                           <li><a href="#">Pay Online</a></li>
                         </ul>
                       </div>
@@ -853,11 +859,11 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">Fellowships</a></li>
-                          <li><a href="#">Events</a></li>
-                          <li><a href="#">Meet our faculty</a></li>
-                          <li><a href="#">Gallery</a></li>
-                          <li><a href="#">Testimonials</a></li>
+                          <li><a href="fellowships.html">Fellowships</a></li>
+                          <li><a href="upcomingEvents.html">Events</a></li>
+                          <li><a href="meetourfaculty.html">Meet our faculty</a></li>
+                          <li><a href="gallery.html">Gallery</a></li>
+                          <li><a href="testimonials.html">Testimonials</a></li>
                         </ul>
                       </div>
 
@@ -885,7 +891,7 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">Why Kidney Disease?</a></li>
+                          <li><a href="treatmentoptions.html">Why Kidney Disease?</a></li>
                           <li>
                             <a href="#">Ways to give / Donation Options</a>
                           </li>
@@ -898,12 +904,12 @@ $(document).ready(function () {
 
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="#">Doctors</a>
+                          <a href="meetourdoctor.html">Doctors</a>
                         </h3>
                       </div>
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="#">Treatment Options</a>
+                          <a href="treatmentoptions.html">Treatment Options</a>
                         </h3>
                       </div>
                       <div class="bottom_footer_heading">
@@ -913,17 +919,17 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="#">Blogs</a>
+                          <a href="blogs">Blogs</a>
                         </h3>
                       </div>
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="#">Careers</a>
+                          <a href="careers.html">Careers</a>
                         </h3>
                       </div>
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="#">Contact Us</a>
+                          <a href="contactus.html">Contact Us</a>
                         </h3>
                       </div>
                     </div>
@@ -1003,6 +1009,41 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 5000,
   });
+
+  $('.testimonial_slider').owlCarousel({
+    loop:true,
+    margin:10,
+    dots: false,
+    nav:true,
+    items: 1,
+    navText: ['<span class="iconify" data-icon="pepicons-pop:angle-left"></span>','<span class="iconify" data-icon="pepicons-pop:angle-right"></span>']
+    // autoplay:true,
+    // autoplayTimeout:5000,
+  })
+
+  $('.meet_doctors_carousel').owlCarousel({
+    // stagePadding: 100,
+    loop:true,
+    margin:30,
+    nav:true,
+    navText: ['<span class="iconify" data-icon="pepicons-pop:angle-left"></span>','<span class="iconify" data-icon="pepicons-pop:angle-right"></span>'],
+    dots: false,
+    responsive:{
+      0:{
+        items: 1.5,
+        stagePadding: 0,
+        margin: 30,
+      },
+
+      480:{
+        items: 2.5,
+        // stagePadding: 25,
+      },
+      1000:{
+        items: 2.6,
+      }
+    }
+  })
 
   //Sub menu click to show top navbar
   $('.sub_menu').on('click', function(){

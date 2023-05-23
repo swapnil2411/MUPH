@@ -1,4 +1,5 @@
 https://swapnil2411.github.io/MUPH/aboutjpac.html
+https://swapnil2411.github.io/MUPH/achievements.html
 https://swapnil2411.github.io/MUPH/anaesthesia.html
 https://swapnil2411.github.io/MUPH/basicHealthPlan.html
 https://swapnil2411.github.io/MUPH/blog.html
@@ -8,6 +9,7 @@ https://swapnil2411.github.io/MUPH/cashlesshospitalisation.html
 https://swapnil2411.github.io/MUPH/contactus.html
 https://swapnil2411.github.io/MUPH/diabetesHealthPlan.html
 https://swapnil2411.github.io/MUPH/domesticpatient.html
+https://swapnil2411.github.io/MUPH/donation.html
 https://swapnil2411.github.io/MUPH/executiveHealthPlan.html
 https://swapnil2411.github.io/MUPH/faq.html
 https://swapnil2411.github.io/MUPH/fellowships.html
@@ -18,17 +20,20 @@ https://swapnil2411.github.io/MUPH/hospitalisationoption.html
 https://swapnil2411.github.io/MUPH/index.html
 https://swapnil2411.github.io/MUPH/internationalpatient.html
 https://swapnil2411.github.io/MUPH/meetourdoctor.html
+https://swapnil2411.github.io/MUPH/meetourfaculty.html
 https://swapnil2411.github.io/MUPH/nephrology.html
+https://swapnil2411.github.io/MUPH/ourteam.html
 https://swapnil2411.github.io/MUPH/pathology.html
 https://swapnil2411.github.io/MUPH/patientfacility.html
 https://swapnil2411.github.io/MUPH/physiotherapy.html
 https://swapnil2411.github.io/MUPH/publication.html
 https://swapnil2411.github.io/MUPH/radiology.html
 https://swapnil2411.github.io/MUPH/RenalHealthPlan.html
+https://swapnil2411.github.io/MUPH/research.html
 https://swapnil2411.github.io/MUPH/specialities.html
 https://swapnil2411.github.io/MUPH/srCitizenHealthPlan.html
 https://swapnil2411.github.io/MUPH/testimonials.html
-https://swapnil2411.github.io/MUPH/testimonials.html
+https://swapnil2411.github.io/MUPH/treatmentoptions.html
 https://swapnil2411.github.io/MUPH/upcomingCourse.html
 https://swapnil2411.github.io/MUPH/upcomingEvents.html
 https://swapnil2411.github.io/MUPH/urology.html
