@@ -292,7 +292,11 @@ a:hover {
 .our_team_tab_links .owl-nav button,
 .campaign_column .campaign_content .campaign_btn,
 .campaign_column .campaign_content .campaign_btn .transparent_btn,
-.impact_right_area{
+.impact_right_area,
+.about_content_stat_col .about_content_stat_box,
+.about_content_stat_flex,
+.philosophy_content_header,
+.affiliation_block .affiliation_box .affiliation_img{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -324,7 +328,9 @@ a:hover {
 .international_patient_stat_flex,
 .faq_banner_area .question_area .question_hit_button,
 .recognition_flex,
-.our_team_tab_links .owl-nav button{
+.our_team_tab_links .owl-nav button,
+.about_content_stat_col .about_content_stat_box,
+.affiliation_block .affiliation_box .affiliation_img{
   -webkit-justify-content: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -353,7 +359,11 @@ a:hover {
 .faq_banner_area .question_area .question_hit_button,
 .history_area .inner_history_info,
 .our_team_tab_links .owl-nav button,
-.impact_right_area{
+.impact_right_area,
+.about_content_stat_col .about_content_stat_box,
+.about_content_stat_flex,
+.philosophy_content_header,
+.affiliation_block .affiliation_box .affiliation_img{
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -2222,9 +2232,9 @@ a:hover {
   padding-left: 70px;
 }
 
-.special_details_para{
+/* .special_details_para{
   padding-top: 45px;
-}
+} */
 
 .healthPlan{
   align-items: center;
@@ -3795,4 +3805,129 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* About MUPH */
+
+.inner_about_info{
+  position: relative;
+}
+
+.about_area_content p{
+  margin-top: 25px;
+}
+
+.about_area_content p b{
+  font-weight: 700;
+}
+
+.about_content_stat_col .about_content_stat_box{
+  width: 140px;
+  height: 140px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.about_content_stat_col .about_content_stat_box h2,
+.about_content_stat_col .about_content_stat_box p{
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about_content_stat_col .pink_box{
+  background: #fc8c8c;
+}
+
+.about_content_stat_col .green_box{
+  background: #4ddebd;
+}
+
+.about_content_stat_col .blue_box{
+  background: #132573;
+}
+
+.about_content_stat_col .blue_box h2,
+.about_content_stat_col .blue_box p{
+  color: #fff;
+}
+
+.about_content_stat_flex{
+  -webkit-justify-content: flex-end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+.about_content_stat_flex .about_content_stat_col:nth-child(1){
+  padding-right: 10px;
+}
+
+.about_content_stat_flex .about_content_stat_col:nth-child(2){
+  padding-left: 10px;
+}
+
+.lotus_vector{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-65%);
+  z-index: -1;
+}
+
+.certification_img_area{
+  margin-top: 15px;
+}
+
+.certification_img_area img:nth-child(2){
+  margin-left: 35px;
+}
+
+.about_philosophy_area .row > div:nth-child(1) .philosophy_col .philosophy_content{
+  padding-right: 70px;
+}
+
+.about_philosophy_area .title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.philosophy_content_header h2{
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #132573;
+}
+
+.philospohy_para{
+  padding-top: 15px;
+}
+
+.about_affiliations_area .title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.affiliation_block .affiliation_box{
+  border: 1px solid #c8c8c8;
+  padding: 15px 25px 40px;
+  margin-bottom: 30px;
+}
+
+.affiliation_block .affiliation_box .affiliation_img{
+  height: 150px;
+}
+
+.affiliation_block .affiliation_txt{
+  padding: 20px 0 0;
+}
+
+.affiliation_block .affiliation_txt p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
 }

@@ -9,7 +9,8 @@
 }
 
 @media (min-width: 1440px) {
-  .content_container{
+  .content_container,
+  .lithotripterLasers{
     max-width: 1366px;
     margin: 0 auto;
   }
@@ -122,6 +123,10 @@
   .main_header .main_header_flex .right_main_header .menu_links{
     margin-right: 15px;
   }
+
+  .inner_about_info .align-items-end{
+    align-items: center !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -131,6 +136,10 @@
   .title {
     font-size: 30px;
     line-height: 40px;
+  }
+
+  .philosophy_content_header h2{
+    font-size: 22px;
   }
 
   .sub_title{
@@ -247,6 +256,10 @@
   .title{
     font-size: 26px;
     line-height: 36px;
+  }
+
+  .philosophy_content_header h2{
+    font-size: 20px;
   }
 
   .font_small{
@@ -467,6 +480,16 @@
 
   .other_block_textarea{
     padding: 20px 30px;
+  }
+
+  .affiliation_block .affiliation_txt p{
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about_content_stat_col .about_content_stat_box{
+    height: 110px;
+    width: 110px;
   }
 
 }
@@ -895,6 +918,31 @@
     object-fit: cover;
   }
 
+  .affiliation_block .affiliation_txt p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about_philosophy_area .row > div:nth-child(1) .philosophy_col .philosophy_content{
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+
+  .about_content_stat_flex{
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .lotus_vector {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -1246,6 +1294,29 @@
 
 .other_block_textarea{
   padding: 20px;
+}
+
+.affiliation_block .affiliation_txt p{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.certification_img_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.certification_img_area img{
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.certification_img_area img:nth-child(2){
+  margin-left: 10px;
 }
 
 }

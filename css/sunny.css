@@ -35,6 +35,14 @@
   left: 60px;
 }
 
+.specialtiesBannerContent .blue_btn{
+  margin: 0 ;
+}
+
+.specialtiesGridInner .text-center .blue_btn{
+  margin-top: 0;
+}
+
 /* Specialties Section CSS */
 
 .specialtiesMain {
@@ -182,15 +190,19 @@
 .specialtiesDetailsInner h2::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
-  border: 3px solid #4ddebd;
+  border: 2px solid #4ddebd;
   height: 0;
 }
 
 .specialtiesDetailsInner p {
-  padding: 12px 0;
+  padding: 18px 0 12px;
+}
+
+.specialtiesDetailsInner .blue_btn{
+  margin: 8px 0 0;
 }
 
 .whatWeDoMain {
@@ -499,7 +511,7 @@
 .bread_crum {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-95%);
   left: 60px;
   display: flex;
   align-items: center;
@@ -507,7 +519,7 @@
 }
 
 .bread_crum a {
-  font-weight: 500;
+  font-weight: 800;
   font-size: 14px;
   line-height: 36px;
   color: #fff;
