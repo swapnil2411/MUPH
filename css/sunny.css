@@ -35,11 +35,11 @@
   left: 60px;
 }
 
-.specialtiesBannerContent .blue_btn{
-  margin: 0 ;
+.specialtiesBannerContent .blue_btn {
+  margin: 0;
 }
 
-.specialtiesGridInner .text-center .blue_btn{
+.specialtiesGridInner .text-center .blue_btn {
   margin-top: 0;
 }
 
@@ -160,7 +160,8 @@
 
 .specialtiesDetailsContent {
   position: absolute;
-  bottom: -114px;
+  /* bottom: -114px; */
+  top: 190px;
   left: 60px;
   background: #ffffff;
   border: 1px solid #c4c4c4;
@@ -201,7 +202,7 @@
   padding: 18px 0 12px;
 }
 
-.specialtiesDetailsInner .blue_btn{
+.specialtiesDetailsInner .blue_btn {
   margin: 8px 0 0;
 }
 
@@ -255,14 +256,17 @@
 }
 
 .whatWeDoRight ul li {
+  position: relative;
+  margin-bottom: 2px;
+  background-color: #fff;
+}
+
+.whatWeDoRight ul li a {
   padding: 13px 0 13px 40px;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   color: #132573;
-  position: relative;
-  margin-bottom: 2px;
-  background-color: #fff;
 }
 
 .whatWeDoRight ul li::after {
@@ -279,6 +283,10 @@
   background-color: #132573;
   color: #fff;
   position: relative;
+}
+
+.whatWeDoRight ul li.active a {
+  color: #fff;
 }
 
 .whatWeDoRight ul li.active::after {
@@ -310,7 +318,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
   color: #132573;
 }
 
@@ -320,7 +328,7 @@
   line-height: 28px;
   color: #2a3d53;
   font-weight: 700;
-  padding-bottom: 7px;
+  padding: 7px 0 7px;
 }
 
 .lumenisPulseLeft ul,
@@ -395,6 +403,33 @@
   font-size: 14px;
   line-height: 25px;
   color: #2a3d53;
+}
+
+.differentHealthService .differentHealthServiceLeft {
+  isolation: isolate;
+}
+
+.differentHealthService .differentHealthServiceLeft img {
+  max-width: 305px;
+  max-height: 220px;
+}
+
+.differentHealthService .differentHealthServiceLeft:nth-child(odd) .absoluteDotsBg{
+  position: absolute;
+  top: -61px;
+  right: -60px;
+  max-width: unset;
+  max-height: unset;
+  z-index: -1;
+}
+
+.differentHealthService .differentHealthServiceLeft:nth-child(2) .absoluteDotsBg{
+  position: absolute;
+  top: -61px;
+  left: -60px;
+  max-width: unset;
+  max-height: unset;
+  z-index: -1;
 }
 
 .differentHealthServiceRight h4 {
@@ -716,7 +751,7 @@
   margin-block: 40px !important;
 }
 
-.fellowShipsIntroLeft{
+.fellowShipsIntroLeft {
   padding-right: 90px;
 }
 
@@ -730,7 +765,7 @@
   padding-bottom: 20px;
 }
 
-.fellowShipsIntroRight h4{
+.fellowShipsIntroRight h4 {
   color: #132573;
 }
 
@@ -790,21 +825,21 @@
   width: 180px;
 }
 
-.fellowships_contact{
-  margin-top: 36px
+.fellowships_contact {
+  margin-top: 36px;
 }
 
-.fellowships_contact a{
+.fellowships_contact a {
   color: #545454;
 }
 
-.fellowships_contact .bold_txt{
+.fellowships_contact .bold_txt {
   font-weight: 700;
   font-size: 14px;
   color: #192029;
 }
 
-.fellowShipsIntroRight .font_regular{
+.fellowShipsIntroRight .font_regular {
   line-height: 25px;
 }
 
@@ -844,7 +879,7 @@
   color: #192029;
 }
 
-.eventsInformation .eventDetails{
+.eventsInformation .eventDetails {
   line-height: 20px;
 }
 
@@ -862,7 +897,7 @@
   position: relative;
 }
 
-.eventsInformation button{
+.eventsInformation button {
   margin: 52px 0 25px;
 }
 
@@ -1172,8 +1207,6 @@
 .topExtraMargin {
   margin-top: 40px !important;
 }
-
-
 
 .healthPlanRight .plan_title {
   font-weight: 700;
