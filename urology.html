@@ -17,8 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <!-- Bootstrap Select Css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+  <!-- Bootstrap Select Css -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/sunny.css">
@@ -92,12 +93,12 @@
         <div class="whatWeDoRight">
           <p>Medical Departments</p>
           <ul>
-            <li class="active"><span></span> Urology</li>
-            <li><span></span> Nephrology</li>
-            <li><span></span> Anesthesia</li>
-            <li><span></span> Pathology</li>
-            <li><span></span> Radiology</li>
-            <li><span></span> Physiotherapy</li>
+            <li class="active"><a href="urology.html"> Urology</a></li>
+            <li><a href="nephrology.html">Nephrology</a></li>
+            <li><a href="anaesthesia.html"> Anesthesia</a></li>
+            <li><a href="pathology.html"> Pathology</a></li>
+            <li><a href="radiology.html"> Radiology</a></li>
+            <li><a href="physiotherapy.html"> Physiotherapy</a></li>
           </ul>
         </div>
       </div>
@@ -166,6 +167,7 @@
         </div>
         <div class="differentHealthService">
           <div class="differentHealthServiceLeft position-relative">
+            <img src="/img/dots_grey.svg" alt="Dots Vector" class="absoluteDotsBg">
             <img src="./img/Specialties/laparoscopic.png" alt="laparoscopic">
           </div>
           <div class="differentHealthServiceRight">
@@ -237,11 +239,13 @@
             </ul>
           </div>
           <div class="differentHealthServiceLeft position-relative">
+            <img src="/img/dots_grey.svg" alt="Dots Vector" class="absoluteDotsBg">
             <img src="./img/Specialties/laparoscopic.png" alt="laparoscopic">
           </div>
         </div>
         <div class="differentHealthService">
           <div class="differentHealthServiceLeft position-relative">
+            <img src="/img/dots_grey.svg" alt="Dots Vector" class="absoluteDotsBg">
             <img src="./img/Specialties/laparoscopic.png" alt="laparoscopic">
           </div>
           <div class="differentHealthServiceRight">
@@ -269,11 +273,13 @@
             </p>
           </div>
           <div class="differentHealthServiceLeft position-relative">
+            <img src="/img/dots_grey.svg" alt="Dots Vector" class="absoluteDotsBg">
             <img src="./img/Specialties/laparoscopic.png" alt="laparoscopic">
           </div>
         </div>
         <div class="differentHealthService">
           <div class="differentHealthServiceLeft position-relative">
+            <img src="/img/dots_grey.svg" alt="Dots Vector" class="absoluteDotsBg">
             <img src="./img/Specialties/laparoscopic.png" alt="laparoscopic">
           </div>
           <div class="differentHealthServiceRight">
@@ -303,6 +309,7 @@
             </p>
           </div>
           <div class="differentHealthServiceLeft position-relative">
+            <img src="/img/dots_grey.svg" alt="Dots Vector" class="absoluteDotsBg">
             <img src="./img/Specialties/laparoscopic.png" alt="laparoscopic">
           </div>
         </div>
@@ -355,81 +362,85 @@
   </section>
 
   <section class="help_form_area green_bg_form ptb-70">
-            <div class="content_container">
-                <div class="row align-items-center m-0">
-                    <div class="col-md-6 col-12 bookappointment_form">
-                        <h2 class="title">Book an Appointment</h2>
-                        <p class="sub_para font_small">Please feel welcome to contact our friendly reception staff with any general or 
-                            medical enquiry. Our doctors will receive or return any urgent calls.</p>
-                        <form class="help_form" method="POST">
-                            <div class="inner_form">
-                                <div class="form_element">
-                                    <select class="selectpicker" title='Choose Department'>
-                                        <option>Department One</option>
-                                        <option>Department Two</option>
-                                        <option>Department Three</option>
-                                    </select>
-                                </div>
-                                <div class="form_element">
-                                    <select class="selectpicker" title='Choose Doctor'>
-                                        <option>Doctor One</option>
-                                        <option>Doctor Two</option>
-                                        <option>Doctor Three</option>
-                                    </select>
-                                </div>
-                                <div class="form_element">
-                                    <input type="text" pattern="[A-Za-z]{1,100}" placeholder="Name" id="name" name="name" class="form_input">
-                                </div>
-                                <div class="form_element">
-                                    <input type="text" pattern="[789][0-9]{9}" placeholder="Contact" id="contact" name="contact" class="form_input">
-                                </div>
-                                <div class="form_element">
-                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" id="email" name="email" class="form_input">
-                                </div>
-                                <div class="form_element">
-                                    <select class="selectpicker" title='Mode of appointment'>
-                                        <option>Doctor One</option>
-                                        <option>Doctor Two</option>
-                                        <option>Doctor Three</option>
-                                    </select>
-                                </div>
-                                <div class="form_element">
-                                    <input type="date" placeholder="Email" id="date" name="date" class="form_input">
-                                </div>
-                                <div class="form_element message_element">
-                                    <textarea placeholder="Message" name="message" id="message" id="" rows="6" class="form_input"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" class="contact_form_btn">Submit</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="help_form_img">
-                            <img src="img/appointment_img.png" alt="MPUH" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                
+    <div class="content_container">
+      <div class="row align-items-center m-0">
+        <div class="col-md-6 col-12 bookappointment_form">
+          <h2 class="title">Book an Appointment</h2>
+          <p class="sub_para font_small">Please feel welcome to contact our friendly reception staff with any general or
+            medical enquiry. Our doctors will receive or return any urgent calls.</p>
+          <form class="help_form" method="POST">
+            <div class="inner_form">
+              <div class="form_element">
+                <select class="selectpicker" title='Choose Department'>
+                  <option>Department One</option>
+                  <option>Department Two</option>
+                  <option>Department Three</option>
+                </select>
+              </div>
+              <div class="form_element">
+                <select class="selectpicker" title='Choose Doctor'>
+                  <option>Doctor One</option>
+                  <option>Doctor Two</option>
+                  <option>Doctor Three</option>
+                </select>
+              </div>
+              <div class="form_element">
+                <input type="text" pattern="[A-Za-z]{1,100}" placeholder="Name" id="name" name="name"
+                  class="form_input">
+              </div>
+              <div class="form_element">
+                <input type="text" pattern="[789][0-9]{9}" placeholder="Contact" id="contact" name="contact"
+                  class="form_input">
+              </div>
+              <div class="form_element">
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" id="email"
+                  name="email" class="form_input">
+              </div>
+              <div class="form_element">
+                <select class="selectpicker" title='Mode of appointment'>
+                  <option>Doctor One</option>
+                  <option>Doctor Two</option>
+                  <option>Doctor Three</option>
+                </select>
+              </div>
+              <div class="form_element">
+                <input type="date" placeholder="Email" id="date" name="date" class="form_input">
+              </div>
+              <div class="form_element message_element">
+                <textarea placeholder="Message" name="message" id="message" id="" rows="6"
+                  class="form_input"></textarea>
+              </div>
             </div>
+            <button type="submit" class="contact_form_btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="help_form_img">
+            <img src="img/appointment_img.png" alt="MPUH" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- Footer Start Here -->
   <my-footer></my-footer>
   <!-- Footer End Here -->
 
-   <!-- Jquery CDN -->
-   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-   <!-- Bootstrap Js -->
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-   <!-- Iconify Js -->
-   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-   <!-- Owl Carousel Js -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-   <!-- Bootstrap Select -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
-   <!-- Custom Js -->
-   <script src="js/main.js"></script>
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <!-- Iconify Js -->
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <!-- Owl Carousel Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Bootstrap Select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+  <!-- Custom Js -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
