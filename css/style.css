@@ -1463,6 +1463,12 @@ a:hover {
   padding: 12px;
 }
 
+.green_btn{
+  background: #4DDEBD;
+}
+
+
+
 .blue_btn svg{
   font-size: 24px;
 }
@@ -1472,6 +1478,9 @@ a:hover {
   color: #fff;
 }
 
+.green_btn:hover{
+  background: #132573;
+}
 
 .inner_form{
   -webkit-justify-content: space-between;
@@ -3930,4 +3939,20 @@ a:hover {
   font-weight: 400;
   line-height: 28px;
   text-align: center;
+}
+
+.about_info_area .green_btn{
+  margin: 77px auto 0;
+}
+
+.jpac_mission .title{
+  margin-bottom: 20px;
+}
+
+.jpac_mission p.sub_heading{
+  line-height: 25px;
+  font-weight: 400;
+  color: #2A3D53;
+  text-align: center;
+  margin-bottom: 53px;
 }
