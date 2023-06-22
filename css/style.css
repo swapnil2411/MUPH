@@ -191,6 +191,10 @@ a:hover {
   padding-top: 40px;
 }
 
+.pb-40{
+  padding-bottom: 40px;
+}
+
 .blue_bg{
   background: #132573;
 }

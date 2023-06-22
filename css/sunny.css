@@ -215,7 +215,7 @@
 
 .whatWeDoLeft {
   border: 1px solid #c4c4c4;
-  padding: 98px 74px;
+  padding: 7.174vw 5.417vw;
   height: 396px;
 }
 
@@ -267,6 +267,11 @@
   font-size: 12px;
   line-height: 15px;
   color: #132573;
+}
+
+.whatWeDoRight ul li a:hover{
+  background: #fc8c8c;
+  color: #fff;
 }
 
 .whatWeDoRight ul li::after {
