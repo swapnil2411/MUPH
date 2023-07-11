@@ -10,9 +10,13 @@
 
 @media (min-width: 1440px) {
   .content_container,
-  .lithotripterLasers{
+  .lithotripter_laser_area,
+  .speciality_banner_container{
     max-width: 1366px;
     margin: 0 auto;
+  }
+  .lithotripter_laser_block .lithotripter_laser_left::after{
+    height: 11vw;
   }
 }
 
@@ -20,6 +24,8 @@
   .urology_innovation_area .wave{
     width: 100%;
   }
+
+  
 }
 
 @media (max-width: 1280px){
@@ -138,7 +144,7 @@
   .statistics_padding_right {
     padding-right: 40px !important;
   }
-  .title {
+  .title, .special_details_title {
     font-size: 30px;
     line-height: 40px;
   }
@@ -160,8 +166,7 @@
 
 @media (max-width: 991px) {
   .top_header_context .left_top_header .contact_txt span a, .top_header_context .left_top_header .email_txt span a,
-  .top_header_context .right_top_header .appointment_txt a span, .top_header_context .right_top_header .brochure_txt a span,
-  .special_details_para, .bread_crum a{
+  .top_header_context .right_top_header .appointment_txt a span, .top_header_context .right_top_header .brochure_txt a span, .bread_crum a{
     font-size: 12px;
   }
 
@@ -257,14 +262,34 @@
     top: 20px;
   }
 
+  .font_medium{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .font_regular{
     font-size: 14px !important;
     line-height: 22px !important;
   }
 
-  .title{
+  .title, .special_details_title{
     font-size: 26px;
     line-height: 36px;
+  }
+
+  .lumenisPulseLeft h4, .differentHealthServiceRight h4{
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .special_service_para{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .lumenisPulseLeft p, .differentHealthServiceRight p{
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .philosophy_content_header h2{
@@ -499,6 +524,15 @@
   .about_content_stat_col .about_content_stat_box{
     height: 110px;
     width: 110px;
+  }
+
+  .whatWeDoLeft{
+    max-width: calc(100% - 250px);
+  }
+
+  .differentHealthService{
+    gap: 80px;
+    padding-bottom: 70px;
   }
 
 }
@@ -973,6 +1007,74 @@
   object-position: center;
 }
 
+.whatWeDoLeft{
+  padding: 15px;
+}
+
+.lithotripter_laser_block .lithotripter_laser_left,
+.lithotripter_laser_block .lithotripter_laser_right{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.lithotripter_laser_block .lithotripter_laser_left{
+  padding: 0 15px;
+}
+
+.lithotripter_laser_block:nth-child(odd) .lithotripter_laser_left .lithotripter_laser_img_container,
+.lithotripter_laser_block:nth-child(even) .lithotripter_laser_left .lithotripter_laser_img_container{
+  margin-left: unset;
+  margin: 0 auto
+}
+
+.lithotripter_laser_block .lithotripter_laser_right{
+  padding: 55px 15px 0;
+}
+
+.lithotripter_laser_block:nth-child(odd) .lithotripter_laser_left::after,
+.lithotripter_laser_block:nth-child(even) .lithotripter_laser_left::after{
+  right: unset;
+  left: 50%;
+  transform: translateX(-80%);
+  width: 150px;
+  height: 100px;
+}
+
+.lithotripter_laser_area{
+  padding-top: 50px;
+}
+
+.differentHealthService{
+  flex-direction: column;
+}
+
+.special_Services_main{
+  overflow-x: hidden;
+}
+
+.differentHealthService .differentHealthServiceLeft,
+.differentHealthService .differentHealthServiceRight{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.tab_flex_reverse{
+  flex-direction: column-reverse;
+}
+
+.differentHealthService .differentHealthServiceLeft:nth-child(odd) .absoluteDotsBg{
+  right: -20%;
+}
+
+.special_Services_heading{
+  padding-bottom: 120px;
+}
+
+.differentHealthService {
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -1020,7 +1122,7 @@
     max-width: 150px;
   }
 
-  .title{
+  .title, .special_details_title{
     font-size: 22px;
     line-height: 30px;
   }
@@ -1349,9 +1451,46 @@
   margin-left: 10px;
 }
 
+.whatWeDo{
+  padding-top: 50px;
+}
+
+.whatWeDoMain{
+  flex-wrap: wrap;
+}
+
+.whatWeDoLeft{
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.whatWeDoRight{
+  height: 100%;
+}
+
+.whatWeDoLeft,
+.whatWeDoRight{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.whatWeDoRight ul{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.whatWeDoRight ul li{
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
 }
 
 @media (max-width: 480px){
+
   .health_plan_flex > div{
     flex: 0 0 100%;
     max-width: 100%;
@@ -1396,5 +1535,14 @@
   .inner_news_area{
     margin: 0;
   }
+
+  .whatWeDoRight ul li{
+    flex: 0 0 49.5%;
+    max-width: 49.5%;
+  }
+
+  .lithotripter_laser_area {
+    padding-top: 130px;
+}
   
 }

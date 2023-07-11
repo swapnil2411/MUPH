@@ -1,3 +1,7 @@
+:root{
+  --desk: calc(100/1366);
+}
+
 .main_header {
   border-bottom: 1px solid #c4c4c4;
 }
@@ -207,9 +211,12 @@
 }
 
 .whatWeDoMain {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr auto;
   gap: 106px;
+  align-items: end; */
+  display: flex;
+  justify-content: space-between;
   align-items: end;
 }
 
@@ -217,6 +224,8 @@
   border: 1px solid #c4c4c4;
   padding: 7.174vw 5.417vw;
   height: 396px;
+  flex: 0 0 100%;
+  max-width: calc(100% - 308px);
 }
 
 .whatWeDoLeft h3 {
@@ -240,6 +249,8 @@
   height: 362px;
   background: #4ddebd;
   padding: 18px 16px;
+  flex: 0 0 202px;
+  max-width: 202px;
 }
 
 .whatWeDoRight p {
