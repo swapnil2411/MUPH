@@ -301,7 +301,9 @@ a:hover {
 .about_content_stat_flex,
 .philosophy_content_header,
 .affiliation_block .affiliation_box .affiliation_img,
-.lithotripter_laser_block{
+.lithotripter_laser_block,
+.doctor_info_modal .inner_info_modal,
+.close_doc_info_modal{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -315,7 +317,8 @@ a:hover {
 .main_header .main_header_flex .right_main_header .menu_links nav ul,
 .main_header .main_header_flex .right_main_header .other_links,
 .visitors_info_faq .accordion .card-header h2 button,
-.faq_banner_area .question_area {
+.faq_banner_area .question_area,
+.doctor_info_modal .inner_info_modal {
   -webkit-justify-content: space-between;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -335,7 +338,8 @@ a:hover {
 .recognition_flex,
 .our_team_tab_links .owl-nav button,
 .about_content_stat_col .about_content_stat_box,
-.affiliation_block .affiliation_box .affiliation_img{
+.affiliation_block .affiliation_box .affiliation_img,
+.close_doc_info_modal{
   -webkit-justify-content: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -369,7 +373,8 @@ a:hover {
 .about_content_stat_flex,
 .philosophy_content_header,
 .affiliation_block .affiliation_box .affiliation_img,
-.lithotripter_laser_block{
+.lithotripter_laser_block,
+.close_doc_info_modal{
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -1444,6 +1449,10 @@ a:hover {
   position: relative;
 }
 
+.stories_content p{
+  text-align: left !important;
+}
+
 .stories_content .quote_icon{
   position: absolute;
   left: 18px;
@@ -1464,7 +1473,6 @@ a:hover {
   max-width: 180px;
   background: #132573;
   color: #fff;
-  text-align: none;
   margin: 20px auto 0;
   padding: 12px;
 }
@@ -3784,7 +3792,7 @@ a:hover {
   overflow: hidden;
 }
 
-.news_area .news_boxes_area .news_media_box .news_img .blue_btn{
+/* .news_area .news_boxes_area .news_media_box .news_img .blue_btn{
   position: absolute;
   max-width: 100%;
   width: 100%;
@@ -3794,10 +3802,14 @@ a:hover {
 
 .news_area .news_boxes_area .news_media_box:hover .news_img .blue_btn{
   bottom: 0;
-}
+} */
 
 .news_area .news_boxes_area .news_media_box .news_content .news_upper_content{
   padding: 35px;
+}
+
+.news_area .news_boxes_area .news_media_box .news_content .news_upper_content .blue_btn{
+  margin: 20px 0 0;
 }
 
 .news_area .news_boxes_area .news_media_box .news_content .news_upper_content .news_title{
@@ -4080,3 +4092,103 @@ a:hover {
   margin-top: 6px;
 }
 
+/* Doctor Modal Css */
+
+.doc_modal_overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4ddebd;
+  opacity: 0.6;
+  display: block;
+  z-index: 9;
+  display: none;
+}
+
+.doc_modal_overlay.show_doc_overlay{
+  display: block;
+}
+
+.doctor_info_modal{
+  max-width: 991px;
+  background: #fff;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 35px 25px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out all;
+}
+
+.doctor_info_modal.show_doc_info_modal{
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.doctor_info_modal .inner_info_modal .doctor_info_img{
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.doctor_info_modal .inner_info_modal .doctor_info_content{
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding-left: 40px;
+}
+
+.doctor_info_modal .doctor_info_content .author{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.doctor_info_modal .doctor_info_content .certificate{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.doctor_info_modal .doctor_info_content .designation{
+  font-weight: 400;
+}
+
+.doctor_info_modal .doctor_info_content .dr_email{
+  color: #4DDEBD;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  margin: 7px 0 25px;
+}
+
+.doctor_info_modal .doctor_info_content ul{
+  padding-left: 18px;
+}
+
+.doctor_info_modal .doctor_info_content ul li{
+  font-weight: 400;
+  margin-bottom: 8px;
+  list-style: disc;
+  line-height: 20px;
+}
+
+.close_doc_info_modal{
+  height: 30px;
+  width: 30px;
+  background: #132573;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.close_doc_info_modal svg{
+  color: #fff;
+  font-size: 26px;
+}

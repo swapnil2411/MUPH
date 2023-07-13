@@ -1289,6 +1289,66 @@ $(document).ready(function () {
 })
 
 
-  $('select').selectpicker();
+$('select').selectpicker();
 });
 
+let doctor_list = [{
+  name: "Dr Mahesh R. Desai",
+  department: "urology",
+  certification: "MS.FRCS.FRCS.FACS",
+  designation: "Managing Trustee & Senior Consultant",
+  email: "mrdesai@mpuh.org",
+  desc: "<li>Dr.B.C. Roy National Award</li><li>Life time achievement award-Endourology Society</li><li>Former president USI and WES</li><li>Ranked among world's top 10 Urologists <br> (Expertscape, USA) 2018</li><li>Among top 2% Global Scientists for publications <br> (Stanford University)</li>"
+}, {
+  name: "Mr. Hemant P. Jain",
+  designation: "Jt. Managing Director",
+  desc: "Leads Company’s marketing functionsBeing an avid traveller and field person, he keeps a keen eye on the latest trends ininternational fashionResponsible for end to end business of Killer, Easies and Desi Belle brandsOverlooks Company’s retail businessTrustee of Jatnobai Karmchandji Ratanparia Chauhan Charitable Trust"
+}, {
+  name: "Mr. Dinesh P. Jain",
+  designation: "Whole Time Director",
+  desc: "Heads Company’s manufacturing operationsSpecialises in production and human resource functionsResponsible for ensuring optimum utilisation of the Company’s production facilities at itsunits at Dadar,Goregaon, Daman and VapiTrustee of Jatnobai Karmchandji Ratanparia Chauhan Charitable Trust"
+}, {
+  name: "Mr. Vikas P. Jain",
+  designation: "Whole Time Director",
+  desc: "Heads the Company’s operations and distribution functionsResponsible for end to end business of Lawman and Integriti brandsOverseas Company’s retail businessSpearheads the lifestyle accessories business under the brand ‘Addictions’Travels extensively and scouts for new technologies in garment manufacturingTrustee of Jatnobai Karmchandji Ratanparia Chauhan Charitable Trust"
+}, {
+  name: "Dr. Prakash A. Mody",
+  designation: "Independent Director",
+  desc: "Chairman and Managing Director of Unichem Laboratories LimitedDoctorate in Organic Chemistry from University of Mumbai. Pursued Marketing Management fromJamnalal BajajInstitute of Management Studies, University of Mumbai and is a graduate alumnus of theHarvard Business Schoolhaving undergone the Owner Presidents’ Management Programme.Rich experience in marketing, research and production"
+}, {
+  name: "Mr. Nimish G. Pandya",
+  designation: "Independent Director",
+  desc: "Bachelor’s Degree in Law from the University of Mumbai and Member of the Bar Council ofMaharashtra. Mr.Pandya was appointed as a Notary Public by the Government of Maharashtra in 1993Specialises in Mergers and Acquisitions, Litigation and Arbitration, Trusts and Charities,Corporate,Commercial and Financial Planning and Execution, including Transaction Support andContracts, IntellectualProperty, Technology, Media and Communications, Competition and Trade, Conveyancing and RealEstates andFamily and Personal LawFounding Partner at Pandya Juris LLP, International Lawyers & Tax ConsultantsProprietor at Pandya and Co. Advocates and NotaryTrustee of Shree Sathya Sai Trust, MaharashtraAll India President of Shree Satya Sai Seva Organisation, India"
+}, {
+  name: "C.A. Mr. Yogesh A. Thar",
+  designation: "Independent Director",
+  desc: "Member of the Institute of Chartered Accountants of India Over 29 years of experience in Business Mergers, Acquisitions and Restructuring, BusinessValuations,Corporate Taxation and Taxation of Non-resident Citizens and Foreign CompaniesSenior Partner in Bansi S. Mehta & Co., a reputed Chartered Accountancy firm in Mumbai"
+}, {
+  name: "C.A Ms. Drushti R. Desai",
+  designation: "Independent Director",
+  desc: "Member of the Institute of Chartered Accountants of IndiaOver 17 years of experience in Valuation of Shares, Businesses and Intangibles, AdvisoryServices on Schemesrelating to Mergers, Acquisitions, Spin-offs and other forms of Corporate Restructuring andFamilySettlements, Financial and Management Advice, Corporate and Individual Taxation (Income-tax,Wealth-tax,Gift-tax)Partner in Bansi S. Mehta & Co., a reputed Chartered Accountancy firm in Mumbai"
+}]
+
+$('.doctor_modal_arrow').on('click', function() {
+  var personName = $(this).parent().siblings().find('.author').text();
+  console.log(personName);
+  doctor_list.forEach(element=>{
+      if (personName == element.name) {
+          $('.author').text(element.name);
+          $('.certificate').text(element.certification);
+          $('.designation').text(element.designation);
+          $('.dr_email').text(element.email);
+          $('.dr_achievements').append(element.desc);
+      }
+  }
+  );
+  $(".doctor_info_modal").addClass("show_doc_info_modal");
+  $(".doc_modal_overlay").addClass("show_doc_overlay");
+  $("body").css("overflow", "hidden");
+})
+
+$('.close_doc_info_modal').on('click', function(){
+  $(".doctor_info_modal").removeClass("show_doc_info_modal");
+  $(".doc_modal_overlay").removeClass("show_doc_overlay");
+  $("body").css("overflow", "auto");
+})
