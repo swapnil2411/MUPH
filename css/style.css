@@ -3973,6 +3973,10 @@ a:hover {
 
 /* Urology Css */
 
+.lithotripter_laser_area{
+  padding-top: 75px;
+}
+
 .lithotripter_laser_details_area{
   padding-top: 2.5vw;
 }

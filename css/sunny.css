@@ -158,15 +158,20 @@
 }
 
 /* Special Details CSS */
+.speciality_banner_container{
+  margin-top: -180px !important;
+  position: relative;
+}
+
 .special_details {
-  margin-bottom: 190px;
+  margin-bottom:65px;
 }
 
 .specialtiesDetailsContent {
-  position: absolute;
-  /* bottom: -114px; */
+  /* position: absolute;
+  bottom: -114px;
   top: 190px;
-  left: 60px;
+  left: 60px; */
   background: #ffffff;
   border: 1px solid #c4c4c4;
   padding: 20px;
@@ -223,7 +228,7 @@
 .whatWeDoLeft {
   border: 1px solid #c4c4c4;
   padding: 7.174vw 5.417vw;
-  height: 396px;
+  min-height: 396px;
   flex: 0 0 100%;
   max-width: calc(100% - 308px);
 }
@@ -560,10 +565,10 @@
 }
 
 .bread_crum {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   transform: translateY(-95%);
-  left: 60px;
+  left: 60px; */
   display: flex;
   align-items: center;
   gap: 10px;

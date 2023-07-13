@@ -18,6 +18,10 @@
   .lithotripter_laser_block .lithotripter_laser_left::after{
     height: 11vw;
   }
+
+  .whatWeDoLeft{
+    padding: 95px 70px 90px;
+  }
 }
 
 @media (min-width: 1366px){
@@ -535,6 +539,10 @@
     padding-bottom: 70px;
   }
 
+  .green_bg_form .bookappointment_form{
+    padding: 20px 20px 35px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1040,10 +1048,6 @@
   height: 100px;
 }
 
-.lithotripter_laser_area{
-  padding-top: 50px;
-}
-
 .differentHealthService{
   flex-direction: column;
 }
@@ -1073,6 +1077,10 @@
 .differentHealthService {
   gap: 30px;
   padding-bottom: 100px;
+}
+
+.special_Services{
+  padding: 45px 0 0;
 }
 
 }
@@ -1451,9 +1459,6 @@
   margin-left: 10px;
 }
 
-.whatWeDo{
-  padding-top: 50px;
-}
 
 .whatWeDoMain{
   flex-wrap: wrap;
@@ -1485,6 +1490,15 @@
 .whatWeDoRight ul li{
   flex: 0 0 33%;
   max-width: 33%;
+}
+
+.inner_form .form_element{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.specialtiesDetailsContent{
+  width: 100%;
 }
 
 }
@@ -1541,8 +1555,5 @@
     max-width: 49.5%;
   }
 
-  .lithotripter_laser_area {
-    padding-top: 130px;
-}
   
 }
