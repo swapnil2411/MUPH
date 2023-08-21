@@ -1330,15 +1330,20 @@ let doctor_list = [{
 }]
 
 $('.doctor_modal_arrow').on('click', function() {
-  var personName = $(this).parent().siblings().find('.author').text();
+  let personName = $(this).parent().siblings().find('.author').text();
+  let docImg = $(this).siblings().attr('src')
   console.log(personName);
+  console.log(docImg);
+  $('.doctor_info_img img').attr('src', docImg);
+  
   doctor_list.forEach(element=>{
       if (personName == element.name) {
           $('.author').text(element.name);
           $('.certificate').text(element.certification);
           $('.designation').text(element.designation);
           $('.dr_email').text(element.email);
-          $('.dr_achievements').append(element.desc);
+          $('.dr_achievements').html(element.desc);
+          $('.doctor_info_img img').attr('alt', element.name);
       }
   }
   );

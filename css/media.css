@@ -20,7 +20,7 @@
   }
 
   .whatWeDoLeft{
-    padding: 95px 70px 90px;
+    padding: 60px 60px 60px 70px;
   }
 }
 
@@ -142,6 +142,16 @@
   .inner_about_info .align-items-end{
     align-items: center !important;
   }
+
+  .nephrology_info_area .nephrology_info_para{
+    max-width: 100%;
+  }
+
+  .cpd_mars_therapy_flex .cpd_area,
+  .cpd_mars_therapy_flex .mars_threapy_area{
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -165,6 +175,8 @@
   .success_stories_area .content_container .half_circle{
     top: 0;
   }
+
+ 
   
 }
 
@@ -1083,6 +1095,39 @@
   padding: 45px 0 0;
 }
 
+.speciality_other_content h2,
+.speciality_other_content p{
+  text-align: left;
+}
+
+.visitors_info_faq.special_details_accordion{
+  max-width: 100%;
+}
+
+.emailCv a{
+  font-size: 18px;
+}
+
+.emailCv{
+  padding-block: 15px;
+  margin-top: 0;
+}
+
+.nephrology_treatment_points .points_block,
+.sign_symptoms_treatment_flex .signs_symptoms_area,
+.sign_symptoms_treatment_flex .treatment_area{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.nephrology_treatment_points .points_block:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.sign_symptoms_treatment_flex .signs_symptoms_area{
+  margin-bottom: 30px;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -1501,6 +1546,23 @@
   width: 100%;
 }
 
+.emailCv a{
+  font-size: 16px;
+}
+
+.cpd_mars_therapy_flex .cpd_area,
+.cpd_mars_therapy_flex .mars_threapy_area{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.cpd_mars_therapy_flex .cpd_area{
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+
 }
 
 @media (max-width: 480px){
@@ -1555,5 +1617,8 @@
     max-width: 49.5%;
   }
 
-  
+  .bread_crum a {
+    font-size: 10px;
+}
+ 
 }

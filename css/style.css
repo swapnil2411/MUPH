@@ -132,6 +132,10 @@ nav,
 section {
   display: block;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1;
   font-family: "Inter", sans-serif;
@@ -4092,6 +4096,33 @@ a:hover {
   margin-top: 6px;
 }
 
+.speciality_other_content h2{
+  text-align: center;
+  color: #132573;
+  margin-bottom: 20px;
+}
+
+.speciality_other_content p{
+  text-align: center;
+}
+
+.speciality_other_content p,
+.speciality_other_content li{
+  line-height: 28px;
+}
+
+.speciality_other_content ul{
+  padding-left: 18px;
+}
+
+.speciality_other_content li{
+  list-style: disc;
+}
+
+.special_details_accordion{
+  margin-top: 85px;
+}
+
 /* Doctor Modal Css */
 
 .doc_modal_overlay{
@@ -4191,4 +4222,129 @@ a:hover {
 .close_doc_info_modal svg{
   color: #fff;
   font-size: 26px;
+}
+
+/* Nephrology Area */
+
+.disease_treated_under_nephrology{
+  padding: 100px 0 75px;
+}
+
+.disease_treated_under_nephrology .title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.disease_treated_under_nephrology .sub_title{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #2A3D53;
+  text-align: center;
+}
+
+.nephrology_treatment_points{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.nephrology_treatment_points .points_block{
+  flex: 0 0 50%;
+  max-width: calc(50% - 36px);
+  padding-left: 18px;
+}
+
+.nephrology_treatment_points .points_block li{
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.nephrology_special_service{
+  padding: 57px 0 0 !important;
+}
+
+.sign_symptoms_treatment_flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sign_symptoms_treatment_flex .signs_symptoms_area,
+.sign_symptoms_treatment_flex .treatment_area{
+  flex: 0 0 50%;
+  max-width: calc(50% - 36px);
+}
+
+.sign_symptoms_treatment_flex .signs_symptoms_area h3,
+.sign_symptoms_treatment_flex .treatment_area h3{
+  color: #132573;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.sign_symptoms_treatment_flex .signs_symptoms_area h3::after,
+.sign_symptoms_treatment_flex .treatment_area h3::after{
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  display: block;
+  background: #132573;
+  left: 0;
+  bottom: -5px;
+}
+
+.sign_symptoms_treatment_flex .signs_symptoms_area ul,
+.sign_symptoms_treatment_flex .treatment_area ul{
+  padding-left: 18px;
+}
+
+.sign_symptoms_treatment_flex .signs_symptoms_area ul li,
+.sign_symptoms_treatment_flex .treatment_area ul li{
+  list-style: disc;
+  line-height: 28px;
+}
+
+.sign_symptoms_treatment_flex .treatment_area p{
+  font-weight: 700 !important;
+  line-height: 28px;
+}
+
+.nephrology_info_area{
+  background: #FFEAEA;
+}
+
+.nephrology_info_area .nephrology_info_para{
+  font-weight: 700 !important;
+  line-height: 28px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cpd_mars_therapy_flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cpd_mars_therapy_flex .cpd_area,
+.cpd_mars_therapy_flex .mars_threapy_area{
+  flex: 0 0 513px;
+  max-width: 513px;
+  border: 1px solid #c7c7c7;
+  padding: 30px;
+  line-height: 28px;
+}
+
+.cpd_mars_therapy_flex .cpd_area{
+  margin-right: 7px;
+}
+
+.cpd_mars_therapy_flex .cpd_area h3,
+.cpd_mars_therapy_flex .mars_threapy_area h3{
+  font-weight: 700 !important;
 }
