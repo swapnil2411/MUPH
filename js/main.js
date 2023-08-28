@@ -785,34 +785,34 @@ $(document).ready(function () {
           <div class="footer_top_area">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="top_footer_col">
+                <a href="#" class="top_footer_col">
                   <div class="footer_icon">
                     <img src="img/icon/appointment.png" alt="appointment" />
                   </div>
                   <div class="footer_col_text">
                     <h3>Book an Appointment</h3>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="top_footer_col">
+                <a href="donation.html" class="top_footer_col">
                   <div class="footer_icon">
                     <img src="img/icon/doner.png" alt="Donate" />
                   </div>
                   <div class="footer_col_text">
                     <h3>Donate</h3>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="top_footer_col">
+                <a href="contactus.html" class="top_footer_col">
                   <div class="footer_icon">
                     <img src="img/icon/email.png" alt="Contact Us" />
                   </div>
                   <div class="footer_col_text">
                     <h3>Contact Us</h3>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

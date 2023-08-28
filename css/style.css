@@ -307,7 +307,10 @@ a:hover {
 .affiliation_block .affiliation_box .affiliation_img,
 .lithotripter_laser_block,
 .doctor_info_modal .inner_info_modal,
-.close_doc_info_modal{
+.close_doc_info_modal,
+.treatment_procedures,
+.kidney_disease_in_gender,
+.organs_treatment_list{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4347,4 +4350,119 @@ a:hover {
 .cpd_mars_therapy_flex .cpd_area h3,
 .cpd_mars_therapy_flex .mars_threapy_area h3{
   font-weight: 700 !important;
+}
+
+/* Kidney Disease Css */
+
+.kidney_disease_content .text_para{
+  text-align: center;
+}
+
+.kidney_disease_in_gender{
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.kidney_disease_in_gender .gender_disease{
+  flex: 0 0 33.33%;
+  max-width: calc(33.33% - 15px);
+}
+
+.kidney_disease_in_gender .gender_disease h3{
+  color: #132573;
+  margin-bottom: 35px;
+}
+
+.kidney_disease_in_gender .gender_disease ul,
+.kidney_disease_in_gender .gender_disease ul li{
+  list-style: disc;
+}
+
+.kidney_disease_in_gender .gender_disease ul{
+  padding-left: 28px;
+}
+
+.kidney_treatment_area{
+  background: #FFEAEA;
+}
+
+.kidney_treatment_area .title,
+.kidney_treatment_area .sub_title{
+  text-align: center;
+}
+
+.kidney_treatment_area .sub_title{
+  color: #2A3D53;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+.treatment_procedures{
+  flex-wrap: wrap;
+  margin: 75px -25px 0;
+}
+
+.treatment_procedures .procedure_box{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 25px;
+  margin-bottom: 80px;
+}
+
+.treatment_procedures .procedure_box h3{
+  color: #132573;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.treatment_procedures .procedure_box h3::before{
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #132573;
+  border-radius: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.organs_treated_urology .title{
+  text-align: center;
+}
+
+.organs_treated_urology .organs_treated_para{
+  font-size: 18px;
+  line-height: 28px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.organs_treated_urology .sub_title{
+  font-size: 18px;
+  line-height: 28px;
+  color: #2A3D53;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.organs_treatment_list{
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.organs_treatment_list .organ_info{
+  flex: 0 0 48%;
+  max-width: 48%;
+  margin-bottom: 20px;
+}
+
+.organs_treatment_list .organ_info h3{
+  color: #132573;
 }
