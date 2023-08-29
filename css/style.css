@@ -4466,3 +4466,61 @@ a:hover {
 .organs_treatment_list .organ_info h3{
   color: #132573;
 }
+
+/* Pop UP Form */
+.popup_appoint_form{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 991px;
+  z-index: 10;
+  padding: 15px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s ease all;
+}
+
+.popup_appoint_form.show_popup_appoint_form{
+  opacity: 1;
+  visibility: visible;
+}
+
+.close_appoint_form{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  background: #132573;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close_appoint_form svg{
+  color: #fff;
+  font-size: 24px;
+}
+
+.popup_form_overlay{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease all;
+}
+
+.popup_form_overlay.show_popup_form_overlay{
+  opacity: 0.5;
+  visibility: visible;
+}

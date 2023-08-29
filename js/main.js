@@ -25,8 +25,8 @@ $(document).ready(function () {
           </div>
         </div>
         <div class="right_top_header">
-          <div class="appointment_txt">
-            <a href="#">
+          <div class="appointment_txt book_appointment_click">
+            <a href="javascript:void(0)">
               <span>Book an Appointment</span>
               <span class="iconify" data-icon="uil:angle-right"></span>
             </a>
@@ -106,27 +106,25 @@ $(document).ready(function () {
 
                       <div class="panel active" id="panel_one">
                         <div class="card_container">
-                          <a href="#" class="nested_card">
+                          <a href="kidney.html" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/kidneys.png" alt="patient facility" class="img-fluid">
                             </div>
                             <div class="nested_card_content">
                               <h3 class="font_regular">Diseases</h3>
-                              <p class="font_small">Urology is the branch of medicine dealing with the diseases related
-                                to Kidney, Urinary Bladder, Prostate gland.</p>
+                              <p class="font_small">Urology is the branch of medicine dealing with the diseases related to Kidney, Urinary Bladder, Prostate gland.</p>
                             </div>
                           </a>
-                          <a href="#" class="nested_card">
+                          <a href="kidney.html" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/nephrology.png" alt="health checkup" class="img-fluid">
                             </div>
                             <div class="nested_card_content">
                               <h3 class="font_regular">Case Studies</h3>
-                              <p class="font_small">At MPUH Hospital, Ahmedabad Department of Nephrology (Department of
-                                Kidney / Renal disease management) </p>
+                              <p class="font_small">At MPUH Hospital, Ahmedabad Department of Nephrology (Department of Kidney / Renal disease management) </p>
                             </div>
                           </a>
-                          <a href="#" class="nested_card">
+                          <a href="kidney.html" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/anesthesia.png" alt="cashless hospitalisation" class="img-fluid">
                             </div>
@@ -136,7 +134,7 @@ $(document).ready(function () {
                                 Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                             </div>
                           </a>
-                          <a href="#" class="nested_card">
+                          <a href="kidney.html" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/pathology.png" alt="hospitalisation options" class="img-fluid">
                             </div>
@@ -785,7 +783,7 @@ $(document).ready(function () {
           <div class="footer_top_area">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <a href="#" class="top_footer_col">
+                <a href="javascript:void(0)" class="top_footer_col book_appointment_click">
                   <div class="footer_icon">
                     <img src="img/icon/appointment.png" alt="appointment" />
                   </div>
@@ -828,7 +826,7 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">About MPUH</a></li>
+                          <li><a href="aboutmpuh.html">About MPUH</a></li>
                           <li><a href="historyAndNews.html">History</a></li>
                           <li><a href="achievements.html">Our Achievements</a></li>
                           <li><a href="ourteam.html">Our Team</a></li>
@@ -840,10 +838,10 @@ $(document).ready(function () {
                       </div>
                       <div class="bottom_footer_links">
                         <ul>
-                          <li><a href="#">Diseases</a></li>
-                          <li><a href="#">Kidney Diseases</a></li>
-                          <li><a href="#">Case Studies</a></li>
-                          <li><a href="#">Patient Testimonials</a></li>
+                          <li><a href="kidney.html">Diseases</a></li>
+                          <li><a href="kidney.html">Kidney Diseases</a></li>
+                          <li><a href="kidney.html">Case Studies</a></li>
+                          <li><a href="kidney.html">Patient Testimonials</a></li>
                         </ul>
                       </div>
 
@@ -883,7 +881,7 @@ $(document).ready(function () {
                           <li><a href="healthcheckup.html">Health Checkup</a></li>
                           <li><a href="cashlesshospitalisation.html">Cashless Hospitalisation</a></li>
                           <li><a href="hospitalisationoption.html">Hospitalisation Options</a></li>
-                          <li><a href="#">Plan your trip</a></li>
+                          <li><a href="internationlpatient.html">Plan your trip</a></li>
                           <li><a href="visitorsinformation.html">Visitor Information</a></li>
                           <li><a href="faq.html">FAQs</a></li>
                           <li><a href="testimonials.html">Patient Testimonials</a></li>
@@ -908,9 +906,9 @@ $(document).ready(function () {
                       </div>
 
                       <div class="bottom_footer_heading">
-                        <h3>Research</h3>
+                        <h3><a href="#">Research</a></h3>
                       </div>
-                      <div class="bottom_footer_links">
+                      <!--<div class="bottom_footer_links">
                         <ul>
                           <li><a href="#">Current Program</a></li>
                           <li><a href="#">Publishes papers</a></li>
@@ -921,15 +919,15 @@ $(document).ready(function () {
                           <li><a href="#">Awards</a></li>
                           <li><a href="#">Reports</a></li>
                         </ul>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-6 p-0">
                     <div class="footer_bottom_col">
                       <div class="bottom_footer_heading">
-                        <h3>Donate</h3>
+                        <h3><a href="donation.html">Donate</a></h3>
                       </div>
-                      <div class="bottom_footer_links">
+                      <!--<div class="bottom_footer_links">
                         <ul>
                           <li><a href="treatmentoptions.html">Why Kidney Disease?</a></li>
                           <li>
@@ -940,7 +938,7 @@ $(document).ready(function () {
                           <li><a href="#">Beneficiary Stories</a></li>
                           <li><a href="#">Support Partners</a></li>
                         </ul>
-                      </div>
+                      </div>-->
 
                       <div class="bottom_footer_heading">
                         <h3>
@@ -1033,12 +1031,90 @@ $(document).ready(function () {
           </div>
         </div>
       </div>
+      <div class="popup_form_overlay"></div>
+      <section class="popup_appoint_form help_form_area green_bg_form">
+        <div class="close_appoint_form">
+          <span class="iconify" data-icon="ic:outline-close"></span>
+        </div>
+        <div class="content_container">
+            <div class="row align-items-center m-0">
+                <div class="col-md-6 col-12 bookappointment_form">
+                    <h2 class="title">Book an Appointment</h2>
+                    <p class="sub_para font_small">Please feel welcome to contact our friendly reception staff with any general or 
+                        medical enquiry. Our doctors will receive or return any urgent calls.</p>
+                    <form class="help_form" method="POST">
+                        <div class="inner_form">
+                            <div class="form_element">
+                                <select class="selectpicker" title='Choose Department'>
+                                    <option>Department One</option>
+                                    <option>Department Two</option>
+                                    <option>Department Three</option>
+                                </select>
+                            </div>
+                            <div class="form_element">
+                                <select class="selectpicker" title='Choose Doctor'>
+                                    <option>Doctor One</option>
+                                    <option>Doctor Two</option>
+                                    <option>Doctor Three</option>
+                                </select>
+                            </div>
+                            <div class="form_element">
+                                <input type="text" pattern="[A-Za-z]{1,100}" placeholder="Name" id="name" name="name"
+                                    class="form_input">
+                            </div>
+                            <div class="form_element">
+                                <input type="text" pattern="[789][0-9]{9}" placeholder="Contact" id="contact"
+                                    name="contact" class="form_input">
+                            </div>
+                            <div class="form_element">
+                                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    placeholder="Email" id="email" name="email" class="form_input">
+                            </div>
+                            <div class="form_element">
+                                <select class="selectpicker" title='Mode of appointment'>
+                                    <option>Doctor One</option>
+                                    <option>Doctor Two</option>
+                                    <option>Doctor Three</option>
+                                </select>
+                            </div>
+                            <div class="form_element">
+                                <input type="date" placeholder="Email" id="date" name="date" class="form_input">
+                            </div>
+                            <div class="form_element message_element">
+                                <textarea placeholder="Message" name="message" id="message" id="" rows="6"
+                                    class="form_input"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="contact_form_btn">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="help_form_img">
+                        <img src="img/appointment_img.png" alt="MPUH" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     </footer>
         `;
     }
   }
 
   customElements.define('my-footer', MyFooter);
+
+  // Appointment Form Show Hide
+
+  $(".book_appointment_click").on('click', function(){
+    $(".popup_appoint_form").addClass('show_popup_appoint_form');
+    $(".popup_form_overlay").addClass('show_popup_form_overlay');
+  })
+
+  $(".close_appoint_form").on('click', function(){
+    $(".popup_appoint_form").removeClass('show_popup_appoint_form');
+    $(".popup_form_overlay").removeClass('show_popup_form_overlay');
+  })
 
   $(".owl-carousel.home_banner").owlCarousel({
     loop: true,
@@ -1286,10 +1362,9 @@ $(document).ready(function () {
             items:4
         }
     }
-})
+  })
 
-
-$('select').selectpicker();
+  $('select').selectpicker();
 });
 
 let doctor_list = [{
@@ -1357,3 +1432,5 @@ $('.close_doc_info_modal').on('click', function(){
   $(".doc_modal_overlay").removeClass("show_doc_overlay");
   $("body").css("overflow", "auto");
 })
+
+
