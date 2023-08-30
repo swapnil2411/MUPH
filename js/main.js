@@ -1433,4 +1433,7 @@ $('.close_doc_info_modal').on('click', function(){
   $("body").css("overflow", "auto");
 })
 
+$('.count-up').countUp({
+  'time': 2000,
+});
 
