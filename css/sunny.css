@@ -31,7 +31,12 @@
   height: 346px;
 }
 
-.specialtiesBannerContent,
+.specialtiesBannerContent .inner_speciality_content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .dr_team_content {
   position: absolute;
   top: 50%;

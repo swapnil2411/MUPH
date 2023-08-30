@@ -6,6 +6,14 @@
   .urology_innovation_area{
     padding-top: 120px !important;
   }
+
+  .follow_up_area .inner_follow_up{
+    height: 650px;
+  }
+
+  .follow_up_area .inner_follow_up .left_content_area::after{
+    border-top: 650px solid #4ddebd;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -15,6 +23,13 @@
     max-width: 1366px;
     margin: 0 auto;
   }
+
+  /* .dropdown_child{
+    width: 1366px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
   .lithotripter_laser_block .lithotripter_laser_left::after{
     height: 11vw;
   }
@@ -568,6 +583,30 @@
 
   .kidney_disease_in_gender{
     margin-top: 50px;
+  }
+
+  .conclusion_faq_area .conclusion_block,
+  .conclusion_faq_area .faq_tab_right_content{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .conclusion_faq_area .faq_tab_right_content{
+    margin-top: 40px;
+  }
+
+  .urology_eduation_expectation_area .urology_education_block, .urology_eduation_expectation_area .urology_expectation_block{
+    padding: 30px;
+  }
+
+  .specialtiesGrid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 84px 60px;
+  }
+
+  .spec_title{
+    font-size: 40px;
+    line-height: 48px;
   }
 
 }
@@ -1163,6 +1202,29 @@
   line-height: 20px;
 }
 
+.urology_eduation_expectation_area .urology_education_block, .urology_eduation_expectation_area .urology_expectation_block{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.urology_eduation_expectation_area .urology_expectation_block{
+  margin-top: 25px;
+}
+
+.specialtiesGrid .specialtiesGridInner{
+  padding: 52px 20px 22px;
+}
+
+.spec_title{
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.spec_para.para_padding{
+  padding: 16px 0;
+}
+
+
 }
 
 @media (max-width: 576px) {
@@ -1618,6 +1680,15 @@
 
 .treatment_procedures .procedure_box h3{
   margin-bottom: 18px;
+}
+
+.specialtiesGrid {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 84px 60px;
+}
+
+.specialtiesGrid .specialtiesGridInner .spec_para{
+  height: 150px;
 }
 
 }

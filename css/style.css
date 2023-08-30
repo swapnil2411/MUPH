@@ -217,7 +217,7 @@ a:hover {
 .sub_title {
   font-size: 30px;
   color: #132573;
-  line-height: 49px;
+  line-height: 35px;
   font-weight: 700;
 }
 
@@ -310,7 +310,9 @@ a:hover {
 .close_doc_info_modal,
 .treatment_procedures,
 .kidney_disease_in_gender,
-.organs_treatment_list{
+.organs_treatment_list,
+.conclusion_faq_area,.about_affiliations_area,
+.urology_eduation_expectation_area{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2510,6 +2512,11 @@ a:hover {
 .follow_up_area .inner_follow_up .left_content_area p.font_small{
   font-weight: 700;
   color: #fff;
+  margin-bottom: 15px;
+}
+
+.follow_up_area .inner_follow_up .left_content_area .blue_btn{
+  margin: 30px 0 0;
 }
 
 .follow_up_area .inner_follow_up .left_content_area h3{
@@ -4124,6 +4131,46 @@ a:hover {
 
 .special_details_accordion{
   margin-top: 85px;
+}
+
+.conclusion_faq_area{
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.conclusion_faq_area .conclusion_block{
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.conclusion_faq_area .faq_tab_right_content{
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin-top: 0;
+}
+
+.urology_eduation_expectation_area{
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.urology_eduation_expectation_area .urology_education_block,
+.urology_eduation_expectation_area .urology_expectation_block{
+  flex: 0 0 50%;
+  max-width: calc(50% - 15px);
+  border: 1px solid #c7c7c7;
+  padding: 40px 35px;
+}
+
+.urology_eduation_expectation_area .urology_education_block h2,
+.urology_eduation_expectation_area .urology_expectation_block h2,
+.urology_eduation_expectation_area .urology_education_block p,
+.urology_eduation_expectation_area .urology_expectation_block p{
+  text-align: left;
 }
 
 /* Doctor Modal Css */
