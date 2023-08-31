@@ -1423,7 +1423,7 @@ let doctor_list = [
       "<li>Dr. B.C. Roy National Award 2007 </li><li> Ex-President-Indian Society of Nephrology </li><li> Over 60 publications in various national and international journals </li><li> Patents in the US & Europe</li>",
   },
   {
-    name: "Dr Sishir Gang",
+    name: "Dr Shishir Gang",
     department: "",
     certification: "MD.DM.DNB",
     designation: "Department Chairman & Senior Consultant",
