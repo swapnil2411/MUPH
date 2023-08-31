@@ -3702,6 +3702,10 @@ a:hover {
   padding-left: 100px;
 }
 
+.meet_doctors_carousel .item .doctors_carousel_box{
+  cursor: pointer;
+}
+
 .meet_doctors_carousel .item .doctors_carousel_box .doctor_carousel_info{
   padding-top: 27px;
 }

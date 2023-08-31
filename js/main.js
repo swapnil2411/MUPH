@@ -522,7 +522,7 @@ $(document).ready(function () {
             </nav>
           </div>
           <div class="other_links">
-            <div class="search_box">
+            <div class="search_box" style="visibility:hidden">
               <img src="img/search.png" alt="Search" />
             </div>
             <div class="payonline_box">
@@ -1520,10 +1520,38 @@ $('.doctor_modal_arrow').on('click', function() {
   $("body").css("overflow", "hidden");
 })
 
+$('.doctors_carousel_box').on('click', function() {
+  let personName = $(this).children().find('.author').text();
+  let docImg = $(this).children().find('img').attr('src')
+  console.log(personName);
+  console.log(docImg);
+  $('.doctor_info_img img').attr('src', docImg);
+  
+  doctor_list.forEach(element=>{
+      if (personName == element.name) {
+          $('.doctor_info_content .author').text(element.name);
+          $('.doctor_info_content .certificate').text(element.certification);
+          $('.doctor_info_content .designation').text(element.designation);
+          $('.doctor_info_content .dr_email').text(element.email);
+          $('.doctor_info_content .dr_achievements').html(element.desc);
+          $('.doctor_info_img img').attr('alt', element.name);
+      }
+  }
+  );
+  $(".doctor_info_modal").addClass("show_doc_info_modal");
+  $(".doc_modal_overlay").addClass("show_doc_overlay");
+  $("body").css("overflow", "hidden");
+})
+
 $('.close_doc_info_modal').on('click', function(){
   $(".doctor_info_modal").removeClass("show_doc_info_modal");
   $(".doc_modal_overlay").removeClass("show_doc_overlay");
   $("body").css("overflow", "auto");
+})
+
+$('.eventsInformation button').on('click', function(){
+  $(this).toggleClass('active_btn');
+  $(this).siblings('.eventDetails').toggleClass('show_event_details');
 })
 
 $('.count-up').countUp({
