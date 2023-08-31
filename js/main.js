@@ -1367,42 +1367,135 @@ $(document).ready(function () {
   $('select').selectpicker();
 });
 
-let doctor_list = [{
-  name: "Dr Mahesh R. Desai",
-  department: "urology",
-  certification: "MS.FRCS.FRCS.FACS",
-  designation: "Managing Trustee & Senior Consultant",
-  email: "mrdesai@mpuh.org",
-  desc: "<li>Dr.B.C. Roy National Award</li><li>Life time achievement award-Endourology Society</li><li>Former president USI and WES</li><li>Ranked among world's top 10 Urologists <br> (Expertscape, USA) 2018</li><li>Among top 2% Global Scientists for publications <br> (Stanford University)</li>"
-}, {
-  name: "Mr. Hemant P. Jain",
-  designation: "Jt. Managing Director",
-  desc: "Leads Company’s marketing functionsBeing an avid traveller and field person, he keeps a keen eye on the latest trends ininternational fashionResponsible for end to end business of Killer, Easies and Desi Belle brandsOverlooks Company’s retail businessTrustee of Jatnobai Karmchandji Ratanparia Chauhan Charitable Trust"
-}, {
-  name: "Mr. Dinesh P. Jain",
-  designation: "Whole Time Director",
-  desc: "Heads Company’s manufacturing operationsSpecialises in production and human resource functionsResponsible for ensuring optimum utilisation of the Company’s production facilities at itsunits at Dadar,Goregaon, Daman and VapiTrustee of Jatnobai Karmchandji Ratanparia Chauhan Charitable Trust"
-}, {
-  name: "Mr. Vikas P. Jain",
-  designation: "Whole Time Director",
-  desc: "Heads the Company’s operations and distribution functionsResponsible for end to end business of Lawman and Integriti brandsOverseas Company’s retail businessSpearheads the lifestyle accessories business under the brand ‘Addictions’Travels extensively and scouts for new technologies in garment manufacturingTrustee of Jatnobai Karmchandji Ratanparia Chauhan Charitable Trust"
-}, {
-  name: "Dr. Prakash A. Mody",
-  designation: "Independent Director",
-  desc: "Chairman and Managing Director of Unichem Laboratories LimitedDoctorate in Organic Chemistry from University of Mumbai. Pursued Marketing Management fromJamnalal BajajInstitute of Management Studies, University of Mumbai and is a graduate alumnus of theHarvard Business Schoolhaving undergone the Owner Presidents’ Management Programme.Rich experience in marketing, research and production"
-}, {
-  name: "Mr. Nimish G. Pandya",
-  designation: "Independent Director",
-  desc: "Bachelor’s Degree in Law from the University of Mumbai and Member of the Bar Council ofMaharashtra. Mr.Pandya was appointed as a Notary Public by the Government of Maharashtra in 1993Specialises in Mergers and Acquisitions, Litigation and Arbitration, Trusts and Charities,Corporate,Commercial and Financial Planning and Execution, including Transaction Support andContracts, IntellectualProperty, Technology, Media and Communications, Competition and Trade, Conveyancing and RealEstates andFamily and Personal LawFounding Partner at Pandya Juris LLP, International Lawyers & Tax ConsultantsProprietor at Pandya and Co. Advocates and NotaryTrustee of Shree Sathya Sai Trust, MaharashtraAll India President of Shree Satya Sai Seva Organisation, India"
-}, {
-  name: "C.A. Mr. Yogesh A. Thar",
-  designation: "Independent Director",
-  desc: "Member of the Institute of Chartered Accountants of India Over 29 years of experience in Business Mergers, Acquisitions and Restructuring, BusinessValuations,Corporate Taxation and Taxation of Non-resident Citizens and Foreign CompaniesSenior Partner in Bansi S. Mehta & Co., a reputed Chartered Accountancy firm in Mumbai"
-}, {
-  name: "C.A Ms. Drushti R. Desai",
-  designation: "Independent Director",
-  desc: "Member of the Institute of Chartered Accountants of IndiaOver 17 years of experience in Valuation of Shares, Businesses and Intangibles, AdvisoryServices on Schemesrelating to Mergers, Acquisitions, Spin-offs and other forms of Corporate Restructuring andFamilySettlements, Financial and Management Advice, Corporate and Individual Taxation (Income-tax,Wealth-tax,Gift-tax)Partner in Bansi S. Mehta & Co., a reputed Chartered Accountancy firm in Mumbai"
-}]
+let doctor_list = [
+  {
+    name: "Dr Mahesh R. Desai",
+    department: "urology",
+    certification: "MS.FRCS.FRCS.FACS",
+    designation: "Managing Trustee & Senior Consultant",
+    email: "mrdesai@mpuh.org",
+    desc:
+      "<li>Dr.B.C. Roy National Award</li><li>Life time achievement award-Endourology Society</li><li>Former president USI and WES</li><li>Ranked among world's top 10 Urologists <br> (Expertscape, USA) 2018</li><li>Among top 2% Global Scientists for publications <br> (Stanford University)</li>",
+  },
+  {
+    name: "Dr Ravindra Sabnis",
+    department: "",
+    certification: "MS.M Ch.",
+    designation: "Department Chairman & Senior Consultant",
+    email: "",
+    desc:
+      "<li>President Elect for Urological Society of India (2021)</li><li>Global leadership award by American Urological Association (2019)</li><li>Best expert review by SIU-2018</li><li>Over 90 journals publications and 200 presentations </li> <li>at various national and international conferences</li>",
+  },
+  {
+    name: "Dr Arvind Ganpule",
+    department: "",
+    certification: "MS.DNB, M.N.A.M.S",
+    designation: "Department Vice- Chairman & Senior Consultant",
+    email: "",
+    desc:
+      "<li>International members of American urological association </li> <li>Recipient of the prestigious MIUC Scholarship awarded by the west zone chapter of urologic a society of India </li> <li> ”Olympus ” best abstract at WCE 2009 China (shanghai) for the paper titled flexible robotic ureteroscopy laser lithotripsy for renal calculi in 2008 </li><li> Recipient of ”Chakraborty fellowship” (2011-2012) </li> ŸCAUA-IAUA academic exchange programme </li> <li> Many professional courses conducted at the American urological association annual meeting </li><li> Expertise in Laparoscopy & Robotic Surgery Endourology (Endourology Society in USA)</li>",
+  },
+  {
+    name: "Dr Abhishek Singh",
+    department: "",
+    certification: "Ms. M.CH , DNB",
+    designation: "(GOLD MEDALIST) Consultant",
+    email: "",
+    desc:
+      "<li>Awarded Dr H.S.Bhat Gold Medal (2018)</li> <li> world Endourology society’s International Travel Scholarship Award 2018 </li> <li> Awarded certification of appreciation in recognition of excelled performance in academics by IMA , Nagpur in 2005 </li> <li> More than 7 publication & many paper presentations </li>",
+  },
+  {
+    name: "Dr Abhijit Patil",
+    department: "Urology",
+    certification: "Ms. M.CH , DNB",
+    designation: "Consultant-Urology",
+    email: "",
+    desc:
+      " <li>Dr. B.C. Roy National Award </li> <li> Life time achievement award-Endourology Society </li> <li> Past President USI and WES</li> <li> Ranked among world’s top 10 Urologists </li> <li> (Expertscape, USA) 2018 </li> <li> Among top 2% Global Scientists for publications (Stanford University)</li>",
+  },
+  {
+    name: "Dr Mohan Rajapurkar",
+    department: "",
+    certification: "MD",
+    designation: "Director, Postgraduate Studies & Research Senior Consultant",
+    email: "",
+    desc:
+      "<li>Dr. B.C. Roy National Award 2007 </li><li> Ex-President-Indian Society of Nephrology </li><li> Over 60 publications in various national and international journals </li><li> Patents in the US & Europe</li>",
+  },
+  {
+    name: "Dr Sishir Gang",
+    department: "",
+    certification: "MD.DM.DNB",
+    designation: "Department Chairman & Senior Consultant",
+    email: "",
+    desc:
+      "<li> Gold medalist in MD (Medicine) </li><li> Fellowship by International Society of Nephrology </li><li> Fellowship by International Society of Peritoneal Dialysis </li><li> Over 35 publications in indexed journals and 50 presentations at national and international conferences </li>",
+  },
+  {
+    name: "Dr Umapati Hegde",
+    department: "",
+    certification: "MD.DNB. (Nephrology) Fellow ISN",
+    designation: "Fellow ISN Department Vice-Chairman",
+    email: "",
+    desc:
+      "<li> Attended PGIMER-BRIGHEM Nephrology course at 2014.</li><li> Attended Haematology conference in Ahmedabad in 2013.</li><li> More than 7 research and publications</li>",
+  },
+  {
+    name: "Dr Abhijit M Konnur",
+    department: "Nephrology",
+    certification: "MD. DNB. (Nephrology)",
+    designation:
+      "Clinical Fellowship in Audit Nephrology  & Renal transplant Canada",
+    email: "",
+    desc:
+      " <li>Burjis khurshidji gold medal for best paper in ISN </li> <li>Best clinical research paper in WCN 2020 </li> <li> Field expertise in pediatric & adult nephrology, renal transplant </li> <li> Award for best paper in Indian society of organ transplantation conference – 2018 : Prevention of post renal transplantation UTI </li> <li> More than 12 international publication</li>",
+  },
+  {
+    name: "Dr Hardik Patel",
+    department: "Nephrology",
+    certification: "MD. DNB. (Nephrology)",
+    designation: "Lorem ipsum dolor sit amet, consectetur  adipiscing elit",
+    email: "",
+    desc:
+      "<li> Attended PGIMER-BRIGHEM Nephrology course at 2014.</li><li> Attended Haematology conference in Ahmedabad in 2013.</li><li> More than 7 research and publications</li>",
+  },
+  {
+    name: "Dr Deepak Mistry",
+    department: "Urology",
+    certification: "MBBS.DA.",
+    designation: "Department Head & Senior Consultant",
+    email: "",
+    desc:
+      "<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>",
+  },
+  {
+    name: "Dr Shailesh Soni",
+    department: "Pathology",
+    certification: "MBBS.DA.",
+    designation: "Chief Consultant Pathology",
+    email: "",
+    desc:
+      "<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</li>",
+  },
+  {
+    name: "Dr Yogesh Rathi",
+    department: "Radiology",
+    certification: "MBBS.DMRD",
+    designation: "Consultant-Radiology",
+    email: "",
+    desc:
+      "<li>The hospital presents an impressive combination of skilled and dedicated surgeons, physicians and support staff, ready to serve with great enthusiasm.</li>",
+  },
+  {
+    name: "Dr AK Rastogi",
+    department: "",
+    certification: "Medical Director",
+    designation: "Fellow ISN Department Vice-Chairman",
+    email: "",
+    desc:
+      "<li> Served in Army Medical Corp for 32 years</li><li>Managed hospitals in Insurgency area and in UN Mission</li>",
+  },
+];
 
 $('.doctor_modal_arrow').on('click', function() {
   let personName = $(this).parent().siblings().find('.author').text();
@@ -1413,11 +1506,11 @@ $('.doctor_modal_arrow').on('click', function() {
   
   doctor_list.forEach(element=>{
       if (personName == element.name) {
-          $('.author').text(element.name);
-          $('.certificate').text(element.certification);
-          $('.designation').text(element.designation);
-          $('.dr_email').text(element.email);
-          $('.dr_achievements').html(element.desc);
+          $('.doctor_info_content .author').text(element.name);
+          $('.doctor_info_content .certificate').text(element.certification);
+          $('.doctor_info_content .designation').text(element.designation);
+          $('.doctor_info_content .dr_email').text(element.email);
+          $('.doctor_info_content .dr_achievements').html(element.desc);
           $('.doctor_info_img img').attr('alt', element.name);
       }
   }

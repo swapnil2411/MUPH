@@ -60,6 +60,10 @@
   .main_header .main_header_flex .right_main_header .menu_links{
     margin-right: 25px;
   }
+
+  .affiliation_block .affiliation_box{
+    min-height: 380px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -196,6 +200,11 @@
 }
 
 @media (max-width: 991px) {
+
+  .affiliation_block .affiliation_box{
+    min-height: 340px;
+  }
+
   .top_header_context .left_top_header .contact_txt span a, .top_header_context .left_top_header .email_txt span a,
   .top_header_context .right_top_header .appointment_txt a span, .top_header_context .right_top_header .brochure_txt a span, .bread_crum a{
     font-size: 12px;
@@ -1228,6 +1237,9 @@
 }
 
 @media (max-width: 576px) {
+  .affiliation_block .affiliation_box{
+    min-height: unset;
+  }
   .logo_area img{
     max-width: 70px;
   }
