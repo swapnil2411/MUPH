@@ -766,7 +766,7 @@ a:hover {
 }
 
 .img_area::before {
-  content: url("../img/dots.png");
+  content: url(".../img/dots.png");
   position: absolute;
   width: 100%;
   height: 100%;
