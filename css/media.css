@@ -425,9 +425,22 @@
     left: 15px;
   }
 
+  .stories_flex{
+    justify-content: flex-start;
+  }
+
+  #kidney_patient_testimonials .blue_btn{
+    margin: 20px auto 0;
+  }
+
   .stories_flex > div{
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .stories_flex .view_all_testimonial{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .stories_box{
@@ -638,6 +651,20 @@
 }
 
 @media (max-width: 767px) {
+  .campaigns_flex .bank_details_col:nth-child(1),
+  .campaigns_flex .bank_details_col:nth-child(2),
+  .campaigns_flex .bank_details_col:nth-child(3),
+  .campaigns_flex .bank_details_col:nth-child(6){
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .campaigns_flex .bank_details_col:nth-child(4),
+  .campaigns_flex .bank_details_col:nth-child(5),
+  .campaigns_flex .bank_details_col:nth-child(7){
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   .logo_area p{
     display: none;
   }
@@ -909,7 +936,8 @@
 }
 
 .history_tab_links .item h4,
-.history_timeline_area .panel .history_panel_flex .year_history_box .history_box_content .history_year{
+.history_timeline_area .panel .history_panel_flex .year_history_box .history_box_content .history_year,
+.campaigns_flex .bank_details_col h2{
   font-size: 16px;
 }
 
@@ -1254,6 +1282,22 @@
 }
 
 @media (max-width: 576px) {
+  .campaigns_flex .bank_details_col:nth-child(1),
+  .campaigns_flex .bank_details_col:nth-child(2),
+  .campaigns_flex .bank_details_col:nth-child(3),
+  .campaigns_flex .bank_details_col:nth-child(6){
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .campaigns_flex .bank_details_col:nth-child(4),
+  .campaigns_flex .bank_details_col:nth-child(5),
+  .campaigns_flex .bank_details_col:nth-child(7){
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
   .affiliation_block .affiliation_box{
     min-height: unset;
   }

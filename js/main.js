@@ -115,7 +115,7 @@ $(document).ready(function () {
                               <p class="font_small">Urology is the branch of medicine dealing with the diseases related to Kidney, Urinary Bladder, Prostate gland.</p>
                             </div>
                           </a>
-                          <a href="kidney.html" class="nested_card">
+                          <a href="kidney.html#types_of_treatment" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/nephrology.png" alt="health checkup" class="img-fluid">
                             </div>
@@ -124,7 +124,7 @@ $(document).ready(function () {
                               <p class="font_small">At MPUH Hospital, Ahmedabad Department of Nephrology (Department of Kidney / Renal disease management) </p>
                             </div>
                           </a>
-                          <a href="kidney.html" class="nested_card">
+                          <a href="kidney.html#organs_treatment" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/anesthesia.png" alt="cashless hospitalisation" class="img-fluid">
                             </div>
@@ -134,7 +134,7 @@ $(document).ready(function () {
                                 Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                             </div>
                           </a>
-                          <a href="kidney.html" class="nested_card">
+                          <a href="kidney.html#kidney_patient_testimonials" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/pathology.png" alt="hospitalisation options" class="img-fluid">
                             </div>
@@ -839,9 +839,9 @@ $(document).ready(function () {
                       <div class="bottom_footer_links">
                         <ul>
                           <li><a href="kidney.html">Diseases</a></li>
-                          <li><a href="kidney.html">Kidney Diseases</a></li>
-                          <li><a href="kidney.html">Case Studies</a></li>
-                          <li><a href="kidney.html">Patient Testimonials</a></li>
+                          <li><a href="kidney.html#organs_treatment">Caring for your kidneys</a></li>
+                          <li><a href="kidney.html#types_of_treatment">Case Studies</a></li>
+                          <li><a href="kidney.html#kidney_patient_testimonials">Patient Testimonials</a></li>
                         </ul>
                       </div>
 
@@ -1037,66 +1037,191 @@ $(document).ready(function () {
           <span class="iconify" data-icon="ic:outline-close"></span>
         </div>
         <div class="content_container">
-            <div class="row align-items-center m-0">
-                <div class="col-md-6 col-12 bookappointment_form">
-                    <h2 class="title">Book an Appointment</h2>
+          <div class="row align-items-center m-0">
+            <div class="col-md-6 col-12 bookappointment_form">
+              <h2 class="title">Book an Appointment</h2>
+              <p class="sub_para font_small">
+                Please feel welcome to contact our friendly reception staff with
+                any general or medical enquiry. Our doctors will receive or return
+                any urgent calls.
+              </p>
+              <form class="help_form" method="POST">
+                <div class="inner_form">
+                  <div class="form_element">
+                    <select class="selectpicker" title='Choose Department'>
+                        <option>Urology</option>
+                        <option>Nephrology</option>
+                        <option>Anesthesia</option>
+                        <option>Pathology</option>
+                        <option>Radiology</option>
+                        <option>Physiotherapy</option>
+                    </select>
+                </div>
+                <div class="form_element">
+                    <select class="selectpicker" title='Choose Doctor'>
+                        <option>Dr Mahesh R. Desai</option>
+                        <option>Dr Ravindra Sabnis</option>
+                        <option>Dr Arvind Ganpule</option>
+                        <option>Dr Abhishek Singh</option>
+                        <option>Dr Abhijit Pradip Patil</option>
+                        <option>Dr Mohan Rajapurkar</option>
+                        <option>Dr Shishir Gang</option>
+                        <option>Dr Umapati Hegde</option>
+                        <option>Dr Abhijit M Konnur</option>
+                        <option>Dr Hardik Patel</option>
+                        <option>Dr Nalini Mahesh Desai</option>
+                        <option>Dr Deepak Mistry</option>
+                        <option>Dr Manoj Patel</option>
+                        <option>Dr Dinesh Prajapati</option>
+                        <option>Dr Shailesh Sone</option>
+                        <option>Dr Sachchidanand Pandey</option>
+                        <option>Dr Banibrata Mukhopadhyay</option>
+                        <option>Dr Amit Joreja</option>
+                        <option>Dr Yogesh Rathi</option>
+                        <option>Dr Vijaykumar Chauhan</option>
+                    </select>
+                </div>
+                  <div class="form_element">
+                    <input
+                      type="text"
+                      pattern="[A-Za-z]{1,100}"
+                      placeholder="Name"
+                      id="name"
+                      name="name"
+                      class="form_input"
+                    />
+                  </div>
+                  <div class="form_element">
+                    <input
+                      type="text"
+                      pattern="[789][0-9]{9}"
+                      placeholder="Contact"
+                      id="contact"
+                      name="contact"
+                      class="form_input"
+                    />
+                  </div>
+                  <div class="form_element">
+                    <input
+                      type="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                      placeholder="Email"
+                      id="email"
+                      name="email"
+                      class="form_input"
+                    />
+                  </div>
+                  <div class="form_element">
+                    <select class="selectpicker" title="Mode of appointment">
+                      <option>Online</option>
+                      <option>Offline</option>
+                    </select>
+                  </div>
+                  <div class="form_element">
+                    <input
+                      type="date"
+                      placeholder="Email"
+                      id="date"
+                      name="date"
+                      class="form_input"
+                    />
+                  </div>
+                  <div class="form_element message_element">
+                    <textarea
+                      placeholder="Message"
+                      name="message"
+                      id="message"
+                      id=""
+                      rows="6"
+                      class="form_input"
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="contact_form_btn">Submit</button>
+              </form>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="help_form_img">
+                <img src="img/appointment_img.png" alt="MPUH" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="help_form_area ptb-70 enquire_pop_up">
+      <div class="close_appoint_form">
+          <span class="iconify" data-icon="ic:outline-close"></span>
+        </div>
+        <div class="content_container">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <h2 class="title">We are ready to help you.</h2>
                     <p class="sub_para font_small">Please feel welcome to contact our friendly reception staff with any general or 
                         medical enquiry. Our doctors will receive or return any urgent calls.</p>
                     <form class="help_form" method="POST">
                         <div class="inner_form">
+                        <div class="form_element">
+                        <select class="selectpicker" title='Choose Department'>
+                            <option>Urology</option>
+                            <option>Nephrology</option>
+                            <option>Anesthesia</option>
+                            <option>Pathology</option>
+                            <option>Radiology</option>
+                            <option>Physiotherapy</option>
+                        </select>
+                    </div>
+                    <div class="form_element">
+                        <select class="selectpicker" title='Choose Doctor'>
+                            <option>Dr Mahesh R. Desai</option>
+                            <option>Dr Ravindra Sabnis</option>
+                            <option>Dr Arvind Ganpule</option>
+                            <option>Dr Abhishek Singh</option>
+                            <option>Dr Abhijit Pradip Patil</option>
+                            <option>Dr Mohan Rajapurkar</option>
+                            <option>Dr Shishir Gang</option>
+                            <option>Dr Umapati Hegde</option>
+                            <option>Dr Abhijit M Konnur</option>
+                            <option>Dr Hardik Patel</option>
+                            <option>Dr Nalini Mahesh Desai</option>
+                            <option>Dr Deepak Mistry</option>
+                            <option>Dr Manoj Patel</option>
+                            <option>Dr Dinesh Prajapati</option>
+                            <option>Dr Shailesh Sone</option>
+                            <option>Dr Sachchidanand Pandey</option>
+                            <option>Dr Banibrata Mukhopadhyay</option>
+                            <option>Dr Amit Joreja</option>
+                            <option>Dr Yogesh Rathi</option>
+                            <option>Dr Vijaykumar Chauhan</option>
+                        </select>
+                    </div>
                             <div class="form_element">
-                                <select class="selectpicker" title='Choose Department'>
-                                    <option>Department One</option>
-                                    <option>Department Two</option>
-                                    <option>Department Three</option>
-                                </select>
+                                <input type="text" pattern="[A-Za-z]{1,100}" placeholder="Name" id="name" name="name" class="form_input">
                             </div>
                             <div class="form_element">
-                                <select class="selectpicker" title='Choose Doctor'>
-                                    <option>Doctor One</option>
-                                    <option>Doctor Two</option>
-                                    <option>Doctor Three</option>
-                                </select>
+                                <input type="text" pattern="[789][0-9]{9}" placeholder="Contact" id="contact" name="contact" class="form_input">
                             </div>
                             <div class="form_element">
-                                <input type="text" pattern="[A-Za-z]{1,100}" placeholder="Name" id="name" name="name"
-                                    class="form_input">
-                            </div>
-                            <div class="form_element">
-                                <input type="text" pattern="[789][0-9]{9}" placeholder="Contact" id="contact"
-                                    name="contact" class="form_input">
-                            </div>
-                            <div class="form_element">
-                                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                    placeholder="Email" id="email" name="email" class="form_input">
-                            </div>
-                            <div class="form_element">
-                                <select class="selectpicker" title='Mode of appointment'>
-                                    <option>Doctor One</option>
-                                    <option>Doctor Two</option>
-                                    <option>Doctor Three</option>
-                                </select>
-                            </div>
-                            <div class="form_element">
-                                <input type="date" placeholder="Email" id="date" name="date" class="form_input">
+                                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" id="email" name="email" class="form_input">
                             </div>
                             <div class="form_element message_element">
-                                <textarea placeholder="Message" name="message" id="message" id="" rows="6"
-                                    class="form_input"></textarea>
+                                <textarea placeholder="Message" name="message" id="message" id="" rows="6" class="form_input"></textarea>
                             </div>
                         </div>
                         <button type="submit" class="contact_form_btn">Submit</button>
                     </form>
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-md-5 col-12">
                     <div class="help_form_img">
-                        <img src="img/appointment_img.png" alt="MPUH" class="img-fluid">
+                        <img src="img/help_form_logo.png" alt="MPUH" class="img-fluid">
+                        
+                        <img src="img/enquire_img.png" alt="MPUH" class="img-fluid">
                     </div>
                 </div>
             </div>
-
+            
         </div>
-    </section>
+    </div>
     </footer>
         `;
     }
@@ -1114,6 +1239,12 @@ $(document).ready(function () {
   $(".close_appoint_form").on('click', function(){
     $(".popup_appoint_form").removeClass('show_popup_appoint_form');
     $(".popup_form_overlay").removeClass('show_popup_form_overlay');
+    $(".enquire_pop_up").removeClass('show_popup_appoint_form');
+  })
+
+  $(".international_patient_info_content .blue_btn").on('click', function(){
+    $(".enquire_pop_up").addClass('show_popup_appoint_form');
+    $(".popup_form_overlay").addClass('show_popup_form_overlay');
   })
 
   $(".owl-carousel.home_banner").owlCarousel({
@@ -1520,33 +1651,41 @@ $('.doctor_modal_arrow').on('click', function() {
   $("body").css("overflow", "hidden");
 })
 
-$('.doctors_carousel_box').on('click', function() {
-  let personName = $(this).children().find('.author').text();
-  let docImg = $(this).children().find('img').attr('src')
-  console.log(personName);
-  console.log(docImg);
-  $('.doctor_info_img img').attr('src', docImg);
+// $('.doctors_carousel_box').on('click', function() {
+//   let personName = $(this).children().find('.author').text();
+//   let docImg = $(this).children().find('img').attr('src')
+//   console.log(personName);
+//   console.log(docImg);
+//   $('.doctor_info_img img').attr('src', docImg);
   
-  doctor_list.forEach(element=>{
-      if (personName == element.name) {
-          $('.doctor_info_content .author').text(element.name);
-          $('.doctor_info_content .certificate').text(element.certification);
-          $('.doctor_info_content .designation').text(element.designation);
-          $('.doctor_info_content .dr_email').text(element.email);
-          $('.doctor_info_content .dr_achievements').html(element.desc);
-          $('.doctor_info_img img').attr('alt', element.name);
-      }
-  }
-  );
-  $(".doctor_info_modal").addClass("show_doc_info_modal");
-  $(".doc_modal_overlay").addClass("show_doc_overlay");
-  $("body").css("overflow", "hidden");
-})
+//   doctor_list.forEach(element=>{
+//       if (personName == element.name) {
+//           $('.doctor_info_content .author').text(element.name);
+//           $('.doctor_info_content .certificate').text(element.certification);
+//           $('.doctor_info_content .designation').text(element.designation);
+//           $('.doctor_info_content .dr_email').text(element.email);
+//           $('.doctor_info_content .dr_achievements').html(element.desc);
+//           $('.doctor_info_img img').attr('alt', element.name);
+//       }
+//   }
+//   );
+//   $(".doctor_info_modal").addClass("show_doc_info_modal");
+//   $(".doc_modal_overlay").addClass("show_doc_overlay");
+//   $("body").css("overflow", "hidden");
+// })
 
 $('.close_doc_info_modal').on('click', function(){
   $(".doctor_info_modal").removeClass("show_doc_info_modal");
   $(".doc_modal_overlay").removeClass("show_doc_overlay");
   $("body").css("overflow", "auto");
+})
+
+$(".floating_connect_btn").on('click', function(){
+  $(".floating_form").addClass("show_floating_form");
+})
+
+$(".close_floating_form").on('click', function(){
+  $(".floating_form").removeClass("show_floating_form");
 })
 
 $('.eventsInformation button').on('click', function(){
@@ -1555,6 +1694,6 @@ $('.eventsInformation button').on('click', function(){
 })
 
 $('.count-up').countUp({
-  'time': 2000,
+  'time': 1000,
 });
 

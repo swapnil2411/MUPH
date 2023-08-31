@@ -322,7 +322,11 @@ a:hover {
 .conclusion_faq_area,.about_affiliations_area,
 .urology_eduation_expectation_area,
 .whatWeDoLeft,
-.campaigns_flex{
+.campaigns_flex,
+.floating_connect_btn,
+.tab button,
+.tab,
+.close_floating_form{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -337,7 +341,8 @@ a:hover {
 .main_header .main_header_flex .right_main_header .other_links,
 .visitors_info_faq .accordion .card-header h2 button,
 .faq_banner_area .question_area,
-.doctor_info_modal .inner_info_modal {
+.doctor_info_modal .inner_info_modal,
+.tab {
   -webkit-justify-content: space-between;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -358,7 +363,10 @@ a:hover {
 .our_team_tab_links .owl-nav button,
 .about_content_stat_col .about_content_stat_box,
 .affiliation_block .affiliation_box .affiliation_img,
-.close_doc_info_modal{
+.close_doc_info_modal,
+.floating_connect_btn,.about_affiliations_area,
+.tab button,
+.close_floating_form{
   -webkit-justify-content: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -394,7 +402,10 @@ a:hover {
 .affiliation_block .affiliation_box .affiliation_img,
 .lithotripter_laser_block,
 .close_doc_info_modal,
-.whatWeDoLeft{
+.whatWeDoLeft,
+.floating_connect_btn,
+.tab button,
+.close_floating_form{
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
@@ -894,10 +905,10 @@ a:hover {
   background-repeat: repeat;
   position: relative;
   isolation: isolate;
-  padding: 40px 0 10px;
+  padding: 45px 0 30px;
 }
 
-.our_statistics::after {
+/* .our_statistics::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -906,7 +917,7 @@ a:hover {
   background: #132573;
   opacity: 0.8;
   z-index: -1;
-}
+} */
 
 .our_statistics .title {
   color: #fff;
@@ -3734,9 +3745,9 @@ a:hover {
   padding-left: 100px;
 }
 
-.meet_doctors_carousel .item .doctors_carousel_box{
+/* .meet_doctors_carousel .item .doctors_carousel_box{
   cursor: pointer;
-}
+} */
 
 .meet_doctors_carousel .item .doctors_carousel_box .doctor_carousel_info{
   padding-top: 27px;
@@ -4576,6 +4587,23 @@ a:hover {
   color: #132573;
 }
 
+.male_organs_treatment .title{
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.organs_treatment_list ul li{
+  margin-bottom: 20px;
+}
+
+.organs_treatment_list ul li h3{
+  color: #132573;
+}
+
+#kidney_patient_testimonials .view_all_testimonial .blue_btn{
+  margin: 20px 0 0 auto;
+}
+
 /* Pop UP Form */
 .popup_appoint_form{
   position: fixed;
@@ -4607,6 +4635,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 11;
 }
 
 .close_appoint_form svg{
@@ -4638,4 +4667,180 @@ a:hover {
 .radiology_services{
   padding: 100px 0 0 !important;
   background: #fff !important;
+}
+
+/* Enquire pop up */
+
+.enquire_pop_up{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 991px;
+  z-index: 10;
+  padding: 15px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s ease all;
+  background: #fff;
+}
+
+.enquire_pop_up.show_popup_appoint_form{
+  opacity: 1;
+  visibility: visible;
+}
+
+.enquire_pop_up .help_form_img{
+  text-align: center;
+}
+.enquire_pop_up .help_form_img img:nth-child(1){
+  height: 152px;
+  width: 152px;
+  margin-bottom: 12px;
+}
+
+/* Floating Contact Button */
+.floating_connect_btn{
+  height: 53px;
+  width: 173px;
+  background: #4DDEBD;
+  border: none;
+  position: fixed;
+  top: 228px;
+  right: -60px;
+  transform: rotate(-90deg);
+  z-index: 7;
+}
+
+.floating_connect_btn span,
+.floating_connect_btn svg{
+  color: #000;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.floating_connect_btn svg{
+  transform: rotate(90deg);
+  height: 30px;
+  width: 30px;
+}
+
+.floating_form{
+  width: 480px;
+  position: fixed;
+  top: 148px;
+  right: -580px;
+  z-index: 7;
+  background: #fff;
+  padding: 27px 44px 44px;
+  transition: 0.5s ease-in-out all;
+  border: 1px solid #c7c7c7;
+}
+
+.floating_form.show_floating_form{
+  right: 0;
+}
+
+.close_floating_form{
+  height: 64px;
+  width: 53px;
+  background: #4DDEBD;
+  position: absolute;
+  top: 0;
+  left: -53px;
+  cursor: pointer;
+}
+
+.close_floating_form svg{
+  height: 40px;
+  width: 40px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  margin-bottom: 58px;
+  /* border: 1px solid #ccc;
+  background-color: #f1f1f1; */
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 14px 16px; */
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button img{
+  width: 28px;
+  height: 28px;
+}
+
+.tab button span{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  display: block;
+  color: #2a2a2a;
+  position: relative;
+}
+
+.tab button span::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+  background: #4DDEBD;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.4s all;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover{
+  /* background-color: #ddd; */
+}
+
+/* Create an active/current tablink class */
+.tab button.active span::after{
+  transform: scaleX(1);
+  /* background-color: #ccc; */
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.tabcontent.green_bg_form{
+  background: transparent;
+}
+
+.tabcontent .inner_form{
+  display: block;
+}
+
+.tabcontent .inner_form .form_element{
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.tabcontent .contact_form_btn{
+  margin: 40px 0 0;
+}
+
+.baneficiary_box{
+  margin-bottom: 25px;
+  height: 350px;
 }
