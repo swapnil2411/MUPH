@@ -321,7 +321,8 @@ a:hover {
 .organs_treatment_list,
 .conclusion_faq_area,.about_affiliations_area,
 .urology_eduation_expectation_area,
-.whatWeDoLeft{
+.whatWeDoLeft,
+.campaigns_flex{
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3573,9 +3574,40 @@ a:hover {
   text-align: center;
 }
 
-.campaigns_flex{
+/* .campaigns_flex{
   max-width: 991px;
   margin: 0 auto;
+} */
+
+.campaigns_flex{
+  
+  flex-wrap: wrap;
+}
+
+.campaigns_flex .bank_details_col{
+  margin-bottom: 40px;
+}
+
+.campaigns_flex .bank_details_col:nth-child(1),
+.campaigns_flex .bank_details_col:nth-child(2),
+.campaigns_flex .bank_details_col:nth-child(3),
+.campaigns_flex .bank_details_col:nth-child(6){
+  flex: 0 0 23.33%;
+  max-width: 23.33%;
+}
+
+.campaigns_flex .bank_details_col:nth-child(4),
+.campaigns_flex .bank_details_col:nth-child(5),
+.campaigns_flex .bank_details_col:nth-child(7){
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+.campaigns_flex .bank_details_col h2{
+  font-size: 18px;
+  font-weight: 700;
+  color: #132573;
+  margin-bottom: 8px;
 }
 
 .campaign_column{
