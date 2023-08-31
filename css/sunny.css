@@ -1352,8 +1352,14 @@
   color: #ffffff;
 }
 
-.healthPlanRight .button.greenBtn {
+.healthPlanRight .greenBtn {
   background: #4ddebd;
+  margin: 0 !important;
+}
+
+.healthPlanRight .greenBtn span{
+  font-size: 14px;
+  color: #fff;
 }
 
 .packageDetailsBox {
