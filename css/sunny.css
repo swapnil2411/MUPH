@@ -1364,7 +1364,7 @@
 
 .packageDetailsBox {
   display: grid;
-  grid-template-columns: repeat(2, 218px);
+  grid-template-columns: repeat(2, 265px);
   padding: 35px 90px;
   gap: 0 90px;
   border: 1px solid #d3ced2;
