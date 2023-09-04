@@ -651,6 +651,18 @@
 }
 
 @media (max-width: 767px) {
+  .differentHealthServiceRight h4::after{
+    width: 200px;
+  }
+
+  .disease_treated_under_nephrology .sub_title br{
+    display: none;
+  }
+
+  .disease_treated_under_nephrology .sub_title::after{
+    width: 50%;
+  }
+
   .campaigns_flex .bank_details_col:nth-child(1),
   .campaigns_flex .bank_details_col:nth-child(2),
   .campaigns_flex .bank_details_col:nth-child(3),

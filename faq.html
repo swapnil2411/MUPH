@@ -120,7 +120,7 @@
                     <div class="faq_tab_left_content">
                         <h2 class="title">Still have a questions?</h2>
                         <p class="font_regular">If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly! </p>
-                        <a href="#" class="blue_btn">
+                        <a href="contactus.html" class="blue_btn">
                             <span class="font_small">Contact Us</span>
                             <span class="iconify" data-icon="prime:angle-right"></span>
                         </a>
@@ -292,18 +292,40 @@
     <!-- Footer End Here -->
 
     <!-- Jquery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Bootstrap Js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <!-- Iconify Js -->
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <!-- Owl Carousel Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Bootstrap Select -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
-    <!-- Custom Js -->
-    <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <!-- Iconify Js -->
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <!-- Owl Carousel Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Bootstrap Select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+  <!-- CountUp Js -->
+  <script src="js/countup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <!-- Custom Js -->
+  <script src="js/main.js"></script>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 </body font_small>
 
 </html>

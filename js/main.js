@@ -908,6 +908,16 @@ $(document).ready(function () {
                       <div class="bottom_footer_heading">
                         <h3><a href="#">Research</a></h3>
                       </div>
+                      <div class="bottom_footer_heading">
+                        <h3>
+                          <a href="meetourdoctor.html">Doctors</a>
+                        </h3>
+                      </div>
+                      <div class="bottom_footer_heading">
+                        <h3>
+                          <a href="treatmentoptions.html">Treatment Options</a>
+                        </h3>
+                      </div>
                       <!--<div class="bottom_footer_links">
                         <ul>
                           <li><a href="#">Current Program</a></li>
@@ -924,9 +934,9 @@ $(document).ready(function () {
                   </div>
                   <div class="col-lg-3 col-md-4 col-6 p-0">
                     <div class="footer_bottom_col">
-                      <div class="bottom_footer_heading">
+                      <!--<div class="bottom_footer_heading">
                         <h3><a href="donation.html">Donate</a></h3>
-                      </div>
+                      </div>-->
                       <!--<div class="bottom_footer_links">
                         <ul>
                           <li><a href="treatmentoptions.html">Why Kidney Disease?</a></li>
@@ -940,16 +950,7 @@ $(document).ready(function () {
                         </ul>
                       </div>-->
 
-                      <div class="bottom_footer_heading">
-                        <h3>
-                          <a href="meetourdoctor.html">Doctors</a>
-                        </h3>
-                      </div>
-                      <div class="bottom_footer_heading">
-                        <h3>
-                          <a href="treatmentoptions.html">Treatment Options</a>
-                        </h3>
-                      </div>
+                      
                       <div class="bottom_footer_heading">
                         <h3>
                           <a href="#">News & Media</a>
@@ -1258,7 +1259,7 @@ $(document).ready(function () {
   });
 
   $('.testimonial_slider').owlCarousel({
-    loop:true,
+    loop:fa,
     margin:10,
     dots: false,
     nav:true,

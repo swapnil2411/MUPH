@@ -1022,18 +1022,20 @@ a:hover {
   height: 710px;
 }
 
+/* width */
 ::-webkit-scrollbar {
-  height: 3px;
+	/* height: 3px !important; */
+	width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #e5e5e5;
+	background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fb7b7a;
+	background: #fc8c8c;
 }
 
 .meet_our_doctor_spacing {
@@ -3836,8 +3838,17 @@ a:hover {
   color: #132573;
 }
 
+.other_block_textarea .inner_block_content h3 a{
+  color: #132573;
+}
+
 .other_block_textarea .inner_block_content p{
   color: #2A3D53;
+  overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
 }
 
 .other_block_textarea .inner_block_content .blue_btn{
@@ -4364,6 +4375,18 @@ a:hover {
   font-weight: 700;
   color: #2A3D53;
   text-align: center;
+  position: relative;
+}
+
+.disease_treated_under_nephrology .sub_title::after{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width:560px;
+  height: 2px;
+  background-color: #132573;
 }
 
 .nephrology_treatment_points{
@@ -4843,4 +4866,20 @@ a:hover {
 .baneficiary_box{
   margin-bottom: 25px;
   height: 350px;
+}
+
+.why_see_urlogist_underline h2{
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.why_see_urlogist_underline h2::after{
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width:184px;
+  height: 2px;
+  background-color: #132573;
 }
