@@ -1259,7 +1259,7 @@ $(document).ready(function () {
   });
 
   $('.testimonial_slider').owlCarousel({
-    loop:fa,
+    loop:true,
     margin:10,
     dots: false,
     nav:true,

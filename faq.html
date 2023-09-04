@@ -288,8 +288,161 @@
     </section>
 
     <!-- Footer Start Here -->
-    <my-footer></my-footer>
-    <!-- Footer End Here -->
+  <my-footer></my-footer>
+  <!-- Footer End Here -->
+  <section class="floating_contact_form">
+    <button type="button" class="floating_connect_btn">
+      <span class="font_small">Let's Connect</span>
+      <span class="iconify" data-icon="mingcute:mail-line"></span>
+    </button>
+  
+    <div class="floating_form">
+      <div class="close_floating_form">
+        <span class="iconify" data-icon="carbon:close-outline"></span>
+      </div>
+      <div class="form_tab">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'float_contact')" id="defaultOpen">
+            <img src="img/icon/email.png" alt="">
+            <span>Contact</span>
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'float_appointment')">
+            <img src="img/icon/appointment.png" alt="">
+            <span>Book An Appointment</span>
+          </button>
+        </div>
+        
+        <div id="float_contact" class="tabcontent green_bg_form">
+          <form class="help_form" method="POST">
+            <div class="inner_form">
+              <div class="form_element">
+                <input
+                  type="text"
+                  pattern="[A-Za-z]{1,100}"
+                  placeholder="Name"
+                  id="name"
+                  name="name"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_element">
+                <input
+                  type="text"
+                  pattern="[789][0-9]{9}"
+                  placeholder="Contact"
+                  id="contact"
+                  name="contact"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_element">
+                <input
+                  type="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_element message_element">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  id=""
+                  rows="10"
+                  class="form_input"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="contact_form_btn">Submit</button>
+          </form>
+        </div>
+        
+        <div id="float_appointment" class="tabcontent green_bg_form">
+          <form class="help_form" method="POST">
+            <div class="inner_form">
+              <div class="form_element">
+                <select class="selectpicker" title='Choose Department'>
+                    <option>Urology</option>
+                    <option>Nephrology</option>
+                    <option>Anesthesia</option>
+                    <option>Pathology</option>
+                    <option>Radiology</option>
+                    <option>Physiotherapy</option>
+                </select>
+            </div>
+            <div class="form_element">
+                <select class="selectpicker" title='Choose Doctor'>
+                    <option>Dr Mahesh R. Desai</option>
+                    <option>Dr Ravindra Sabnis</option>
+                    <option>Dr Arvind Ganpule</option>
+                    <option>Dr Abhishek Singh</option>
+                    <option>Dr Abhijit Pradip Patil</option>
+                    <option>Dr Mohan Rajapurkar</option>
+                    <option>Dr Shishir Gang</option>
+                    <option>Dr Umapati Hegde</option>
+                    <option>Dr Abhijit M Konnur</option>
+                    <option>Dr Hardik Patel</option>
+                    <option>Dr Nalini Mahesh Desai</option>
+                    <option>Dr Deepak Mistry</option>
+                    <option>Dr Manoj Patel</option>
+                    <option>Dr Dinesh Prajapati</option>
+                    <option>Dr Shailesh Sone</option>
+                    <option>Dr Sachchidanand Pandey</option>
+                    <option>Dr Banibrata Mukhopadhyay</option>
+                    <option>Dr Amit Joreja</option>
+                    <option>Dr Yogesh Rathi</option>
+                    <option>Dr Vijaykumar Chauhan</option>
+                </select>
+            </div>
+              <div class="form_element">
+                <input
+                  type="text"
+                  pattern="[A-Za-z]{1,100}"
+                  placeholder="Name"
+                  id="name"
+                  name="name"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_element">
+                <input
+                  type="text"
+                  pattern="[789][0-9]{9}"
+                  placeholder="Contact"
+                  id="contact"
+                  name="contact"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_element">
+                <input
+                  type="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_element message_element">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  id=""
+                  rows="10"
+                  class="form_input"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="contact_form_btn">Submit</button>
+          </form>
+      </div>
+    </div>
+  </section>
 
     <!-- Jquery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
