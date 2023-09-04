@@ -473,7 +473,7 @@ $(document).ready(function () {
                                 better learning & exposure. Explore here.</p>
                             </div>
                           </a>
-                          <a href="meetourdoctor.html" class="nested_card">
+                          <a href="meetourfaculty.html" class="nested_card">
                             <div class="nested_card_img">
                               <img src="img/faculty.png" alt="Meet our faculty" class="img-fluid">
                             </div>
@@ -906,7 +906,7 @@ $(document).ready(function () {
                       </div>
 
                       <div class="bottom_footer_heading">
-                        <h3><a href="#">Research</a></h3>
+                        <h3><a href="research.html">Research</a></h3>
                       </div>
                       <div class="bottom_footer_heading">
                         <h3>
@@ -953,12 +953,12 @@ $(document).ready(function () {
                       
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="#">News & Media</a>
+                          <a href="newsandmedia.html">News & Media</a>
                         </h3>
                       </div>
                       <div class="bottom_footer_heading">
                         <h3>
-                          <a href="blogs">Blogs</a>
+                          <a href="blog.html">Blogs</a>
                         </h3>
                       </div>
                       <div class="bottom_footer_heading">
