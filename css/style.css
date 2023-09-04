@@ -3388,6 +3388,10 @@ a:hover {
   margin-left: auto;
 }
 
+.our_team_panel .chairman_box .chairman_content .designation{
+  padding-left: 10px;
+}
+
 .our_team_panel .chairman_box:nth-child(even){
   margin-left: auto;
   flex-direction: row-reverse;
