@@ -603,11 +603,11 @@ a:hover {
 }
 
 .banner_slider h2 {
-  max-width: 555px;
+  max-width: 767px;
   font-size: 52px;
   line-height: 63px;
   font-weight: 400;
-  color: #132573;
+  color: #fff;
   position: absolute;
   top: 130px;
   left: 40px;

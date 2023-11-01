@@ -16,8 +16,10 @@ $(document).ready(function () {
         <div class="left_top_header">
           <div class="contact_txt">
             <span class="iconify" data-icon="fluent:call-end-24-regular" data-rotate="270deg"></span>
-            <span><a href="tel:1800-121-3637">1800-121-3637</a><span class="line">|</span><a
-                href="tel:+91 268 2520323">+91 268 2520323</a></span>
+            <span>
+           <!-- <a href="tel:1800-121-3637">1800-121-3637</a><span class="line">|</span>-->
+            <a href="tel:+91 268 2520323">+91 268 2520323</a>
+            </span>
           </div>
           <div class="email_txt">
             <span class="iconify" data-icon="ic:outline-email"></span>
@@ -987,7 +989,7 @@ $(document).ready(function () {
                   <div class="location">
                     <h3>Telephone</h3>
                     <p>
-                      <a href="tel:1800-121-3637">1800-121-3637</a>
+                      <!--<a href="tel:1800-121-3637">1800-121-3637</a>-->
                       <a href="tel:+91 268 2520323">+91 268 2520323</a>
                     </p>
                   </div>
@@ -995,7 +997,7 @@ $(document).ready(function () {
                     <h3>Email ID</h3>
                     <p>
                       <a href="mailto:info@mpuh.org">info@mpuh.org</a>
-                      <a href="mailto:sale@mpuh.org">sale@mpuh.org</a>
+                      <!--<a href="mailto:sale@mpuh.org">sale@mpuh.org</a>-->
                     </p>
                   </div>
                   <div class="social">
@@ -1164,12 +1166,9 @@ $(document).ready(function () {
                         <div class="inner_form">
                         <div class="form_element">
                         <select class="selectpicker" title='Choose Department'>
-                            <option>Urology</option>
-                            <option>Nephrology</option>
-                            <option>Anesthesia</option>
-                            <option>Pathology</option>
-                            <option>Radiology</option>
-                            <option>Physiotherapy</option>
+                          <option>Urology</option>
+                          <option>Nephrology</option>
+                          <option>Physiotherapy</option>
                         </select>
                     </div>
                     <div class="form_element">

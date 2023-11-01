@@ -648,6 +648,11 @@
     line-height: 48px;
   }
 
+  .banner_slider h2{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1073,10 +1078,7 @@
     line-height: 42px;
   }
 
-  .banner_slider h2{
-    top: 50%;
-    transform: translateY(-50%);
-  }
+ 
 
   .news_area .news_boxes_area .news_media_box .news_img img{
     width: 100%;
