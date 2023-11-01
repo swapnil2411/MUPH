@@ -29,6 +29,8 @@
 .specialtiesBanner > img {
   max-height: 346px;
   height: 346px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .specialtiesBannerContent .inner_speciality_content{

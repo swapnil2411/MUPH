@@ -412,12 +412,12 @@ $(document).ready(function () {
                               <span class="font_regular">News & Media</span>
                             </a>
                           </li>
-                          <li>
+                          <!--<li>
                             <a href="blog.html">
                               <img src="img/blog.png" alt="Blog" class="img-fluid">
                               <span class="font_regular">Blog</span>
                             </a>
-                          </li>
+                          </li>-->
                           <li>
                             <a href="careers.html">
                               <img src="img/recruitment.png" alt="careers" class="img-fluid">
@@ -732,7 +732,7 @@ $(document).ready(function () {
                   </div>
                 </div>
 
-                <div class="card">
+                <!--<div class="card">
                   <div class="card-header" id="heading-4-4">
                     <h5 class="mb-0">
                       <a class="no_collapse" href="blog.html">
@@ -740,7 +740,7 @@ $(document).ready(function () {
                       </a>
                     </h5>
                   </div>
-                </div>
+                </div>-->
 
                 <div class="card">
                   <div class="card-header" id="heading-4-5">
@@ -958,11 +958,11 @@ $(document).ready(function () {
                           <a href="newsandmedia.html">News & Media</a>
                         </h3>
                       </div>
-                      <div class="bottom_footer_heading">
+                      <!--<div class="bottom_footer_heading">
                         <h3>
                           <a href="blog.html">Blogs</a>
                         </h3>
-                      </div>
+                      </div>-->
                       <div class="bottom_footer_heading">
                         <h3>
                           <a href="careers.html">Careers</a>
@@ -1054,9 +1054,6 @@ $(document).ready(function () {
                     <select class="selectpicker" title='Choose Department'>
                         <option>Urology</option>
                         <option>Nephrology</option>
-                        <option>Anesthesia</option>
-                        <option>Pathology</option>
-                        <option>Radiology</option>
                         <option>Physiotherapy</option>
                     </select>
                 </div>
