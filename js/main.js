@@ -1073,7 +1073,7 @@ $(document).ready(function () {
                         <option>Dr Deepak Mistry</option>
                         <option>Dr Manoj Patel</option>
                         <option>Dr Dinesh Prajapati</option>
-                        <option>Dr Shailesh Sone</option>
+                        <option>Dr Shailesh Soni</option>
                         <option>Dr Sachchidanand Pandey</option>
                         <option>Dr Banibrata Mukhopadhyay</option>
                         <option>Dr Amit Joreja</option>
@@ -1184,7 +1184,7 @@ $(document).ready(function () {
                             <option>Dr Deepak Mistry</option>
                             <option>Dr Manoj Patel</option>
                             <option>Dr Dinesh Prajapati</option>
-                            <option>Dr Shailesh Sone</option>
+                            <option>Dr Shailesh Soni</option>
                             <option>Dr Sachchidanand Pandey</option>
                             <option>Dr Banibrata Mukhopadhyay</option>
                             <option>Dr Amit Joreja</option>
@@ -1640,6 +1640,9 @@ $('.doctor_modal_arrow').on('click', function() {
           $('.doctor_info_content .dr_email').text(element.email);
           $('.doctor_info_content .dr_achievements').html(element.desc);
           $('.doctor_info_img img').attr('alt', element.name);
+      }
+      else{
+        
       }
   }
   );

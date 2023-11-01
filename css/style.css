@@ -609,7 +609,9 @@ a:hover {
   font-weight: 400;
   color: #fff;
   position: absolute;
-  top: 130px;
+  /* top: 130px; */
+  top: 50%;
+  transform: translateY(-50%);
   left: 40px;
 }
 
