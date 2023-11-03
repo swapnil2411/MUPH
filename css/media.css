@@ -1292,6 +1292,14 @@
   padding: 16px 0;
 }
 
+.our_team_panel .urology_area .sub_title, .our_team_panel .nephrology_area .sub_title{
+  font-size: 24px;
+}
+
+.our_team_panel .team_flex .team_member_box {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 
 }
 
@@ -1585,8 +1593,8 @@
 }
 
 .our_team_panel .team_flex .team_member_box{
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .our_team_panel .team_flex .team_member_box .team_member_txt .member_name{

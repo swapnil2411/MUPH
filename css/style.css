@@ -3515,22 +3515,27 @@ a:hover {
 
 .our_team_panel .nephrology_area .sub_title::before{
   content: 'Nephrology';
+  display: none;
 }
 
 .our_team_panel .anesthesiology_area .sub_title::before{
   content: 'Anesthesiology';
+  display: none;
 }
 
 .our_team_panel .laboratory_area .sub_title::before{
   content: 'Laboratory';
+  display: none;
 }
 
 .our_team_panel .radiology_area .sub_title::before{
   content: 'Radiology';
+  display: none;
 }
 
 .our_team_panel .administration_area .sub_title::before{
   content: 'Administration';
+  display: none;
 }
 
 /* Donate */
