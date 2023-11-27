@@ -1786,6 +1786,38 @@
   height: 150px;
 }
 
+.floating_form{
+  padding: 27px 15px 40px;
+}
+
+.tab button span{
+  font-size: 16px;
+}
+
+.help_form_area .help_form_img{
+  padding: 0;
+}
+
+.help_form_area .help_form_img img{
+  display: none;
+}
+
+.green_bg_form .bookappointment_form{
+  padding: 15px;
+}
+
+.help_form_area .title{
+  margin-bottom: 15px;
+}
+
+.inner_form{
+  margin-top: 20px;
+}
+
+.popup_appoint_form{
+  height: 100%;
+}
+
 }
 
 @media (max-width: 480px){

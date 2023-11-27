@@ -4645,11 +4645,14 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 991px;
+  max-width: 100%;
   z-index: 10;
   padding: 15px 0;
   opacity: 0;
   visibility: hidden;
   transition: .5s ease all;
+  overflow: auto;
+ 
 }
 
 .popup_appoint_form.show_popup_appoint_form{
@@ -4769,6 +4772,7 @@ a:hover {
   padding: 27px 44px 44px;
   transition: 0.5s ease-in-out all;
   border: 1px solid #c7c7c7;
+  max-width: 88%;
 }
 
 .floating_form.show_floating_form{
@@ -4893,4 +4897,12 @@ a:hover {
   width:184px;
   height: 2px;
   background-color: #132573;
+}
+
+.grey_border{
+  border: 1px solid #c4c4c4;
+}
+
+.grey_border img{
+  display: block;
 }

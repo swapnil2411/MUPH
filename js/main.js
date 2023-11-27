@@ -105,6 +105,7 @@ $(document).ready(function () {
                           </li>
                         </ul>
                       </div>
+                      
 
                       <div class="panel active" id="panel_one">
                         <div class="card_container">
@@ -576,10 +577,10 @@ $(document).ready(function () {
                   <div id="collapse-1-1" class="collapse" data-parent="#accordion-1" aria-labelledby="heading-1-1">
                     <div class="card-body">
                       <ul>
-                        <li><a href="">Diseases</a></li>
-                        <li><a href="">Case Studies</a></li>
-                        <li><a href="">Caring for your kidneys</a></li>
-                        <li><a href="">Patient Testimonials</a></li>
+                        <li><a href="kidney.html">Diseases</a></li>
+                        <li><a href="kidney.html#types_of_treatment">Case Studies</a></li>
+                        <li><a href="kidney.html#organs_treatment">Caring for your kidneys</a></li>
+                        <li><a href="kidney.html#kidney_patient_testimonials">Patient Testimonials</a></li>
                       </ul>
                     </div>
                   </div>
@@ -605,12 +606,12 @@ $(document).ready(function () {
                   <div id="collapse-1-3" class="collapse" data-parent="#accordion-1" aria-labelledby="heading-1-3">
                     <div class="card-body">
                       <ul>
-                        <li><a href="">Urology</a></li>
-                        <li><a href="">Nephrology</a></li>
-                        <li><a href="">Anesthesia</a></li>
-                        <li><a href="">Pathology</a></li>
-                        <li><a href="">Radiology</a></li>
-                        <li><a href="">Physiotherapy</a></li>
+                        <li><a href="urology.html">Urology</a></li>
+                        <li><a href="nephrology.html">Nephrology</a></li>
+                        <li><a href="anaesthesia.html">Anesthesia</a></li>
+                        <li><a href="pathology.html">Pathology</a></li>
+                        <li><a href="radiology.html">Radiology</a></li>
+                        <li><a href="physiotherapy.html">Physiotherapy</a></li>
                       </ul>
                     </div>
                   </div>
@@ -627,10 +628,10 @@ $(document).ready(function () {
                   <div id="collapse-1-4" class="collapse" data-parent="#accordion-1" aria-labelledby="heading-1-4">
                     <div class="card-body">
                       <ul>
-                        <li><a href="">Patient Facilities</a></li>
-                        <li><a href="">Health Check up</a></li>
-                        <li><a href="">Cashless Hospitalisation</a></li>
-                        <li><a href="">Hospitalisation Options</a></li>
+                        <li><a href="patientfacility.html">Patient Facilities</a></li>
+                        <li><a href="healthcheckup.html">Health Check up</a></li>
+                        <li><a href="cashlesshospitalisation.html">Cashless Hospitalisation</a></li>
+                        <li><a href="hospitalisationoption.html">Hospitalisation Options</a></li>
                       </ul>
                     </div>
                   </div>
@@ -643,7 +644,7 @@ $(document).ready(function () {
         <div class="card">
           <div class="card-header" id="heading-2">
             <h5 class="mb-0">
-              <a class="no_collapse" href="doctors.html">
+              <a class="no_collapse" href="meetourdoctor.html">
                 Doctors
               </a>
             </h5>
@@ -661,10 +662,10 @@ $(document).ready(function () {
           <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
             <div class="card-body">
               <ul>
-                <li><a href="">About MUPH</a></li>
-                <li><a href="">History</a></li>
-                <li><a href="">Our Achievements</a></li>
-                <li><a href="">Our Team</a></li>
+                <li><a href="aboutmpuh.html">About MUPH</a></li>
+                <li><a href="historyAndNews.html">History</a></li>
+                <li><a href="achievements.html">Our Achievements</a></li>
+                <li><a href="ourteam.html">Our Team</a></li>
               </ul>
             </div>
           </div>
@@ -693,8 +694,8 @@ $(document).ready(function () {
                   <div id="collapse-4-1" class="collapse" data-parent="#accordion-4" aria-labelledby="heading-4-1">
                     <div class="card-body">
                       <ul>
-                        <li><a href="">About JPAC</a></li>
-                        <li><a href="">Upcoming Courses</a></li>
+                        <li><a href="aboutjpac.html">About JPAC</a></li>
+                        <li><a href="upcomingCourse.html">Upcoming Courses</a></li>
                       </ul>
                     </div>
                   </div>
@@ -711,12 +712,12 @@ $(document).ready(function () {
                   <div id="collapse-4-2" class="collapse" data-parent="#accordion-4" aria-labelledby="heading-4-2">
                     <div class="card-body">
                       <ul>
-                        <li><a href="">Fellowships</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Meet Our Faculty</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Publications</a></li>
+                        <li><a href="fellowships.html">Fellowships</a></li>
+                        <li><a href="upcomingEvents.html">Events</a></li>
+                        <li><a href="meetourdoctor.html">Meet Our Faculty</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="publication.html">Publications</a></li>
                       </ul>
                     </div>
                   </div>
@@ -725,7 +726,7 @@ $(document).ready(function () {
                 <div class="card">
                   <div class="card-header" id="heading-4-3">
                     <h5 class="mb-0">
-                      <a class="no_collapse" href="treatmentoptions.html">
+                      <a class="no_collapse" href="newsandmedia.html">
                         News & Media
                       </a>
                     </h5>
