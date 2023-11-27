@@ -4772,7 +4772,7 @@ a:hover {
   padding: 27px 44px 44px;
   transition: 0.5s ease-in-out all;
   border: 1px solid #c7c7c7;
-  max-width: 88%;
+  max-width: 100%;
 }
 
 .floating_form.show_floating_form{

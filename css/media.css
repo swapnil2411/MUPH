@@ -1791,7 +1791,7 @@
 }
 
 .tab button span{
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .help_form_area .help_form_img{
@@ -1816,6 +1816,16 @@
 
 .popup_appoint_form{
   height: 100%;
+}
+
+.close_floating_form{
+  top: -64px;
+  left: 0;
+}
+
+.tab button img {
+  width: 22px;
+  height: 22px;
 }
 
 }
